@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Myler</title>
+
+    <link rel="stylesheet" href="css/bootsrap.min.css" type="text/css" />
+    <!-- <link rel="stylesheet" href="js/jquery.slim.min.js" type="text/js" />   
+    <link rel="stylesheet" href="js/bootstrap.bundle.min.js" type="text/js" />   -->
+
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/dc.min.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+                <img src="http://placehold.it/150x50?text=Logo" alt="">
+              </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home
+                      <span class="sr-only">(current)</span>
+                    </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#select_bar">Select bar</a>  
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- Page Content -->
+    
+    <div class="content-container background">
+        <section class="main">
+            <div class="container-fluid mt-1 main-container">
+                <div class="img-overlay">&nbsp;</div>
+                        <div class="card mb-3">
+                            <img src="data/image_products/eyeem-122523602.jpg" class="card-img-top"
+                                alt="dashboard-logo">
+                        </div>
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+            <div class="card">
+                <div class="card-body">
+            <h5 class="card-title">Card title</h5>    
+                    <div class="container-fluid mt-3 lp-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <!--- Main button that directs to the dashboard section -->
+                             <button type="button"
+                                 class="btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block"
+                                id="main-btn"><img src="assets/img/seethestats.png"class="img-fluid winter-pic rounded mx-auto d-block" alt="linktofirstdashboard" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <div class="dashboard-container">        
+<div class="container">
+    <div class="introduction">
+        <h1 class="main_title">Toys´r mine!</h1>
+        <p>We are specialists in antique toys, old toys and rare toys for collectors, such as <i><b>Classic cars</b>, <b>Motorcycles</b>, <b>Trucks and buses</b>, <b>Aircrafts</b>, <b>Ships</b>, <b>Trains</b>, memorabilia and even more antique toys (only by local contact) - many antique toys come from well-known factories and regions such as the well nown Erzgebirge and Seiffen.</p>
+                
+        <p>We sell old toys from circa 1800 to 1950. Our business has existed since 1990.  We sell no reproductions and no broken items.
+        In this page one can study different aspects of our sell report made between the years 2003-2005. If you have any questions about our products, please contact us via email - we will get back to you as soon as possible!</p>
+    <div>
+        <button class="text-white btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets  everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">
+            Reset All
+        </button>
+    
+        <div class="all_selectors" id="select_bar">
+            <div class="select">
+                <p>City selector</p>
+                <div class="dc-select-menu" id="city"></div>
+            </div>
+            <div class="select">    
+                <p>Customer selector</p>
+                <div class="dc-select-menu" id="customer_selector"></div>
+            </div>    
+            <div class="select">   
+                <p>Sales selector</p>
+                <div class="dc-select-menu" id="dead-selector"></div>
+            </div>
+        </div>
+            <div class="time_charts">
+                <h2 class=" section_title ">Charts related to time</h2>
+            <button class="col-xs-12 col-sm-12 col-8" type="button" data-toggle="collapse" data-target="#footwear" aria-expanded="false" aria-controls="footwear" >situacion</button>
+                        <div class="collapse" id="footwear">
+                                <p>There is biggest peak (in November) caused by the Chritmas celebration preceded by one smalle in the October month, and that is direct connected to our sells; there are also other smaller peaks before sommer(left) Our favorite product
+                                    have been by far classical cars followed by Vintage cars and Motocycles. The graphic shows the first years of our business and the first stage of its expansion, and how in gained clients for all its products(right)</p>
+                            </div>
+        <section>
+            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="chart-here">
+                    <h4 class="chart_title">Montly average sale chart</h4> 
+            </div>
+        </section>    
+            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_year_products">
+                    <h4 class="chart_title">Stacked bar chart per years</h4>
+            </div>
+            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_quartal">
+                    <h4 class="chart_title">Sales time line per trimester</h4>
+            </div>
+            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_STATUS_and_deal_size">
+                    <h4 class="chart_title">Status of sales and their deal size </h4>
+            </div>
+            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="donuts">
+                    <h4 class="chart_title">World ares of delivery</h4>
+            </div>
+            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="country_pie">
+                    <h4 class="chart_title">Country chart  </h4>
+            </div>
+            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="price_along_dates">
+                    <h4 class="chart_title">Complete distribution of each order and shops with color status</h4>
+            </div>
+            <div class="charts col-xs-12 col-sm-12 col-8 text-center" id="Map">
+                    <h4 class="chart_title">Map </h4>
+            </div>
+            <button class="text-white btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This   resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">
+                Reset All
+            </button>
+</div>
+
+
+
+      </div>
+      <!-- /.container -->
+        <!-- <div class="container">
+   
+
+                
+                    </div>
+                </div>
+                <div class="">
+                    
+                </div>
+                
+            
+            <div class="">
+                
+            </div> -->
+            
+        <!-- <div class="">
+            <div class="col-xs-12 col-sm-12 col-8 text-center">
+                <button class="text-white btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This   resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset All
+                </button>
+            </div> -->
+          
+        
+    
+    </div>
+</div>    
+        <!--<div class="mt-5 col-12" data-intro="This show information about the attacks." data-highlightClass="intro" data-tooltipClass="intro">-->
+        <!--    <h2 class='label'>Attack Info</h2>-->
+        <!--    <table id='event-table' class="table"></table>-->
+        <!--    <p class="text-center">Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span>.</p>-->
+        <!--    <div class="text-center">-->
+        <!--        <button id="info-prev" class="btn btn-primary border-white">Prev</button>-->
+        <!--        <button id="info-next" class="btn btn-primary border-white">Next</button>-->
+        <!--    </div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <script type="text/javascript" src="js/d3.min.js"></script>
+        <script type="text/javascript" src="js/crossfilter.min.js"></script>
+        <script type="text/javascript" src="js/dc.min.js"></script>
+        <script type="text/javascript" src="js/queue.min.js"></script>
+        <script type="text/javascript" src="js/Script.js"></script>
+        <script type="text/javascript" src="js/map.js"></script>
+
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpSSxuK48quxHpT6nGK-pzyTLJOZlFZvM&callback=initMap" async defer></script>
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        
+    <script>
+            
+            $(function () {
+        $("#main-btn").on("click", function () {
+                $(".main").hide();
+                $(".dashboard-container").fadeIn(500);
+                $(".content-container").removeClass("background").addClass("background-alt");
+                // the button start the graphic page
+                introJs().start();
+            });
+        });
+            function myFunction() {
+                var x = document.getElementById("myLinks");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                }
+                else {
+                    x.style.display = "block";
+                }
+            }
+            $(document).ready(function() {
+                $(".all_selectors").hover(function() {
+                    $(this).css("background-color", "yellow");
+                }, function() {
+                    $(this).css("background-color", "grey");
+                });
+            });
+        </script>
+    </div>
+</body>
+</html>

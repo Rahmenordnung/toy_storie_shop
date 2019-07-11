@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Myler</title>
+
+    <link rel="stylesheet" href="css/com.css" type="text/css" />
+    <link rel="stylesheet" href="css/dc.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Emilys+Candy" rel="stylesheet">
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <script type="text/javascript" src="js/Script.js"></script>
+    <script src="jquery.flip.js"></script>
+    
+<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
+
+</head>
+
+<body>
+    <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a href="home.html" class="active">Our Toys</a>
+            <div id="myLinks">
+                <a href="index.html">Report</a>
+                <a href="Contact.html">Contact</a>
+                <a href="About.html">About</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+        </div>
+        <div class="container1">
+   
+            <div id="one"><img class="images" src="/data/image products/c.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/o1.png"/></div>
+            <div id="one"><img class="images" src="/data/image products/l1.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/l2.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/e.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/c2.png"/></div>
+            <div id="one"><img class="images" src="/data/image products/t.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/i.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/o2.jpg"/></div>
+            <div id="one"><img class="images" src="/data/image products/n.gif"/></div>
+        </div>
+
+        <footer>
+            <p>Trademark & Copyright Notice: ™ and &copy; 2018 FOX and its related entities.</p>
+        </footer>
+</body>
+
+<script>
+    $("#one").flip({
+        axis: 'x',
+        trigger: 'hover'
+    });
+</script>
+
+
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        }
+        else {
+            x.style.display = "block";
+        }
+    }
+</script>
+
+</html>

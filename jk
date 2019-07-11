@@ -1,0 +1,39 @@
+  <div class="container1">
+   
+            <div id="one"> HIGH QUALITY</div>
+            
+            <div id="one">EXPERT APPROVED</div>
+            <div id="one">SAFETY CERTIFIED</div>
+            <div id="one">DIFFENT TOYS</div>
+            <div id="one">DELIEVERY ALL OVER THE WORLD</div>
+            <div id="one">TOYS FOR ALL TASTES</div>
+            <div id="one">UNIVERSALLY RECOGNIZED</div>
+            <div id="one">MADE FOR ALL KIDS</div>
+            <div id="one">LOVED BY SANTA</div>
+        </div> 
+        
+        
+          function Tabletry(ndx) {
+        var dim = ndx.dimension(dc.pluck("ORDERDATE"));
+        var group = dim.group();
+        var dealsizeChart = dc.rowChart
+
+	d3.csv("/data/sales.csv", function(err, data) {
+			if (err) throw err;
+			
+				var ndx = crossfilter(data);
+			var all = ndx.groupAll();
+			
+			 var dim = ndx.dimension(dc.pluck("DEAL-SIZE"));
+
+    	dealsizeChart("#dealsize")
+				.dimension(dim)
+				.group(group)
+				.elasticX(true);
+
+	dc.renderAll();
+
+
+
+		});
+               

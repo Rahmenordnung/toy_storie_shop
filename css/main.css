@@ -1,0 +1,54 @@
+.{
+  margin: 0;
+  padding: 0;
+}
+
+
+#Map {
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 25px;
+  margin-top: 25px
+}
+/*hover box text*/
+.gm-style-iw-d{
+  color:black
+}
+.navbar-brand{
+  padding: 0px
+}
+.image{
+  height: 15%;
+  width: 100%;
+ background-image: url("data/image_products/car.jpeg");
+}
+.main_title{
+text-align: center;
+margin-bottom: 10rem;
+margin-top: 6rem;
+}
+.all_selectors{
+  display: flex;
+  padding: 30px;
+  margin-block-end: 50px;
+  margin-block-start: 50px;
+}
+.select{
+  display: grid;
+  margin: 55px 55px;
+}
+.section_title{
+  text-align: center;
+}
+
+/*settings for all charts*/
+.charts{
+  padding-top: 85px;
+  padding-bottom: 70px;
+  height: auto;
+  border-bottom: 1px #DADADA solid;
+}
+
+.chart_title{
+margin-bottom:75px; 
+}
