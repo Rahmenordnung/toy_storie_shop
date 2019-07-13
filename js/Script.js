@@ -4,6 +4,7 @@ queue()
 
 function makeGraphs(error, SALESData) {
     var ndx = crossfilter(SALESData)
+        // sales_number(ndx);
         CITY(ndx);
         customer_business(ndx);
         // show_Status_products(ndx);
@@ -15,9 +16,19 @@ function makeGraphs(error, SALESData) {
         sales_month(ndx);
         scatter_price(ndx);
         show_territory_donuts(ndx);
+        mrsp_price(ndx);
         
-         // show_Status_products(ndx);
+         // render all dc.js through(ndx) crossfilter;
     dc.renderAll();
+
+ //total//
+//  function sales_number(ndx) {
+//     dc.salesDisplay("#sales_number")
+//         .group(SALESGroup)
+//         .valueAccessor(function (d) {
+//             return d;
+//         })
+//  };   
     
 //selectors//
 function CITY(ndx) {
@@ -47,8 +58,57 @@ function amount_causes(ndx) {
             .group(group);
     }
 
-//graphics//
-//average monthly sale//
+
+// function mrsp_price(ndx) {
+//     var dim = ndx.dimension(dc.pluck("STATE"));
+//         var group = dim.group();
+        
+//         dc.barChart("#mrsp")
+//         .width(600)
+//         .height(500)
+//         .margins({ top: 10, right: 10, bottom: 60, left: 35 })
+//         .dimension(dim)
+//         .group(group)
+//         .transitionDuration(500)
+//         .x(d3.scale.ordinal().domain([, , 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]).range([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]))
+//         .xUnits(dc.units.ordinal)
+//         .elasticY(true)
+//         .xAxisLabel("COUNTRY")
+//         .renderHorizontalGridLines(true)
+//         .on('renderlet', function(chart) {
+//             chart.selectAll("g.x text")
+//                 .attr('dx', '-15')
+//                 .attr('transform', "rotate(-45)");
+//             })
+//         .addFilterHandler(function(filters, filter) { return [filter]; })
+//         .yAxis().ticks(20);
+// }
+function mrsp_price(ndx) {
+    var dim = ndx.dimension(dc.pluck('PRODUCTLINE'));
+    var group = dim.group();
+    var STATUSColors = d3.scale.ordinal()
+        .domain(["Classic Cars", "Motorcycles", "Trucks and Buses", "Vintage Cars", "Planes", "Trains"])
+        .range(["red", "green", "blue", "yellow", "violet", "brown"]);
+    
+    dc.barChart("#mrsp")
+        .width(600)
+        .height(300)
+        .margins({top: 10, right: 50, bottom: 30, left: 50})
+        .dimension(dim)
+        .group(group)
+        .transitionDuration(500)
+        .colors(STATUSColors)
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .elasticY(true)
+        .xAxisLabel("Products")
+        
+}
+
+
+
+// graphics//
+// average monthly sale//
 function show_monthy_sales_distribution(ndx) {
     var dim = ndx.dimension(dc.pluck("MONTH_ID"));
     var group = dim.group();

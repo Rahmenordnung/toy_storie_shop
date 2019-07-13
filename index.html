@@ -19,6 +19,8 @@
 </head>
 
 <body>
+
+    <!-- static navbar with logo and burger for mobile display -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
           <a class="navbar-brand" href="#">
@@ -47,38 +49,90 @@
           </div>
         </div>
       </nav>
+
       
       <!-- Page Content -->
     
-    <div class="content-container background">
-        <section class="main">
-            <div class="container-fluid mt-1 main-container">
+      <section class="main">
+      <div class="content-container background">
+        <div class="container-fluid mt-1 main-container">
+            <!-- <div id="sales_number"></div> -->
                 <div class="img-overlay">&nbsp;</div>
                         <div class="card mb-3">
-                            <img src="data/image_products/eyeem-122523602.jpg" class="card-img-top"
-                                alt="dashboard-logo">
-                        </div>
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-        </div>
-            <div class="card">
-                <div class="card-body">
-            <h5 class="card-title">Card title</h5>    
-                    <div class="container-fluid mt-3 lp-container">
-                    <div class="row">
-                        <div class="col-12">
-                            <!--- Main button that directs to the dashboard section -->
-                             <button type="button"
-                                 class="btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block"
+                            <img src="data/image_products/eyeem-122523602.jpg" class="card-img-top"alt="dashboard-logo">
+                                <!--- Main button that directs to the dashboard section -->
+                                <button type="button"
+                                    class="btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block"
                                 id="main-btn"><img src="assets/img/seethestats.png"class="img-fluid winter-pic rounded mx-auto d-block" alt="linktofirstdashboard" />
                             </button>
                         </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                      <div class="card text-center">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="donuts"></div>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="card text-center">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="country_pie"></div>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                      </div>
                     </div>
                 </div>
-            </div>
+                <div class="row">
+                        <div class="col-sm-6">
+                          <div class="card text-center">
+                            <div class="card-body">
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="chart-here"></div>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6">
+                          <div class="card text-center">
+                            <div class="card-body">
+                              <h5 class="card-title">Special title treatment</h5>
+                              <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_year_products"></div>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-sm-6">
+                              <div class="card text-center">
+                                <div class="card-body">
+                                  <h5 class="card-title">Special title treatment</h5>
+                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="mrsp"></div>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="card text-center">
+                                <div class="card-body">
+                                  <h5 class="card-title">Special title treatment</h5>
+                                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                    <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_quartal"></div>
+                                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                  
         </section>  
 
         <div class="dashboard-container">        
@@ -115,32 +169,67 @@
                                 <p>There is biggest peak (in November) caused by the Chritmas celebration preceded by one smalle in the October month, and that is direct connected to our sells; there are also other smaller peaks before sommer(left) Our favorite product
                                     have been by far classical cars followed by Vintage cars and Motocycles. The graphic shows the first years of our business and the first stage of its expansion, and how in gained clients for all its products(right)</p>
                             </div>
-        <section>
+        <!-- <section>
             <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="chart-here">
                     <h4 class="chart_title">Montly average sale chart</h4> 
             </div>
         </section>    
             <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_year_products">
-                    <h4 class="chart_title">Stacked bar chart per years</h4>
-            </div>
+                    <h4 class="chart_title">Stacked bar chart per years</h4> -->
+            <!-- </div> -->
             <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_quartal">
                     <h4 class="chart_title">Sales time line per trimester</h4>
             </div>
             <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_STATUS_and_deal_size">
                     <h4 class="chart_title">Status of sales and their deal size </h4>
             </div>
-            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="donuts">
+            <!-- <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="donuts">
                     <h4 class="chart_title">World ares of delivery</h4>
             </div>
             <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="country_pie">
                     <h4 class="chart_title">Country chart  </h4>
+            </div> -->
+            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="mrspoo">
+                    <h4 class="chart_title">mrsp</h4>
             </div>
-            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="price_along_dates">
+            #chart-here
+            <!-- <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="price_along_dates">
                     <h4 class="chart_title">Complete distribution of each order and shops with color status</h4>
-            </div>
-            <div class="charts col-xs-12 col-sm-12 col-8 text-center" id="Map">
-                    <h4 class="chart_title">Map </h4>
-            </div>
+            </div> -->
+
+          
+
+            <div class=" card text-center">
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">Scatter Plot all sales chart</h3>
+                      <p class="card-text">Our shop is highly specialized, therefore we mostly sell little quantities</p>
+                      <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="price_along_dates"></div>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Affordability. We also we don´t sacrifice quality with price, so there are more small amount spended that big.
+                    </div>
+                  </div>
+
+            
+            <div class=" card text-center">
+                    <div class="card-header">
+                      Featured
+                    </div>
+                    <div class="card-body">
+                      <h3 class="card-title">Delivery map</h3>
+                      <p class="card-text">Our products reach all corners of the world</p>
+                      <div class="  col-xs-12 col-sm-12 col-8 text-center" id="Map"></div>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="card-footer text-muted">
+                        Worldwide, wherever people recognize the quality of our products.
+                    </div>
+                  </div>
+
             <button class="text-white btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This   resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">
                 Reset All
             </button>
