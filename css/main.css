@@ -27,6 +27,8 @@ margin-top: 6rem;
   padding: 30px;
   margin-block-end: 50px;
   margin-block-start: 50px;
+  background-color: #b34b4b;
+  border-radius: 15px;
 }
 .select{
   display: grid;
@@ -43,7 +45,13 @@ margin-top: 6rem;
   height: auto;
   border-bottom: 1px #DADADA solid;
 }
-
 .chart_title{
-margin-bottom:75px; 
+margin-bottom:75px;
+}
+.cards{
+  margin-bottom: 30px;
+}
+.buttons{
+  margin-bottom: 15px;
+  margin-top: 15px;
 }

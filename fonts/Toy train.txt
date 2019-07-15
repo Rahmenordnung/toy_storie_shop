@@ -1,0 +1,12 @@
+Toy train instructions
+
+Always use a capital letter to get an engine
+
+asterisk * has engine without letter
+
+space has buffer
+
+underscore _ has plain track, no buffer
+
+brackets have wagons without letters { and } plus [ and ]
+
