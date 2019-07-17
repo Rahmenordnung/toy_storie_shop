@@ -16,12 +16,15 @@
   height: 15%;
   width: 100%;
  background-image: url("data/image_products/car.jpeg");
+ 
 }
 .main_title{
 text-align: center;
 margin-bottom: 10rem;
 margin-top: 6rem;
 }
+
+/*selectors bar*/
 .all_selectors{
   display: flex;
   padding: 30px;
@@ -29,6 +32,50 @@ margin-top: 6rem;
   margin-block-start: 50px;
   background-color: #b34b4b;
   border-radius: 15px;
+}
+ .select select {
+        font-family: 'Arial';
+        display: inline-block;
+        width: 100%;
+        cursor: pointer;
+        padding: 9px 17px;
+        outline: 0;
+        border: 1px inset #0d1ca9;
+        border-radius: 10px;
+        background: #caccc9;
+        color: #000000;
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+        .select select:hover,
+        .select select:focus {
+            color: #3e539b;
+            background: #cccccc;
+        }
+        .select select:disabled {
+            opacity: 1;
+            pointer-events: none;
+        }
+.select_arrow {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    width: 14px;
+    height: 14px;
+    border: solid #1925cd;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+    border-color: #05e3e3;
+}
+.select select:disabled ~ .select_arrow {
+    border-top-color: #ffe700;
 }
 .select{
   display: grid;
@@ -55,3 +102,93 @@ margin-bottom:75px;
   margin-bottom: 15px;
   margin-top: 15px;
 }
+.btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+transform: translate(-50%,-50%);
+margin-right: -50%;
+top: 50%;
+left: 50%;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.hero {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+  
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Text styles */
+  text-align: center;
+  color: white; /* ADD THIS LINE */
+}
+.hero h1 {
+  /* Text styles */
+  font-size: 5em;
+}
+.hero h1 {
+  /* Text styles */
+  font-size: 5em;
+  
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero .btn {
+  /* Positioning and sizing */
+  display: block;
+  width: 200px;
+  
+  /* Padding and margins */
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Text styles */
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  
+  /* Border styles */
+  border: 3px solid white;
+  border-radius: 20px;
+  
+  /* Background styles */
+  background-color: rgba(147, 112, 219, 0.8);
+}
+
+.hero {
+  /* Sizing */
+  width: 100vw;
+  height: 100vh;
+  
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* Text styles */
+  text-align: center;
+  color: white;
+  
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('data/image_products/eyeem-122523602.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
