@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/dc.min.css" type="text/css" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"</link> 
 </head>
 
 <body>
@@ -39,7 +41,7 @@
                 <a class="nav-link" href="#">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#time_charts">Time charts</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#select_bar">Select bar</a>  
@@ -62,90 +64,65 @@
                 </section>
             </section>
         </div>        
-
-
-<main>           
-        <div class="dashboard-container">        
-                <div class="container">
-                <div class="introduction">
-                        <h1 class="main_title">Toys´r mine!</h1>
-                        <hr>
-                        <p>We are specialists in antique toys, old toys and rare toys for collectors, such as <i><b>Classic cars</b>, <b>Vintage cars</b>, <b>Motorcycles</b>, <b>Trucks and buses</b>, <b>Aircrafts</b>, <b>Ships</b>, <b>Trains</b>, memorabilia and even more antique toys (only by local contact) - many antique toys come from well-known factories and regions such as the well nown Erzgebirge and Seiffen, Madrid, Moirans-en-Montagne, Lyon,in Europe, Toledo, Boston ,Seattle, Miami etc, in USA, and many other places all around the world.  </p>
-                                
-                        <p>We sell old toys from circa 1800 to 1950. Our business has existed since 1990.  We sell no reproductions and no broken items.
-                        In this page one can study different aspects of our sell report made between the years 2003-2005. If you have any questions about our products, please contact us via email - we will get back to you as soon as possible!</p>
-                    <div>
-                <hr>        
-                    <div class="all_selectors" id="select_bar">
-                        <div class="select">
-                            <p>City selector</p>
-                            <div class="dc-select-menu" id="city"></div>
-                        </div>
-                        <div class="select">    
-                            <p>Customer selector</p>
-                            <div class="dc-select-menu" id="customer_selector"></div>
-                        </div>    
-                        <div class="select">   
-                            <p>Sales selector</p>
-                            <div class="dc-select-menu" id="dead-selector"></div>
-                        </div>
-                        <div class="select_arrow">
-                            </div>
-                    </div>
-                    <div id="newpost">
-                            Test text
-                        </div>
-                        
-                        <button>Click</button>
-                    <div class="time_charts">
-                        <h2 class=" section_title ">Charts related to time</h2>
-                    <button class="col-xs-12 col-sm-12 col-8" type="button" data-toggle="collapse" data-target="#footwear" aria-expanded="false" aria-controls="footwear" >situacion</button>
-                    <div class="collapse" id="footwear">
-                        <p>There is biggest peak (in November) caused by the Chritmas celebration preceded by one smalle in the October month, and that is direct connected to our sells; there are also other smaller peaks before sommer(left) Our favorite product
-                            have been by far classical cars followed by Vintage cars and Motocycles. The graphic shows the first years of our business and the first stage of its expansion, and how in gained clients for all its products(right)</p>
-                    </div>
+<main> </main>          
+    <div class="dashboard-container">        
+        
+        <div class="introduction">
+            <h1 class="main_title">Toys´r mine!</h1>
+            <hr>
+            <p>We are specialists in antique toys, old toys and rare toys for collectors, such as <i><b>Classic cars</b>, <b>Vintage cars</b>, <b>Motorcycles</b>, <b>Trucks and buses</b>, <b>Aircrafts</b>, <b>Ships</b>, <b>Trains</b>, memorabilia and even more antique toys (only by local contact) - many antique toys come from well-known factories and regions such as the well nown Erzgebirge and Seiffen, Madrid, Moirans-en-Montagne, Lyon,in Europe, Toledo, Boston ,Seattle, Miami etc, in USA, and many other places all around the world.  </p>
+                    
+            <p>We sell old toys from circa 1800 to 1950. Our business has existed since 1990.  We sell no reproductions and no broken items.
+            In this page one can study different aspects of our sell report made between the years 2003-2005. If you have any questions about our products, please contact us via email - we will get back to you as soon as possible!</p>
+        <div>
+            <hr>        
+        <div class="all_selectors" id="select_bar">
+            <div class="select">
+                <p>City selector</p>
+                <div class="dc-select-menu" id="city"></div>
+            </div>
+            <div class="select">    
+                <p>Customer selector</p>
+                <div class="dc-select-menu" id="customer_selector"></div>
+            </div>    
+            <div class="select">   
+                <p>Sales selector</p>
+                <div class="dc-select-menu" id="dead-selector"></div>
+            </div>
+            <div class="select_arrow">
                 </div>
-                <div class="cards">
-                    <div class=" card text-center">
-                            <div id='content'>Hello World</div>
-                                <h3 class="card-title">Quantitity of Sales in each transaction</h3>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Our shop is highly specialized, therefore we mostly sell little quantities. Ussually the clients don´t have enough with buying only one of our toys. </p>
-                                    <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="price_along_dates"></div>
-                                    <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This   resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
-                                </div>
-                                <div class="card-footer text-muted">
-                                    Affordability. We also we don´t sacrifice quality with price, so there are more small amount spended that big.
-                                </div>
+        </div>
+                
+    <div class="cards">
+        <div class=" card text-center">
+            <div class="card-header">
+                <div class=toggle>
+                <h3 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>
+                Quantitity of Sales in each transaction</h3>
+                </div>
+            </div>
+            <div id="hide_botton">
+                <div class="card-body">
+                    <p class="card-text">Our shop is highly specialized, therefore we mostly sell little quantities. Ussually the clients don´t have enough with buying only one of our toys. </p>
+                    <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="price_along_dates"></div>
+                    <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This   resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                </div>
+                    <div class="card-footer text-muted">
+                        Affordability. We also we don´t sacrifice quality with price, so there are more small amount spended that big.
+                    </div>
+                </div>    
+            </div>
+        </div>
+
+        <div class="geography" id="geography_charts"><div class="row cards">
+                <div class="col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <div class=toggle>
+                                <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_territories()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Distribution of the products by territories</h5>
                             </div>    
                         </div>
-                        <div class="cards">
-                            <div class=" card text-center">
-                                <div class="card-header">
-                                    <h3 class="card-title">Delivery map</h3>
-                                </div>
-                                <div class="card-body">
-                                    <p class="card-text">Our products reach all corners of the world</p>
-                                    <div class="  col-xs-12 col-sm-12 col-8 text-center" id="Map"></div>
-                                </div>
-                                <div class="card-footer text-muted">
-                                    Worldwide, wherever people recognize the quality of our products.
-                                </div>
-                            </div>
-                        </div>
-                    </div>    
-                    </div>
-                </div>
-            </div>        
-
-            <hr>
-            <div class="row cards">
-                    <div class="col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-header">
-                                <h5 class="card-title">Distribution of the products by territories</h5>
-                                    </div>
+                    <div id="hide_botton_territories">
                         <div class="card-body">
                             <p class="card-text">Most of our products are delievered to Europe and North America.</p>
                                 <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="donuts"></div>
@@ -153,109 +130,160 @@
                                 <div class="card-footer text-muted">
                                     We have been selling also products to Asia and Australia.
                                 </div>
-                        </div>
+                            </div>    
                         </div>
                     </div>
-                    <div class="col-sm-6">
+                </div>
+                <div class="col-sm-6">
                         <div class="card text-center">
                             <div class="card-header">
-                                <h5 class="card-title">Countries distribution per sales</h5>
-                                    </div>
+                                    <div class=toggle>
+                                        <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_country()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Countries distribution per sales</h5>
+                                    </div> 
+                                </div>
+                    <div id="hide_botton_country">
                         <div class="card-body">
-                            <p class="card-text">We have clients in nineteen countries, and each of them has the same importance for us. the other</p>
+                            <p class="card-text"> We have clients in nineteen countries, and each of them has the same importance for us. the other </p>
                                 <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="country_pie"></div>
                             <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
                                 <div class="card-footer text-muted">
-                                    The USA is the leader of our ranking and Ireland close it.
+                                        The USA is the leader of our ranking and Ireland close it.
+                                    </div>
                                 </div>
-                        </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row cards">
-                        <div class="col-sm-6">
-                            <div class="card text-center">
-                                <div class="card-header">
-                                    <h5 class="card-title">Average monthly sales chart</h5>
-                                        </div>
-                            <div class="card-body">
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                                    <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="chart-here"></div>
-                                <a href="#" class="buttons btn btn-primary">Back on top</a>
-                                    <div class="card-footer text-muted">
-                                        The biggest peak is reached in November, caused by the Christmas sales preparation.
-                                    </div>
-                            </div>
+        
+    
+        <div class="time_charts" id="time_charts">
+            <div class="cards">
+                    <div class=" card text-center">
+                        <div class="card-header">
+                            <div class=toggle>
+                                <h3 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_time()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Scatter Plot all sales chart</h3>
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="card text-center">
-                                <div class="card-header">
-                                    <h5 class="card-title">Compleate sales of all products per year chart</h5>
-                                        </div>
-                            <div class="card-body">
-                                <p class="card-text"> Clear increase of our sales level in the second year of existance in all the available products </p>
-                                    <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_year_products"></div>
+                    <div id="hide_botton_time">         
+                        <div class="card-body cards">
+                            <p class="card-text"> In the last trimester of the year there is a clear increase in our sales, that compensate the low sales level recorded in summer. </p>
+                            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_quartal"></div>
                                 <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
-                                    <div class="card-footer text-muted">
-                                            Our main product is Classical cars antique toys.
-                                    </div>
                             </div>
+                            <div class="card-footer text-muted">
+                                We end the year with a positive bilance, that helps us expand our business and improve our service.
                             </div>
                         </div>
-                    </div>
-                    <div class="container">
-                            <div class="cards">
-                        <div class=" card text-center">
-                    <div class="card-header">
-                        <h3 class="card-title">Scatter Plot all sales chart</h3>
-                    </div>
-                    <div class="card-body cards">
-                      <p class="card-text"> In the last trimester of the year there is a clear increase in our sales, that compensate the low sales level recorded in summer. </p>
-                        <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_quartal"></div>
-                        <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        We end the year with a positive bilance, that helps us expand our business and improve our service.
-                    </div>
-                  </div>
+                    </div>    
                 </div>
-            
-            </div>                
-                    <div class="row cards">
-                            <div class="col-sm-6">
-                                <div class="card text-center">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Individualized products sale distribution</h5>
-                                            </div>
-                                <div class="card-body">
-                                    <p class="card-text">Classical cars and Vintage are our star products, followed by the rest at similar levels. </p>
-                                        <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="products"></div>
-                                    <a href="#" class="buttons btn btn-primary">Back on top</a>
-                                        <div class="card-footer text-muted">
-                                            Our trains are a product still in development, with the lowest sales rate.
-                                        </div>
-                                </div>
+            </div>
+            <div class="row cards">
+                <div class="col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <div class=toggle>
+                                <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_month()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Average monthly sales chart</h5>
+                            </div>
+                        </div>
+                <div id="hide_botton_month">        
+                    <div class="card-body">
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="chart-here"></div>
+                        <a href="#" class="buttons btn btn-primary">Back on top</a>
+                            <div class="card-footer text-muted">
+                                The biggest peak is reached in November, caused by the Christmas sales preparation.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>    
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <div class=toggle>
+                                    <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_year()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Compleate sales of all products per year chart</h5>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="card text-center">
-                                    <div class="card-header">
-                                        <h5 class="card-title">Deal size and deal status graphic</h5>
-                                            </div>
-                                <div class="card-body">
-                                    <p class="card-text">we are a medium size deals company with a high level of shipping</p>
-                                        <div class="charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_STATUS_and_deal_size"></div>
-                                    <a class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
-                                        <div class="card-footer text-muted">
-                                            We don´t have among the large deals any cancelled delas yet.
-                                        </div>
-                                    </div>
+                    <div id="hide_botton_year">                
+                        <div class="card-body">
+                            <p class="card-text"> Clear increase of our sales level in the second year of existance in all the available products </p>
+                                <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_year_products"></div>
+                            <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                                <div class="card-footer text-muted">
+                                        Our main product is Classical cars antique toys.
                                 </div>
                             </div>
                         </div>
-                                 
-                    </main>
+                    </div>
+                </div>
+            </div>
+            
+                
+            
+                <div class="cards">
+                    <div class=" card text-center">
+                        <div class="card-header">
+                            <div class=toggle>
+                                <h3 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_map()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Delivery map</h3>
+                            </div>
+                        </div>
+                        <div id="hide_botton_map">
+                            <div class="card-body">
+                                <p class="card-text">Our products reach all corners of the world</p>
+                            <div class="  col-xs-12 col-sm-12 col-8 text-center" id="Map"></div>
+                            <div class="card-footer text-muted">
+                                Worldwide, wherever people recognize the quality of our products.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>        
+                    
+    <div class="row cards">
+        <div class="col-sm-6">
+            <div class="card text-center">
+                <div class="card-header">
+                    <div class=toggle>
+                        <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_product()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Individualized products sale distribution</h5>
+                    </div>
+                </div>
+        <div id="hide_botton_product">            
+            <div class="card-body">
+                <p class="card-text">Classical cars and Vintage are our star products, followed by the rest at similar levels. </p>
+                    <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="products"></div>
+                <a href="#" class="buttons btn btn-primary">Back on top</a>
+                    <div class="card-footer text-muted">
+                        Our trains are a product still in development, with the lowest sales rate.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+        <div class="col-sm-6">
+            <div class="card text-center">
+                <div class="card-header">
+                    <div class=toggle>
+                        <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_deal_size()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Deal size and deal status graphic</h5>
+                    </div>
+                </div>
+        <div id="hide_botton_deal_size">            
+            <div class="card-body">
+                <p class="card-text">we are a medium size deals company with a high level of shipping</p>
+                    <div class="charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_STATUS_and_deal_size"></div>
+                <a class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                    <div class="card-footer text-muted">
+                        We don´t have among the large deals any cancelled delas yet.
+                    </div>
+                </div>
+            </div>
+        </div>    
+        
+    
+    
+
     
         <script type="text/javascript" src="js/d3.min.js"></script>
         <script type="text/javascript" src="js/crossfilter.min.js"></script>
@@ -273,30 +301,97 @@
         
     <script>
 
-$("button").click(function() {
-    $("#newpost").toggle();
+
+function myFunction() {
+  var x = document.getElementById("hide_botton");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction_map() {
+  var y = document.getElementById("hide_botton_map");
+  if (y.style.display === "none") {
+    y.style.display = "block";
+  } else {
+    y.style.display = "none";
+  }
+}
+function myFunction_territories() {
+  var s = document.getElementById("hide_botton_territories");
+  if (s.style.display === "none") {
+    s.style.display = "block";
+  } else {
+    s.style.display = "none";
+  }
+}
+function myFunction_country() {
+  var s = document.getElementById("hide_botton_country");
+  if (s.style.display === "none") {
+    s.style.display = "block";
+  } else {
+    s.style.display = "none";
+  }
+}
+function myFunction_month() {
+  var s = document.getElementById("hide_botton_month");
+  if (s.style.display === "none") {
+    s.style.display = "block";
+  } else {
+    s.style.display = "none";
+  }
+}
+
+function myFunction_year() {
+  var s = document.getElementById("hide_botton_year");
+  if (s.style.display === "none") {
+    s.style.display = "block";
+  } else {
+    s.style.display = "none";
+  }
+}
+
+function myFunction_time() {
+  var s = document.getElementById("hide_botton_time");
+  if (s.style.display === "none") {
+    s.style.display = "block";
+  } else {
+    s.style.display = "none";
+  }
+}
+
+function myFunction_product() {
+  var s = document.getElementById("hide_botton_product");
+  if (s.style.display === "none") {
+    s.style.display = "block";
+  } else {
+    s.style.display = "none";
+  }
+}
+
+function myFunction_deal_size() {
+  var s = document.getElementById("hide_botton_deal_size");
+  if (s.style.display === "none") {
+    s.style.display = "block";
+  } else {
+    s.style.display = "none";
+  }
+}
+$("button").click(function(){
+    $(this).find("i").toggleClass("fas fa-angle-double-down");
 });
-            
+
+
             $(function () {
         $("#main-btn").on("click", function () {
                 $(".main").hide();
                 $(".dashboard-container").fadeIn(500);
                 $(".content-container").removeClass("background").addClass("background-alt");
-                // the button start the graphic page
                 introJs().start();
             });
         });
-        
- 
-            // function myFunction() {
-            //     var x = document.getElementById("myLinks");
-            //     if (x.style.display === "block") {
-            //         x.style.display = "none";
-            //     }
-            //     else {
-            //         x.style.display = "block";
-            //     }
-            // }
+      
             $(document).ready(function() {
                 $(".all_selectors").hover(function() {
                     $(this).css("background-color", "yellow");
@@ -305,6 +400,5 @@ $("button").click(function() {
                 });
             });
         </script>
-    </div>
-</body>
+    </body>
 </html>
