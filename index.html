@@ -8,14 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Myler</title>
 
-    <link rel="stylesheet" href="css/bootsrap.min.css" type="text/css" />
-    <!-- <link rel="stylesheet" href="js/jquery.slim.min.js" type="text/js" />   
-    <link rel="stylesheet" href="js/bootstrap.bundle.min.js" type="text/js" />   -->
-
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/dc.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link href="https://fonts.googleapis.com/css?family=Amita&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"</link> 
 </head>
@@ -24,13 +24,13 @@
     <!-- static navbar with logo and burger for mobile display -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
-                <img src="data/image_products/logo_transparent.png" alt="">
+          <a class="navbar-brand" href="#"><h1 class="logo">Toy story shop</h1>
+                
               </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
+          <div class=" navbars collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item active">
                 <a class="nav-link" href="#">Home
@@ -50,33 +50,55 @@
           </div>
         </div>
       </nav>
+      <div class="sub_nav"></div>
+
+      <!-- <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <div class="hovereffect">
+                <img class="img-responsive" src="http://placehold.it/350x250" alt="">
+                    <div class="overlay">
+                        <h2>Effect 12</h2>
+                        <p>
+                            <a href="#">LINK HERE</a>
+                        </p>
+                    </div>
+            </div>
+        </div> -->
+
 <div class="content-container background">
         <section class="main">
             <!-- <div class=""> -->
-                <section class="hero">
-                    <div class="hero-inner">
-                        <h1>My awesome website</h1>
-                        <h2>Look at this website and bask in its amazing glory!</h2>
-                        <button type="button"
-                                class="btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block"
-                                    id="main-btn">Go and play!</button>
+                <!-- <section class="hero"> -->
+                            <div class="hovereffect">
+                                <img class="img-responsive" src="data/toys-wallpapers.jpg" alt="">
+                                    <div class="overlay">
+                                        <h2>Effect 12</h2>
+                                        <p>
+                                                <button type="button"
+                                                class="btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block"
+                                                    id="main-btn">Go and play!</button>
+                                        </p>
+                                    </div>
+                            </div>
+                        
                     </div>
                 </section>
             </section>
         </div>        
-<main> </main>          
+<main>           
     <div class="dashboard-container">        
         
         <div class="introduction">
-            <h1 class="main_title">Toys´r mine!</h1>
+            <h1 class="main_title">Toy story shop</h1>
             <hr>
             <p>We are specialists in antique toys, old toys and rare toys for collectors, such as <i><b>Classic cars</b>, <b>Vintage cars</b>, <b>Motorcycles</b>, <b>Trucks and buses</b>, <b>Aircrafts</b>, <b>Ships</b>, <b>Trains</b>, memorabilia and even more antique toys (only by local contact) - many antique toys come from well-known factories and regions such as the well nown Erzgebirge and Seiffen, Madrid, Moirans-en-Montagne, Lyon,in Europe, Toledo, Boston ,Seattle, Miami etc, in USA, and many other places all around the world.  </p>
                     
             <p>We sell old toys from circa 1800 to 1950. Our business has existed since 1990.  We sell no reproductions and no broken items.
             In this page one can study different aspects of our sell report made between the years 2003-2005. If you have any questions about our products, please contact us via email - we will get back to you as soon as possible!</p>
         <div>
-            <hr>        
+            <hr>
+                    
         <div class="all_selectors" id="select_bar">
+            
             <div class="select">
                 <p>City selector</p>
                 <div class="dc-select-menu" id="city"></div>
@@ -154,6 +176,27 @@
                         </div>
                     </div>
                 </div>
+            <div class="cards">
+                    <div class=" card text-center">
+                        <div class="card-header">
+                            <div class=toggle>
+                                <h3 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_map()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Delivery map</h3>
+                            </div>
+                        </div>
+                        <div id="hide_botton_map">
+                            <div class="card-body">
+                                <p class="card-text">Our products reach all corners of the world</p>
+                            <div class="  col-xs-12 col-sm-12 col-8 text-center" id="Map"></div>
+                            <div class="card-footer text-muted">
+                                Worldwide, wherever people recognize the quality of our products.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </div>
+</div>    
         
     
         <div class="time_charts" id="time_charts">
@@ -216,31 +259,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            
-                
-            
-                <div class="cards">
-                    <div class=" card text-center">
-                        <div class="card-header">
-                            <div class=toggle>
-                                <h3 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_map()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Delivery map</h3>
-                            </div>
-                        </div>
-                        <div id="hide_botton_map">
-                            <div class="card-body">
-                                <p class="card-text">Our products reach all corners of the world</p>
-                            <div class="  col-xs-12 col-sm-12 col-8 text-center" id="Map"></div>
-                            <div class="card-footer text-muted">
-                                Worldwide, wherever people recognize the quality of our products.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-        </div>
-    </div>
-</div>        
+            </div>        
                     
     <div class="row cards">
         <div class="col-sm-6">
@@ -279,11 +298,30 @@
                     </div>
                 </div>
             </div>
-        </div>    
-        
-    
-    
-
+        </div>
+    </main>
+    <section id="footer">
+            <div class="container">
+                
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="https://github.com/Rahmenordnung" target="_blank"><i class="fa fa-github github-logo"></i></a></li>
+                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    </hr>
+                </div>	
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p><u><a href=https://www.kaggle.com/">Kaggle</a></u> provided this original unmodified database.</p>
+                        <p class="copyright">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Toy story shop</a></p>
+                    </div>
+                    </hr>
+                </div>	
+            </div>
+        </section>
     
         <script type="text/javascript" src="js/d3.min.js"></script>
         <script type="text/javascript" src="js/crossfilter.min.js"></script>
@@ -291,7 +329,7 @@
         <script type="text/javascript" src="js/queue.min.js"></script>
         <script type="text/javascript" src="js/Script.js"></script>
         <script type="text/javascript" src="js/map.js"></script>
-
+        <script type="text/javascript" src="js/graphs.js"></script>
 
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpSSxuK48quxHpT6nGK-pzyTLJOZlFZvM&callback=initMap" async defer></script>
         <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
@@ -300,9 +338,28 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
         
     <script>
+    $("button").click(function(){
+    $(this).find("i").toggleClass("fas fa-angle-double-down");
+});
+            
+            $(function () {
+        $("#main-btn").on("click", function () {
+                $(".main").hide();
+                $(".dashboard-container").fadeIn(500);
+                $(".content-container").removeClass("background").addClass("background-alt");
+                introJs().start();
+            });
+        });
+      
+            $(document).ready(function() {
+                $(".all_selectors").hover(function() {
+                    $(this).css("background-color", "yellow");
+                }, function() {
+                    $(this).css("background-color", "grey");
+                });
+            });
 
-
-function myFunction() {
+            function myFunction() {
   var x = document.getElementById("hide_botton");
   if (x.style.display === "none") {
     x.style.display = "block";
@@ -378,27 +435,10 @@ function myFunction_deal_size() {
     s.style.display = "none";
   }
 }
-$("button").click(function(){
-    $(this).find("i").toggleClass("fas fa-angle-double-down");
-});
 
 
-            $(function () {
-        $("#main-btn").on("click", function () {
-                $(".main").hide();
-                $(".dashboard-container").fadeIn(500);
-                $(".content-container").removeClass("background").addClass("background-alt");
-                introJs().start();
-            });
-        });
-      
-            $(document).ready(function() {
-                $(".all_selectors").hover(function() {
-                    $(this).css("background-color", "yellow");
-                }, function() {
-                    $(this).css("background-color", "grey");
-                });
-            });
+
+
         </script>
     </body>
 </html>
