@@ -1,4 +1,4 @@
-Second Milestone Project
+# Second Milestone Project
 Short description
 This short program that represents the second project for Front End developer diploma from Code Institute integrates javascript and d3 plus crossfilter and dc.js as part of the Front end Development chapter
 
