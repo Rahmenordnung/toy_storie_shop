@@ -81,9 +81,6 @@ function show_monthy_sales_distribution(ndx) {
         var dim = ndx.dimension(dc.pluck('PRODUCTLINE'));
         var group = dim.group();
 
-        var PRODUCTLINEColors = d3.scale.ordinal()
-                .domain(["Classic Cars", "Motorcycles", "Vintage Cars", "Planes", "Trucks and Buses", "Ships"])
-                .range(["red", "green", "blue", "yellow", "violet", "brown"]);
         
         dc.barChart("#products")
             .width(600)
@@ -96,7 +93,6 @@ function show_monthy_sales_distribution(ndx) {
             .xUnits(dc.units.ordinal)
             .elasticY(true)
             .xAxisLabel("Products")
-            .colors(PRODUCTLINEColors)
             .yAxis().ticks(20);
     }
 //time distribution of the sales per trimester also known as quartals(time line chart)//    
