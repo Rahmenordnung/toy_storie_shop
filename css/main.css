@@ -27,6 +27,7 @@ margin-top: 6rem;
 .logo{
   font-family: 'Tangerine', serif;
   font-size: 48px;
+  color: cornflowerblue;
   text-shadow: 4px 4px 4px #aaa;
 }
 .sub_nav{
@@ -134,78 +135,24 @@ margin-bottom:75px;
   left: 0px;
   top: 0px;
   position: absolute;
-transform: translate(-50%,-50%);
-margin-right: -50%;
-top: 50%;
-left: 50%;
+  transform: translate(-50%,-50%);
+  margin-right: -50%;
+  top: 50%;
+  left: 50%;
+    
 }
 
-/* body {
-  margin: 0;
-  font-family: sans-serif;
-} */
-
-.hero {
-  /* Sizing */
-  width: 100vw;
-  height: 100vh;
-  
-  
-  /* Flexbox stuff */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  /* Text styles */
-  text-align: center;
-  color: white; /* ADD THIS LINE */
-}
-.center_title{
-  font-family: 'Tangerine', serif;
-  text-shadow: 4px 4px 4px #aaa;
-}
-.hero h1 {
-  /* Text styles */
-  font-size: 5em;
-}
-.hero h1 {
-  /* Text styles */
-  font-size: 5em;
-  
-  /* Margins */
-  margin-top: 0;
-  margin-bottom: 0.5em;
-}
-
-.hero .btn {
-  /* Positioning and sizing */
-  display: block;
-  width: 200px;
-  
-  /* Padding and margins */
-  padding: 1em;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  
-  /* Text styles */
-  color: white;
-  text-decoration: none;
-  font-size: 1.5em;
-  
-  /* Border styles */
-  border: 3px solid white;
+.btn-outline-primary{
+  color: #ffff07;
+  border-color: #00fbff;
+  border: double;
   border-radius: 20px;
-  
-  /* Background styles */
-  background-color: rgba(147, 112, 219, 0.8);
-}
-
-.hero {
-  /* Sizing */
-  width: 100vw;
-  height: 100vh;
+  height: 60px;
+  width: 180px;
+  font-weight: 500;
+  font-size: x-large;
   font-family: 'Italianno', cursive;
+}
   
   /* Flexbox stuff */
   display: flex;
@@ -217,7 +164,6 @@ left: 50%;
   color: white;
   
   /* Background styles */
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('data/images/MVIMG_20190714_111839_197.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -225,7 +171,7 @@ left: 50%;
 }
 
 /*footer*/
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+ 
 section .section-title {
     text-align: center;
     color: #007b5e;
@@ -233,7 +179,7 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    background:#364642 !important;
+    background:#19332b !important;
 }
 #footer h5{
 	padding-left: 10px;
@@ -299,6 +245,8 @@ section .section-title {
 }
 }
 
+/*image display*/
+
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -307,7 +255,7 @@ section .section-title {
   position: relative;
   text-align: center;
   cursor: default;
-  background: #42b078;
+  background: #6fccc7;
 }
 
 .hovereffect .overlay {
@@ -318,6 +266,14 @@ section .section-title {
   top: 0;
   left: 0;
   padding: 50px 20px;
+}
+.overlay
+{margin-top: 250px;}
+.text_top1{
+  font-family: 'Tangerine', cursive;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 175px;
+  color: cornflowerblue;
 }
 
 .hovereffect img {
@@ -334,7 +290,7 @@ section .section-title {
 }
 
 .hovereffect:hover img {
-  opacity: 0.4;
+  opacity: 0.7;
   filter: alpha(opacity=40);
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
@@ -342,10 +298,11 @@ section .section-title {
 
 .hovereffect h2 {
   text-transform: uppercase;
-  color: #fff;
+  color: rgb(181, 0, 17);
+  font-family: 'Italianno', cursive;
   text-align: center;
   position: relative;
-  font-size: 17px;
+  font-size: 30px;
   overflow: hidden;
   padding: 0.5em 0;
   background-color: transparent;
