@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="https://fonts.googleapis.com/css?family=Amita&display=swap" rel="stylesheet">
-
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"</link> 
 </head>
 
@@ -49,100 +46,96 @@
             </ul>
           </div>
         </div>
-      </nav>
-      <div class="sub_nav"></div>
+    </nav>
+    
+    <div class="sub_nav"></div>
 
-      <div class="content-container background">
-            <section class="main">
-                <div class="hovereffect">
-                    <img class="img-responsive" src="data/images/toys-wallpapers.jpg" alt="">
-                        <div class="overlay">
-                                <h1 class="text_top1">Toy story shop</h1>
-                                <h2 class="text_top2">Look at this website and bask in its amazing glory!</h2>
-                            <p>
-                                <button type="button"
-                                    class="btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block"
-                                id="main-btn">Go and play!</button>
-                            </p>
-                        </div>
-                </div>
-            </section>
-        </div>
+    <div class="content-container background">
+        <section class="main">
+            <div class="hovereffect">
+                <img class="img-responsive" src="data/images/toys-wallpapers.jpg" alt="">
+                    <div class="overlay">
+                            <h1 class="text_top1">Toy story shop</h1>
+                            <h2 class="text_top2">Look at this website and bask in its amazing glory!</h2>
+                        <p>
+                            <button type="button"
+                                class="btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block"
+                            id="main-btn">Go and play!</button>
+                        </p>
+                    </div>
+            </div>
+        </section>
+    </div>
          
-
-<main>           
-    <div class="dashboard-container">        
-        
-        <div class=" nah introduction">
-            
-            <hr>
-            <h1 class="main_title">Toy story shop</h1>
-            <p>We are specialists in antique toys, old toys and rare toys for collectors, such as <i><b>Classic cars</b>, <b>Vintage cars</b>, <b>Motorcycles</b>, <b>Trucks and buses</b>, <b>Aircrafts</b>, <b>Ships</b>, <b>Trains</b>, memorabilia and even more antique toys (only by local contact) - many antique toys come from well-known factories and regions such as the well nown Erzgebirge and Seiffen, Madrid, Moirans-en-Montagne, Lyon,in Europe, Toledo, Boston ,Seattle, Miami etc, in USA, and many other places all around the world.  </p>
+    <main>           
+        <div class="dashboard-container">        
+            <div class="introduction">
+                <hr>
+                <h1 class="main_title">Toy story shop</h1>
+                <p>We are specialists in antique toys, old toys and rare toys for collectors, such as <i><b>Classic cars</b>, <b>Vintage cars</b>, <b>Motorcycles</b>, <b>Trucks and buses</b>, <b>Aircrafts</b>, <b>Ships</b>, <b>Trains</b>, memorabilia and even more antique toys (only by local contact) - many antique toys come from well-known factories and regions such as the well nown Erzgebirge and Seiffen, Madrid, Moirans-en-Montagne, Lyon,in Europe, Toledo, Boston ,Seattle, Miami etc, in USA, and many other places all around the world.  </p>
+                        
+                <p>We sell old toys from circa 1800 to 1950. Our business has existed since 1990.  We sell no reproductions and no broken items.
+                In this page one can study different aspects of our sell report made between the years 2003-2005. If you have any questions about our products, please contact us via email - we will get back to you as soon as possible!</p>
+            <div>
+            <hr>    
                     
-            <p>We sell old toys from circa 1800 to 1950. Our business has existed since 1990.  We sell no reproductions and no broken items.
-            In this page one can study different aspects of our sell report made between the years 2003-2005. If you have any questions about our products, please contact us via email - we will get back to you as soon as possible!</p>
-        <div>
-            <hr>
-                    
-        <div class="all_selectors" id="select_bar">
-            
-            <div class="select">
-                <p>City selector</p>
-                <div class="dc-select-menu" id="city"></div>
-            </div>
-            <div class="select">    
-                <p>Customer selector</p>
-                <div class="dc-select-menu" id="customer_selector"></div>
-            </div>    
-            <div class="select">   
-                <p>Sales selector</p>
-                <div class="dc-select-menu" id="dead-selector"></div>
-            </div>
-            <div class="select_arrow">
+            <div class="all_selectors" id="select_bar">
+                <div class="container select">
+                    <div class="row">
+                        <div class="col-sm dc-select-menu" id="city"">
+                        City selector
+                        </div>
+                        <div class="col-sm dc-select-menu" id="customer_selector">
+                            Customer selector
+                        </div>
+                        <div class="col-sm dc-select-menu" id="dead-selector">
+                        Sales selector
+                        </div>
+                    </div>
                 </div>
-        </div>
+            </div>  
                 
-    <div class="cards">
-        <div class=" card text-center">
-            <div class="card-header">
-                <div class=toggle>
-                <h3 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>
-                Quantitity of Sales in each transaction</h3>
-                </div>
-            </div>
-            <div id="hide_botton">
-                <div class="card-body">
-                    <p class="card-text">Our shop is highly specialized, therefore we mostly sell little quantities. Ussually the clients don´t have enough with buying only one of our toys. </p>
-                    <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="price_along_dates"></div>
-                    <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This   resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
-                </div>
-                    <div class="card-footer text-muted">
-                        Affordability. We also we don´t sacrifice quality with price, so there are more small amount spended that big.
-                    </div>
-                </div>    
-            </div>
-        </div>
-
-        <div class="geography" id="geography_charts"><div class="row cards">
-                <div class="col-sm-6">
-                    <div class="card text-center">
-                        <div class="card-header">
-                            <div class=toggle>
-                                <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_territories()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Distribution of the products by territories</h5>
-                            </div>    
+            <div class="cards">
+                <div class=" card text-center">
+                    <div class="card-header">
+                        <div class=toggle>
+                            <h3 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>
+                            Quantitity of Sales in each transaction</h3>
                         </div>
-                    <div id="hide_botton_territories">
+                    </div>
+                    <div id="hide_botton">
                         <div class="card-body">
-                            <p class="card-text"> Europe and North America are leaders in our exporting areas. We also deliever to Japan and The Australia Pacific.</p>
-                                <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="donuts"></div>
-                            <a href="#" class="buttons btn btn-primary">Back on top</a>
-                                <div class="card-footer text-muted">
-                                    There is a corelation between sales and areas. As an American company is a big succes to deliever half of our products to Europe.
-                                </div>
-                            </div>    
+                            <p class="card-text">Our shop is highly specialized, therefore we mostly sell little quantities. Ussually the clients don´t have enough with buying only one of our toys. </p>
+                            <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="QUANTITYORDERED_chart"></div>
+                            <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This   resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            Affordability. We also we don´t sacrifice quality with price, so there are more small amount spended that big.
+                        </div>
+                    </div>    
+                </div>
+            </div>
+
+            <div class="geography" id="geography_charts"><div class="row cards">
+                    <div class="col-sm-6">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                <div class=toggle>
+                                    <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_territories()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Distribution of the products by territories</h5>
+                                </div>    
+                            </div>
+                        <div id="hide_botton_territories">
+                            <div class="card-body">
+                                <p class="card-text"> Europe and North America are leaders in our exporting areas. We also deliever to Japan and The Australia Pacific.</p>
+                                    <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="donuts"></div>
+                                <a href="#" class="buttons btn btn-primary">Back on top</a>
+                                    <div class="card-footer text-muted">
+                                        There is a corelation between sales and areas. As an American company is a big succes to deliever half of our products to Europe.
+                                    </div>
+                                </div>    
+                            </div>
                         </div>
                     </div>
-                </div>
                 <div class="col-sm-6">
                         <div class="card text-center">
                             <div class="card-header">
@@ -153,7 +146,7 @@
                     <div id="hide_botton_country">
                         <div class="card-body">
                             <p class="card-text"> We have clients in nineteen countries, and each of them has the same importance for us. the other </p>
-                                <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="country_pie"></div>
+                                <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="country_pie"></div>
                             <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
                                 <div class="card-footer text-muted">
                                         The USA is the leader of our ranking and Ireland close it.We deliever in countries like Ireland and Australia.
@@ -173,7 +166,7 @@
                         <div id="hide_botton_map">
                             <div class="card-body">
                                 <p class="card-text">Our products reach all corners of the world</p>
-                            <div class="  col-xs-12 col-sm-12 col-8 text-center" id="Map"></div>
+                            <div class="  col-xs-12 col-sm-12 col-12 text-center" id="Map"></div>
                             <div class="card-footer text-muted">
                                 Worldwide, wherever people recognize the quality of our products.
                             </div>
@@ -183,21 +176,20 @@
             </div>    
         </div>
     </div>
-</div>    
+        </div>    
         
-    
         <div class="time_charts" id="time_charts">
             <div class="cards">
-                    <div class=" card text-center">
-                        <div class="card-header">
-                            <div class=toggle>
-                                <h3 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_time()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Scatter Plot all sales chart</h3>
-                            </div>
+                <div class=" card text-center">
+                    <div class="card-header">
+                        <div class=toggle>
+                            <h3 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_time()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Scatter Plot all sales chart</h3>
                         </div>
+                    </div>
                     <div id="hide_botton_time">         
                         <div class="card-body cards">
                             <p class="card-text"> In the last trimester of the year there is a clear increase in our sales, that compensate the low sales level recorded in summer. </p>
-                            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_quartal"></div>
+                            <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="sales_quartal"></div>
                                 <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
                             </div>
                             <div class="card-footer text-muted">
@@ -215,30 +207,30 @@
                                 <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_month()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Average monthly sales chart</h5>
                             </div>
                         </div>
-                <div id="hide_botton_month">        
-                    <div class="card-body">
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                            <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="chart-here"></div>
-                        <a href="#" class="buttons btn btn-primary">Back on top</a>
-                            <div class="card-footer text-muted">
-                                The biggest peak is reached in November, caused by the Christmas sales preparation.
+                        <div id="hide_botton_month">        
+                            <div class="card-body">
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                                <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="chart-here"></div>
+                                <a href="#" class="buttons btn btn-primary">Back on top</a>
+                                <div class="card-footer text-muted">
+                                    The biggest peak is reached in November, caused by the Christmas sales preparation.
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
                 </div>    
-                    <div class="col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-header">
-                                <div class=toggle>
-                                    <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_year()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Compleate sales of all products per year chart</h5>
-                                </div>
+                <div class="col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <div class=toggle>
+                                <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_year()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Compleate sales of all products per year chart</h5>
                             </div>
-                    <div id="hide_botton_year">                
-                        <div class="card-body">
-                            <p class="card-text"> Clear increase of our sales level in the second year of existance in all the available products </p>
-                                <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_year_products"></div>
-                            <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                        </div>
+                        <div id="hide_botton_year">                
+                            <div class="card-body">
+                                <p class="card-text"> Clear increase of our sales level in the second year of existance in all the available products </p>
+                                <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="sales_per_year_products"></div>
+                                <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
                                 <div class="card-footer text-muted">
                                         Our main product is Classical cars antique toys.
                                 </div>
@@ -246,180 +238,102 @@
                         </div>
                     </div>
                 </div>
-            </div>        
+            </div>
+        </div>        
                     
-    <div class="row cards">
-        <div class="col-sm-6">
-            <div class="card text-center">
-                <div class="card-header">
-                    <div class=toggle>
-                        <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_product()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Individualized products sale distribution</h5>
+        <div class="row cards">
+            <div class="col-sm-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <div class=toggle>
+                            <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_product()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Individualized products sale distribution</h5>
+                        </div>
+                    </div>
+                    <div id="hide_botton_product">            
+                        <div class="card-body">
+                            <p class="card-text">Classical cars and Vintage are our star products, followed by the rest at similar levels. </p>
+                            <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="products"></div>
+                            <a href="#" class="buttons btn btn-primary">Back on top</a>
+                            <div class="card-footer text-muted">
+                                Our trains are a product still in development, with the lowest sales rate.
+                            </div>
+                        </div>
                     </div>
                 </div>
-        <div id="hide_botton_product">            
-            <div class="card-body">
-                <p class="card-text">Classical cars and Vintage are our star products, followed by the rest at similar levels. </p>
-                    <div class=" charts col-xs-12 col-sm-12 col-8 text-center" id="products"></div>
-                <a href="#" class="buttons btn btn-primary">Back on top</a>
-                    <div class="card-footer text-muted">
-                        Our trains are a product still in development, with the lowest sales rate.
+            </div>    
+            <div class="col-sm-6">
+                <div class="card text-center">
+                    <div class="card-header">
+                        <div class=toggle>
+                            <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_deal_size()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Deal size and deal status graphic</h5>
+                        </div>
+                    </div>
+                    <div id="hide_botton_deal_size">            
+                        <div class="card-body">
+                            <p class="card-text">we are a medium size deals company with a high level of shipping</p>
+                            <div class="charts col-xs-12 col-sm-12 col-12 text-center" id="sales_per_STATUS_and_deal_size"></div>
+                            <a class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                            <div class="card-footer text-muted">
+                                We don´t have among the large deals any cancelled delas yet.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>    
-        <div class="col-sm-6">
-            <div class="card text-center">
-                <div class="card-header">
-                    <div class=toggle>
-                        <h5 class="card-title"><button class="toggle btn btn-success btn-circle" onclick="myFunction_deal_size()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Deal size and deal status graphic</h5>
-                    </div>
+        <div class="">
+                <div id="pagination">
+                    Results: <span id="start"></span>-<span id="end"></span> of <span id="totalSize"></span>
+                    <button id="prev" class="btn" onclick="prev()">Prev</button>
+                    <button id="next" class="btn" onclick="next()">Next</button>
                 </div>
-        <div id="hide_botton_deal_size">            
-            <div class="card-body">
-                <p class="card-text">we are a medium size deals company with a high level of shipping</p>
-                    <div class="charts col-xs-12 col-sm-12 col-8 text-center" id="sales_per_STATUS_and_deal_size"></div>
-                <a class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
-                    <div class="card-footer text-muted">
-                        We don´t have among the large deals any cancelled delas yet.
-                    </div>
+            <div class="col-sm-12">
+                <div class="card text-center">
+                    <div class="card-header">
+                <table id="test" class=" charts col-xs-12 col-sm-12 col-12 text-center table table-striped"></table>
                 </div>
             </div>
         </div>
+        <div class="charts col-xs-12 col-sm-12 col-12 text-center" id="sales_per_STATUS_and_deal_size"></div>
+            <a class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>        
     </main>
+
     <section id="footer">
-            <div class="container">
-                
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
-                        <ul class="list-unstyled list-inline social text-center">
-                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="https://github.com/Rahmenordnung" target="_blank"><i class="fa fa-github github-logo"></i></a></li>
-                            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                    </hr>
-                </div>	
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                        <p><u><a href=https://www.kaggle.com/">Kaggle</a></u> provided this original unmodified database.</p>
-                        <p class="copyright">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Toy story shop</a></p>
-                    </div>
-                    </hr>
-                </div>	
-            </div>
-        </section>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+                    <ul class="list-unstyled list-inline social text-center">
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+                        <li class="list-inline-item"><a href="https://github.com/Rahmenordnung" target="_blank"><i class="fa fa-github github-logo"></i></a></li>
+                        <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                </hr>
+            </div>	
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                    <p><u><a href=https://www.kaggle.com/">Kaggle</a></u> provided this original unmodified database.</p>
+                    <p class="copyright">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Toy story shop</a></p>
+                </div>
+                </hr>
+            </div>	
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     
-        <script type="text/javascript" src="js/d3.min.js"></script>
-        <script type="text/javascript" src="js/crossfilter.min.js"></script>
-        <script type="text/javascript" src="js/dc.min.js"></script>
-        <script type="text/javascript" src="js/queue.min.js"></script>
-        <script type="text/javascript" src="js/Script.js"></script>
-        <script type="text/javascript" src="js/map.js"></script>
-        <script type="text/javascript" src="js/graphs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="js/d3.min.js"></script>
+    <script type="text/javascript" src="js/crossfilter.min.js"></script>
+    <script type="text/javascript" src="js/dc.min.js"></script>
+    <script type="text/javascript" src="js/queue.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpSSxuK48quxHpT6nGK-pzyTLJOZlFZvM&callback=initMap" async defer></script>
+    <script type="text/javascript" src="js/graphs.js"></script>
 
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpSSxuK48quxHpT6nGK-pzyTLJOZlFZvM&callback=initMap" async defer></script>
-        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-        
-    <script>
-    $("button").click(function(){
-    $(this).find("i").toggleClass("fas fa-angle-double-down");
-});
-            
-            $(function () {
-        $("#main-btn").on("click", function () {
-                $(".main").hide();
-                $(".dashboard-container").fadeIn(500);
-                $(".content-container").removeClass("background").addClass("background-alt");
-                introJs().start();
-            });
-        });
-      
-            $(document).ready(function() {
-                $(".all_selectors").hover(function() {
-                    $(this).css("background-color", "yellow");
-                }, function() {
-                    $(this).css("background-color", "grey");
-                });
-            });
-
-            function myFunction() {
-  var x = document.getElementById("hide_botton");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
-function myFunction_map() {
-  var y = document.getElementById("hide_botton_map");
-  if (y.style.display === "none") {
-    y.style.display = "block";
-  } else {
-    y.style.display = "none";
-  }
-}
-function myFunction_territories() {
-  var s = document.getElementById("hide_botton_territories");
-  if (s.style.display === "none") {
-    s.style.display = "block";
-  } else {
-    s.style.display = "none";
-  }
-}
-function myFunction_country() {
-  var s = document.getElementById("hide_botton_country");
-  if (s.style.display === "none") {
-    s.style.display = "block";
-  } else {
-    s.style.display = "none";
-  }
-}
-function myFunction_month() {
-  var s = document.getElementById("hide_botton_month");
-  if (s.style.display === "none") {
-    s.style.display = "block";
-  } else {
-    s.style.display = "none";
-  }
-}
-function myFunction_year() {
-  var s = document.getElementById("hide_botton_year");
-  if (s.style.display === "none") {
-    s.style.display = "block";
-  } else {
-    s.style.display = "none";
-  }
-}
-function myFunction_time() {
-  var s = document.getElementById("hide_botton_time");
-  if (s.style.display === "none") {
-    s.style.display = "block";
-  } else {
-    s.style.display = "none";
-  }
-}
-function myFunction_product() {
-  var s = document.getElementById("hide_botton_product");
-  if (s.style.display === "none") {
-    s.style.display = "block";
-  } else {
-    s.style.display = "none";
-  }
-}
-function myFunction_deal_size() {
-  var s = document.getElementById("hide_botton_deal_size");
-  if (s.style.display === "none") {
-    s.style.display = "block";
-  } else {
-    s.style.display = "none";
-  }
-}    
-
-
-        </script>
-    </body>
+</body>
 </html>

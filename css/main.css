@@ -91,10 +91,6 @@ margin-top: 6rem;
 .select select:disabled ~ .select_arrow {
     border-top-color: #ffe700;
 }
-.select{
-  display: grid;
-  margin: 55px 55px;
-}
 .section_title{
   text-align: center;
 }

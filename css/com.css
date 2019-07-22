@@ -1,0 +1,427 @@
+/*Contact form*/
+
+GEEKFORGEEKS {
+  margin-left: 70px;
+  font-weight: bold;
+  float: left;
+  clear: left;
+  width: 10px;
+  text-align: left;
+  margin-right: 10px;
+  font-family: sans-serif, bold, Arial, Helvetica;
+  font-size: 18px;
+  border: 1px yellow inset;
+  background-color: yellow;
+}
+
+
+
+form {
+  margin: 0 auto;
+  width: 600px;
+  height: 83vh;
+  margin-top: 100px;
+}
+
+#exampleInputPassword1 {
+  border: 1px grey inset;
+}
+
+#exampleCheck1 {
+  border: 1px grey inset;
+}
+
+#exampleInputEmail1 {
+  border: 1px grey inset;
+}
+
+#exampleCheck1 {
+  border: 1px grey inset;
+}
+
+#subject {
+  border: 1px grey inset;
+  width: 600px;
+  height: 75px;
+}
+
+#country {
+  border: 1px grey inset;
+  width: 150px;
+  height: 25px;
+}
+
+.contact_button {
+  border: 1px grey inset;
+  width: 150px;
+  height: 25px;
+}
+
+.about_button {
+  border: 1px grey inset;
+  width: 150px;
+  height: 25px;
+}
+
+
+
+frameset {
+  height: 100px;
+  width: 100px;
+}
+/* charts borders */
+.time_charts{
+  margin-top: 65px;
+}
+/*naaav*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: yellow;
+}
+
+.mobile-container {
+  margin-bottom: 0px;
+  color: white;
+  border-radius: 10px;
+  overflow-x: hidden;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #215c68;
+  color: white;
+  text-decoration: none;
+}
+
+/*body*/
+
+.section {
+  border-bottom: 1px solid #c5f442;
+  font-family: 'Imprima', sans-serif;
+}
+
+.section-paragraph {
+  line-height: 1.2;
+
+}
+
+.section-heading,
+#discipline-selector {
+  display: inline-block;
+  float: none;
+  margin: 20px;
+}
+
+.section-heading {
+  margin-bottom: 50px;
+}
+
+.custom-chart {
+  margin-bottom: 40px;
+}
+
+.title_charts{
+  border-bottom: 2px red ridge;
+}
+
+
+
+/*  javascript*/
+
+p {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  font-family: 'Cormorant Infant', serif;
+
+}
+
+/*Selectors*/
+
+.selector-box row{
+  border: 2px solid red;
+}
+.all_selectors{
+  border: 2px purple ridge;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px
+    /*transition:all 0.3s ease;*/
+}
+
+/*.all_selectors:hover*/
+/*{*/
+/*        background:#53a7ea;*/
+/*}*/
+
+
+.dc-select-menu{
+  display: block;
+    width: 100%;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-image: none;
+    border-radius: 4px;
+    color: black;
+}
+
+
+/*map*/
+
+ c
+
+/**/
+
+/*home*/
+
+footer {
+
+  width: 100%;
+  height: 55px;
+
+  color: #000;
+  background-color: orange;
+  text-align: center;
+}
+
+.navbar-default {
+  margin-bottom: 0px;
+}
+
+#main-text {
+  background-image: url("/data/toys-wallpapers.jpg");
+  height: 900px;
+}
+
+
+.chart_title{
+.text-align: center;
+border: 1px solid red;
+margin-left: 50px;
+}
+.container-general {
+  border: 1px solid #42f480;
+  margin-left: 45px;
+  margin-right: 46px;
+  padding: 60px;
+}
+img {
+  height: 50px;
+  width: 50px;
+}
+
+col-sm {
+  margin-top: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+
+#title {
+  float: right;
+}
+
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+}
+
+.containerImages {
+  background-color: #d4f4df;
+}
+
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*responsive*/
+
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  .col-xs-1,
+  .col-md-10,
+  .row,
+  .mobile-container,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+
+  }
+  .col-md-6 {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+
+  }
+
+}
+.row {
+  color: black;
+  border: none;
+}
+
+/*about colors*/
+
+.colors {
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-family: 'Henny Penny', cursive;
+  text-align: center;
+}
+
+
+.row-text {
+  font-size: 20px;
+  color: #f252ec;
+
+
+}
+
+.td {
+  font-size: 50px;
+
+}
+
+
+.column {
+
+  border: 1px solid #514e4d;
+  margin-left: 250px;
+  margin-right: 250px;
+  background-color: #cfd1cf;
+}
+
+#demo {
+  text-align: center;
+  background-color: #d4f4df;
+  font-family: 'Lobster Two', cursive;
+
+}
+
+.form-group {
+  margin-top: 10px;
+  height: 100px;
+}
+
+.btn {
+  margin-bottom: 10px;
+}
+
+.justify-content-start {
+  margin-bottom: 25px;
+}
+
+#country_pie {
+  float: right;
+
+}
+
+#donuts {
+  float: right;
+}
+
+.section-paragraph {
+
+  font-family: 'Milonga', cursive;
+}
+
+
+/*Home */
+
+.container1>div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+}
+.icon{
+  border: 1px solid black;
+  height: 50px;
+  width: 50px;
+}
+
+.container1>div:nth-child(1n) {
+  background-color: #96ceb4;
+}
+
+.container1>div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container1>div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.container1>div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
+
+/*.container1 {*/
+/*  border: 1px solid purple;*/
+/*  display: grid;*/
+/*  grid-gap: 5px;*/
+/*  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));*/
+/*  grid-auto-rows: 550px;*/
+/*  font-size: 8px;*/
+/*  font-family: 'Emilys Candy', cursive;*/
+/*}*/
+
+.images{
+  max-width: 120px;
+}
