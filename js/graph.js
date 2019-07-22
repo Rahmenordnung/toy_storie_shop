@@ -16,10 +16,127 @@ function makeGraphs(error, SALESData) {
         scatter_price(ndx);
         show_territory_donuts(ndx);
         show_productline(ndx);
+
+    var chart = dc.dataTable("#test");
+
+    chart
+          .width(300)
+          .height(480)
+          .dimension(runDimension)
+          .size(Infinity)
+          .showSections(false)
+          .columns(['Expt', 'Run', 'Speed'])
+          .sortBy(function (d) { return [fmt(+d.Expt),fmt(+d.Run)]; })
+          .order(d3.ascending)
+          .on('preRender', update_offset)
+          .on('preRedraw', update_offset)
+          .on('pretransition', display);
+
+     // use odd page size to show the effect better
+    var ofs = 0, pag = 17;
+    function update_offset() {
+        var totFilteredRecs = ndx.groupAll().value();
+        var end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
+        ofs = ofs >= totFilteredRecs ? Math.floor((totFilteredRecs - 1) / pag) * pag : ofs;
+        ofs = ofs < 0 ? 0 : ofs;
+        chart.beginSlice(ofs);
+        chart.endSlice(ofs+pag);
+    }
+    function display() {
+        var totFilteredRecs = ndx.groupAll().value();
+        var end = ofs + pag > totFilteredRecs ? totFilteredRecs : ofs + pag;
+        d3.select('#begin')
+            .text(end === 0? ofs : ofs + 1);
+        d3.select('#end')
+            .text(end);
+        d3.select('#last')
+            .attr('disabled', ofs-pag<0 ? 'true' : null);
+        d3.select('#next')
+            .attr('disabled', ofs+pag>=totFilteredRecs ? 'true' : null);
+        d3.select('#size').text(totFilteredRecs);
+        if(totFilteredRecs != ndx.size()){
+        d3.select('#totalsize').text("(filtered Total: " + ndx.size() + " )");
+        }else{
+        d3.select('#totalsize').text('');
+        }
+    }
+    function next() {
+        ofs += pag;
+        update_offset();
+        chart.redraw();
+    }
+    function last() {
+        ofs -= pag;
+        update_offset();
+        chart.redraw();
+    }      
+
         
          // show_Status_products(ndx);
     dc.renderAll();
-    
+
+//     var dataTable = dc.dataTable("#dataTable");
+//     var facts;
+
+//       d3.csv("csv file/sales.csv", function(error, data){
+
+//         data.forEach(function(d){
+//           d.ORDERDATE = +d.ORDERDATE;
+//           // console.log(d.Raised);
+//         });
+
+//        facts = crossfilter(data);
+
+
+//             var dimension = facts.dimension(function(d){ return [d.CITY, d.ORDERDATE]});
+//             var groupByState = function(d){ return d.State};
+
+//          dataTable
+//                   .width(1024)
+//                   .height(250)
+//                   .dimension(dimension)
+//                   .group(groupByState)
+//                   .columns(['CITY', 'ORDERDATE'])
+//                   .size(Infinity)
+//                   //.showGroups(false)
+//                   //.sortBy(function(d){ return d.State ; })
+
+//           updateResult()
+
+//           dc.renderAll();
+//   });
+
+//         var resultStart = 0; var resultEnd =21;
+
+//         function displayResult() {
+
+//           document.getElementById("start").innerHTML = resultStart;
+//           document.getElementById("end").innerHTML = resultStart + resultEnd-1;
+
+//           document.getElementById("totalSize").innerHTML = facts.size();
+
+
+//           d3.select('#prev').attr('disabled', resultStart-resultEnd < 0 ? 'true' : null);
+//           d3.select('#next').attr('disabled', resultStart+resultEnd >= facts.size() ? 'true' : null);
+//       }
+
+//         function updateResult() {
+
+//           dataTable.beginSlice(resultStart);
+//           dataTable.endSlice(resultStart + resultEnd);
+//           displayResult();
+//       }
+
+//       function prev() {
+//         resultStart -= resultEnd;;
+//         updateResult();
+//         dataTable.redraw();
+//       }
+
+//         function next() {
+//           resultStart += resultEnd;
+//           updateResult();
+//           dataTable.redraw();
 //selectors//
 //city selector//
 function CITY(ndx) {
@@ -105,8 +222,8 @@ function sales_month(ndx) {
     var maxORDERDATE = QTR_ID_dim.top(1)[0].QTR_ID;
 
     dc.lineChart("#sales_quartal")
-        .width(600)
-        .height(500)
+        .width(1000)
+        .height(400)
         .useViewBoxResizing(true)
         .margins({ top: 10, right: 20, bottom: 60, left: 50 })
         .dimension(QTR_ID_dim)
@@ -288,13 +405,14 @@ function scatter_price(ndx) {
     var SALESGroup = SALESDim.group();
     var spend_chart = dc.scatterPlot("#QUANTITYORDERED_chart");
     spend_chart
-        .width(600)
-        .height(500)
+        .width(1000)
+        .height(400)
         .x(d3.time.scale().domain([minQUANTITYORDERED, maxQUANTITYORDERED]))
         .brushOn(false)
         .symbolSize(8)
         .clipPadding(10)
         .yAxisLabel("Amount Spent")
+        .y(d3.scale.linear().domain([0, 10000]))
         .xAxisLabel("Quantity ordered")
         .margins({ top: 25, right: 60, bottom: 60, left: 60 })
         .title(function(d) {
