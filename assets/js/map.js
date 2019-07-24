@@ -186,7 +186,7 @@ function initMap() {
     }, {
         lat: 57.723276, //Boras, Sweeden
         lng: 12.944913,
-        title:'Sweeden',
+        title:'Boras',
         businnes:'<u>Scandinavian Gift Ideas</u>, ?kergatan 24'
     }, {
         lat: 48.803333, //Versailles

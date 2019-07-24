@@ -1,0 +1,23 @@
+{
+  "name": "project2-master",
+  "version": "1.0.0",
+  "description": "Short description\r This short program that represents the second project for Front End developer diploma from Code Institute integrates javascript and d3 plus crossfilter and dc.js as part of the Front end Development chapter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rahmenordnung/toy_storie_shop.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rahmenordnung/toy_storie_shop/issues"
+  },
+  "homepage": "https://github.com/Rahmenordnung/toy_storie_shop#readme",
+  "dependencies": {
+    "shepherd.js": "^3.1.0"
+  }
+}

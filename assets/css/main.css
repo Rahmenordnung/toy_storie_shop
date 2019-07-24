@@ -41,10 +41,16 @@ margin-top: 6rem;
   padding: 30px;
   margin-block-end: 50px;
   margin-block-start: 50px;
-  background-color: #b34b4b;
+  background-color: #bdd4d1;
   border-radius: 15px;
   justify-content: center;
+  border: 1px black double;
 }
+.selectors_titles{
+  text-transform: uppercase;
+  font: linear-gradient(to bottom right, red, yellow,blue)
+}
+
  .select select {
         font-family: 'Arial';
         display: inline-block;
@@ -52,9 +58,9 @@ margin-top: 6rem;
         cursor: pointer;
         padding: 9px 17px;
         outline: 0;
-        border: 1px inset #0d1ca9;
+        border: 1px inset #29a803;
         border-radius: 10px;
-        background: #caccc9;
+        background: #a5d2d9;
         color: #000000;
         appearance: none;
         -webkit-appearance: none;
@@ -63,7 +69,7 @@ margin-top: 6rem;
         .select select:hover,
         .select select:focus {
             color: #3e539b;
-            background: #cccccc;
+            background: #ffffff;
         }
         .select select:disabled {
             opacity: 1;
@@ -123,6 +129,10 @@ margin-bottom:75px;
 /*toggle botton*/
 .toggle {
   margin-right:30px;
+}
+.time_charts{
+  margin-bottom: 10px;
+  border: 2px solid red;
 }
 
 
@@ -271,7 +281,9 @@ section .section-title {
   font-size: 175px;
   color: cornflowerblue;
 }
-
+.img-responsive{
+  width: auto;
+}
 .hovereffect img {
   display: block;
   position: relative;
@@ -294,7 +306,7 @@ section .section-title {
 
 .hovereffect h2 {
   text-transform: uppercase;
-  color: rgb(181, 0, 17);
+  color: rgb(255, 255, 255);
   font-family: 'Italianno', cursive;
   text-align: center;
   position: relative;
@@ -340,11 +352,35 @@ section .section-title {
   transform: translate3d(0,0,0);
 }
 
+@media only screen and (max-width: 850px) {
+  body {
+    background-color: rgb(214, 219, 221);
+    margin: 0%
+  }
+  .overlay{margin-top: 0px;}
+  .text_top1{font-size: 75px;}
+  .hovereffect h2{font-size: 17px;}
+}
 
-
-
-
-
-
-
-
+/*shepherd.js css rules*/
+ 
+ body::after {
+  opacity: 0;
+  }
+  
+  body.shepherd-active::after {
+  content: "";
+  display: block;
+  background-color: #000;
+  opacity: 0.4;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; }
+  
+  .shepherd-element.shepherd-open, .shepherd-target.shepherd-enabled {
+  z-index: 10000000;
+  position: relative; 
+  } 

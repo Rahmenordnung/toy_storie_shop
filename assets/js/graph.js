@@ -434,8 +434,8 @@ function show_territory_donuts(ndx) {
     var dim = ndx.dimension(dc.pluck("TERRITORY"));
     var group = dim.group();
     dc.pieChart('#donuts')
-        .width(375)
-        .radius(400)
+        .width(425)
+        .radius(200)
         .innerRadius(50)
         .transitionDuration(1000)
         .dimension(dim)
