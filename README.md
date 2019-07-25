@@ -61,7 +61,9 @@ The name of the project is a generic one, __Toy story shop__. As there is not pr
 I tried to approach the page in the most proffesional manner that I could, so that it will be mostly used in business industries.
 
 The page is made for any investor/client that is interested in seeing tha sales report of their bussines, or their rival, etc
+
 Is also made for the managers of the company , with the intention of expanding the shops, or to improve their products, etc
+
 Last but not least is created for anybody interested in seying how a medium toy company spread their products around world, and the level of sales that they have.
 
 #### <a name="Wireframes"></a>Wireframes :
@@ -71,7 +73,7 @@ You can find a pdf link for the wirefranes here: [Mockups](https://github.com/Ra
 ---
 ##  <a name="Features"></a>Features
 
-In the constuction of the project I have used the libraries donated by the Code institute,
+In the constuction of the project I have used the libraries donated by the Code institute, and other functional elements.
 
 
 #### <a name="Current_Features"></a>Current Features ##
@@ -94,7 +96,6 @@ In the constuction of the project I have used the libraries donated by the Code 
 -- __Google map__: Allwos the user to locate precisely all the custommers adresses listed in the database. On hover it appears the city name and by clicking the marker the CUstomer firma name, and the adress available in the records. (Uses Google Maps and Google Places). See js/maps.js
 
 -- __Footer__: Informs the user that the site is hosted by Github Pages, and provides as link to where they can view the source code on Github, and also a link to the dataset in a elegant dark green color.
-
 
 
 #### <a name="Coding_languages"></a>Current Features ##
@@ -130,16 +131,11 @@ In the constuction of the project I have used the libraries donated by the Code 
 --  [bootstap](https://getbootstrap.com/) is a framework to help you design websites faster and easier.
 
 
-
 #### <a name="Google_API"></a> Google API  ## 
 
 --[Google APIs(Google maps)](https://developers.google.com/maps/documentation/) is a set of application programming interfaces developed by Google which allow communication with Google Services and their integration to other services
 
 Finally I have used the Google Maps API and added to it the clients adresses so that the user can relate and see where each project has been delivered.
-
-#### <a name="Dataset"></a> Dataset  #### 
-
-The data in the dashboard is based on this dataset sourced from [Kaggle](https://www.kaggle.com/kyanyoga/sample-sales-data)
 
 
 ## <a name="Features left to implement"></a>Features_left_to_implement ##
