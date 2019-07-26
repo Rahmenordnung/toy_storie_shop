@@ -33,8 +33,8 @@ In addition I have added a small basic page as a preseentation of the listed pro
     
 * [Features left to implement](#Features_left_to_implement)    
 * [Testing](#Testing)
-  * [Responsiveness Testing](#Responsiveness Testing)
-  * [Code Testing](#Code Testing)
+  * [Responsiveness Testing](#Responsiveness_Testing)
+  * [Code Testing](#Code_Testing)
 * [Dataset](#Dataset)
 
 * [Deployment](#Deployment)
@@ -161,7 +161,7 @@ These is a representative map, but not a dynamic one connected to the crossfilte
 
 
 ---
-## Media
+## Media ## <a name="Media"></a> Media  ##
 All the images used in the project are taken from Google images page and there are free of copyright.
 
 In this project I used just one image __url url url url shepher shepherd__
@@ -169,7 +169,7 @@ In this project I used just one image __url url url url shepher shepherd__
 
 ## <a name="Testing"></a> Testing  ## 
 
-#### Responsiveness Testing ## <a name="Responsiveness_Testing"></a> Responsiveness Testing  ## 
+#### <a name="Responsiveness_Testing"></a> Responsiveness Testing  ## 
 
 The responsiveness of the website was tested on Chrome developer tool and also in the Mopzzila developer tool.
 
@@ -187,7 +187,7 @@ etc
 
 The full page is responsive in small, medium, and big devices. The charts are fully responsive thanks to the __ .useViewBoxResizing(true) __ property added in all the charts. Also I create this responsivness with help of the bootrap cards and classes used in their grid system. The selector bar, navbar and footer I edited myself and created some media queries with css help as I learned in previous modules.
 
-#### Code Testing
+#### <a name="Code_Testing"></a> Code Testing  ####
 The HTML was validated using the HTML Validator.
 
 The CSS was validated using the CSS Validator. In total, 1 issues was found. This has to do with the parsing of a property. But as it doesn´t really affect the project I considerated to ignore it.
