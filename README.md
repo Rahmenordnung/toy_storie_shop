@@ -10,7 +10,7 @@ In this case the data belongs to an **American Toys company** that with the purp
 
 In addition I have added a small basic page as a preseentation of the listed products in the graphs in which I have used some small javascript functions.
 
- #### <a name="Sumary"></a>Sumary :
+ #### Sumary :
 
 
 * [Description](#Description)
@@ -36,7 +36,7 @@ In addition I have added a small basic page as a preseentation of the listed pro
   * [Responsiveness Testing](#Responsiveness_Testing)
   * [Code Testing](#Code_Testing)
 * [Dataset](#Dataset)
-
+* [Media](#Media)
 * [Deployment](#Deployment)
   * [Developer environment](#Developer_environment)
 * [The DOM](#The_DOM)
@@ -161,7 +161,11 @@ These is a representative map, but not a dynamic one connected to the crossfilte
 
 
 ---
-## Media ## <a name="Media"></a> Media  ##
+## <a name="Dataset"></a>Dataset
+
+The data set has been exported from Kaggle. A link of the exact dataset used can be found here .>>[Kaggle](https://www.kaggle.com/kyanyoga/sample-sales-data)
+
+## <a name="Media"></a> Media  ##
 All the images used in the project are taken from Google images page and there are free of copyright.
 
 In this project I used just one image __url url url url shepher shepherd__
