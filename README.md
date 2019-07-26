@@ -103,7 +103,7 @@ In the constuction of the project I have used the libraries donated by the Code 
 
 -- __Search selectors__: There are three selectors that ease the customers display a lot. One can look after the __City__ where the products were delievered, the __Customer name__ and the __order date__ of the delievery. In that way the user can have differents perspectives in which the the data can be analized
 
--- __Google map__: Allwos the user to locate precisely all the custommers adresses listed in the database. On hover it appears the city name and by clicking the marker the CUstomer firma name, and the adress available in the records. (Uses Google Maps and Google Places). See js/maps.js
+-- __Google map__: Allwos the user to locate precisely all the custommers adresses listed in the database. On hover it appears the city name and by clicking the marker the CUstomer firma name, and the adress available in the records. (Uses Google Maps and Google Places). See js/maps.js. *Misstaches by the adress could appear due to the geographical localizators
 
 -- __Footer__: Informs the user that the site is hosted by Github Pages, and provides as link to where they can view the source code on Github, and also a link to the dataset in a elegant dark green color.
 
