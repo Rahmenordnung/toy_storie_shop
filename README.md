@@ -34,6 +34,7 @@ In this case the data belongs to an **American Toys company** that with the purp
 * [Testing](#Testing)
   * [Responsiveness Testing](#Responsiveness_Testing)
   * [Code Testing](#Code_Testing)
+  * [User Story Testing](#User Story Testing)
 * [Dataset](#Dataset)
 * [Media](#Media)
 * [Deployment](#Deployment)
@@ -51,7 +52,7 @@ The name of the project is a generic one, __Toy story shop__. As there is not pr
 ---
 ## <a name="UX"></a>UX :
 
-#### <a name="User_Stories"></a>User Stories :
+### <a name="User_Stories"></a>User Stories :
 
 I tried to approach the page in the most proffesional manner that I could, so that it will be mostly used in marketing, sales and business area and/or other investigations.
 
@@ -70,8 +71,8 @@ __Example 3__
 Last but not least is created for anybody, manufacturer, importer, wholesaler interested in seeing how a medium toy company spread their products around world, and the level of sales that they have. 
 As a possible client, or retailer I want to see if they are selling products in my area or they will, what type of toys they have in the deposit, how many they sell in a specific period or in average. 
 
-
-#### <a name="Wireframes"></a>Wireframes :
+---
+### <a name="Wireframes"></a>Wireframes :
 
 You can find a pdf link for the wirefranes here: [Mockups](https://github.com/Rahmenordnung/toy_storie_shop/tree/master/assets/images/mockups)
 
@@ -89,6 +90,8 @@ In the constuction of the project I have used the libraries donated by the Code 
 -- __Navbar__: Allows all users to easily navigate to the different sections of the website, regardless of which page they are currently on, simply by clicking the name of the area they wish to visit in the navbar. Also contain an logo that redirect to the user.
 
 -- __Full screen background with button in hover effect__: The image contextualize the business in an the right sector. And the __hover efect__ brings the attention to the the __button__ that leads the user to the charts page.
+
+--__Shepherd.js__ Thanks to javascript it makes a tour with messages and arrows and opacity  hat highlight some key elements in the page that the User should pay attention to in order to understant correctly its purpose
 
 -- __Charts in bootrap cards in differnt sizes__: This charts represent the data in easy to understand manner and makes easy to find connections between different variables from the dataset. Each chart is contained in a bootstrap card that improves the visibility and ads some extra info. The site contains the following types of graphs: bar charts, row charts, pie charts, and scatter plots.
 
@@ -127,9 +130,9 @@ In the constuction of the project I have used the libraries donated by the Code 
 
 --  [Font-awesome] (https://fontawesome.com/) Font Awesome is a web font containing all the icons from the Twitter Bootstrap framework, and now many more.
 
---  [Goolgle fonts] (https://fonts.google.com/)A collection from Goolgle with diverse fonts. (not needed to see the graphs but to style them) that were used for the graphs building. 
+--  [Goolgle fonts] (https://fonts.google.com/) A collection from Goolgle with diverse fonts. (not needed to see the graphs but to style them) that were used for the graphs building. 
 
---  [b]
+--  [shepherd.js](https://shepherdjs.dev/) Guide your users through a tour of the app. Is a javascript plug that creates an experience of a tour that is displayed at the beginning of the page. I think it improves constistently the user experience of the page.
 
 --  [jquery.js](https://jquery.com/) is a library of Java scripts that simplifies lots of its functions, the main differance with javascriptis that it performs many common scripting functions in fewer lines of codes
 
@@ -193,12 +196,27 @@ The CSS was validated using the CSS Validator. In total, 1 issues was found. Thi
 
 TheJavaScript files were tested using JSHint.com. Initially, 1 warnings were detected: Duplicate key 'mapTypeId'. But that is the normal type of expression for map.js. The rest is clean.
 
-User Story Testing
-Here are the results for the user story tests:
+#### <a name="User Story Testing"></a> User Story Testing ####
 
+The normal functionality of the page has been tested through this tests:
 
+__Full Background start image__: When hovered over it shows a dinamic effect contains a button.
 
-Jumbotron:
+__Go and play button__: When hovered changes color and adds margin around. When clicked hides the hole _start image_ and the _background page_ and displays the charts page that beginns with _shepherd.js tour_
+
+__Shepherd.js tour__ it will be displayed when firsly showing the charts page or each time we refresh it and it will guide the User, explain and show him the first steps that the User can do in order understand better the page and its purpose.
+
+__Select bar__ When clicking have to display to indicated data from the dataset, and if clicked to filter throgh the selection and limit the other elements.
+
+__Toggle button__ When clicked once it hides the respective card where the charts are contained, twice it shows it back again. This can be helpfull in order to ease the graphs display and their analysis.
+
+__The charts__ are interactive and responsive and if clicked they will show the section clicked and if clicked back again that will go to the normal  view again.
+
+__Back to top button__ It will take the user when clicked to the top of the page.
+
+__Reset button__ When clicked it resets the charts filtering selection.
+
+__Footer__ It contains anchors, social media, dataset, main page that takes the User to the desired links.
 
 Click the 'Take me there' button, and verify it does in fact take the user to the weather section.
 Travel Inspiration:
