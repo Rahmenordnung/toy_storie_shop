@@ -128,9 +128,9 @@ In the constuction of the project I have used the libraries donated by the Code 
 
 #### <a name="Miscelaneous"></a> Miscelaneous ##
 
---  [Font-awesome] (https://fontawesome.com/) Font Awesome is a web font containing all the icons from the Twitter Bootstrap framework, and now many more.
+--  [Font-awesome](https://fontawesome.com/) Font Awesome is a web font containing all the icons from the Twitter Bootstrap framework, and now many more.
 
---  [Goolgle fonts] (https://fonts.google.com/) A collection from Goolgle with diverse fonts. (not needed to see the graphs but to style them) that were used for the graphs building. 
+--  [Goolgle fonts](https://fonts.google.com/) A collection from Goolgle with diverse fonts. (not needed to see the graphs but to style them) that were used for the graphs building. 
 
 --  [shepherd.js](https://shepherdjs.dev/) Guide your users through a tour of the app. Is a javascript plug that creates an experience of a tour that is displayed at the beginning of the page. I think it improves constistently the user experience of the page.
 
