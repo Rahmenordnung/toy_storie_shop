@@ -47,7 +47,9 @@ In this case the data belongs to an **American Toys company** that with the purp
 
 #### <a name="Name"></a>Name :
 
-The name of the project is a generic one, __Toy story shop__. As there is not present in the database. I tried to find the easiest to remember, without to much complication. A link of the working project can be found [here](https://github.com/Rahmenordnung/toy_storie_shop/tree/master/assets/images/mockups)
+The name of the project it may sound as a generic one, __Toy story shop__. But as there is not present in the database. I found a very simple one that shows the domain that we are talking, toys, and that we are talking about toys with a story behind, such as old toys. 
+
+A link of the working project can be found [here](https://github.com/Rahmenordnung/toy_storie_shop/tree/master/assets/images/mockups)
 
 ---
 ## <a name="UX"></a>UX :
@@ -60,15 +62,15 @@ __Example 1__
 
 The page is made for any investor/client that is interested in seeing tha sales report of their bussines, or their rival, etc
 As a client I have a special interest in knowing more about this Toys company. I have bought some products from them and I want to track where and when all the products batch was sold. I would like to compare how many products of this tipe were bought from this Company.
-As a investor I am interesting in seying how the sales volumes distribute along a time distribution so I can build a marketing plan for my investition.
+As a investor I am interesting in seeing how the sales volumes distribute along a time distribution so I can build a marketing plan for my investition.
 
 __Example 2__
 
-Is also made for the managers of the company , with the intention of expanding the shops, or to improve their products, etc. The lead board can easily find time patterns of better time when to sell their products, they can explore the map and plan promotions of their products in new geographical areas. They also can analyse how the sale of new productucts have evolved and if it worth it to keep on saling or if their prsent looses for the business.
+Is also made for the managers of the company, with the intention of expanding the shops, or to improve their products, etc. The lead board can easily find time patterns of better time when to sell their products, they can explore the map and plan promotions of their products in new geographical areas. They also can analyse how the sale of new productucts have evolved and if it worths to keep on selling or if their present losses for the business.
 
 __Example 3__
 
-Last but not least is created for anybody, manufacturer, importer, wholesaler interested in seeing how a medium toy company spread their products around world, and the level of sales that they have. 
+Last, but not least is created for anybody, manufacturer, importers, wholesalers interested in seeing how a medium toy company spread their products around world, and the level of sales that they have. 
 As a possible client, or retailer I want to see if they are selling products in my area or they will, what type of toys they have in the deposit, how many they sell in a specific period or in average. 
 
 ---
@@ -87,11 +89,11 @@ In the constuction of the project I have used the libraries donated by the Code 
 
 #### <a name="Existing_functionality"></a> Existing functionality ##
 
--- __Navbar__: Allows all users to easily navigate to the different sections of the website, regardless of which page they are currently on, simply by clicking the name of the area they wish to visit in the navbar. Also contain an logo that redirect to the user.
+-- __Navbar__: Allows all users to easily navigate to the different sections of the website and interpretate the theme which relates them, regardless of which page they are currently on, simply by clicking the name of the area they wish to visit in the navbar. Also contain an logo that redirect to the home page (in this case, the same page).
 
 -- __Full screen background with button in hover effect__: The image contextualize the business in an the right sector. And the __hover efect__ brings the attention to the the __button__ that leads the user to the charts page.
 
---__Shepherd.js__ Thanks to javascript it makes a tour with messages and arrows and opacity  hat highlight some key elements in the page that the User should pay attention to in order to understant correctly its purpose
+--__Shepherd.js__ Thanks to javascript it makes a tour with messages and arrows and opacity  hat highlight some key elements in the page that the User should pay attention to in order to understand correctly its purpose
 
 -- __Charts in bootrap cards in differnt sizes__: This charts represent the data in easy to understand manner and makes easy to find connections between different variables from the dataset. Each chart is contained in a bootstrap card that improves the visibility and ads some extra info. The site contains the following types of graphs: bar charts, row charts, pie charts, and scatter plots.
 
@@ -101,10 +103,9 @@ In the constuction of the project I have used the libraries donated by the Code 
 
 -- __Search selectors__: There are three selectors that ease the customers display a lot. One can look after the __City__ where the products were delievered, the __Customer name__ and the __order date__ of the delievery. In that way the user can have differents perspectives in which the the data can be analized
 
--- __Google map__: Allwos the user to locate precisely all the custommers adresses listed in the database. On hover it appears the city name and by clicking the marker the CUstomer firma name, and the adress available in the records. (Uses Google Maps and Google Places). See js/maps.js. *Misstaches by the adress could appear due to the geographical localizators
+-- __Google map__: Allwos the user to locate precisely all the custommers adresses listed in the database. On hover it appears the city name and by clicking the marker, the Customer firma name and the adress available in the records. (Uses Google Maps and Google Places). See js/maps.js. *Mistakes by the adress could appear due to the geographical localizators or incomplete data in the dataset
 
--- __Footer__: Informs the user that the site is hosted by Github Pages, and provides as link to where they can view the source code on Github, and also a link to the dataset in a elegant dark green color.
-
+-- __Footer__: Informs the user that the site is hosted by Github Pages, and provides us a link to where they can view the source code on Github, and also a link to the dataset in a elegant dark green color.
 
 #### <a name="Coding_languages"></a>Current Features ##
 
@@ -157,7 +158,6 @@ These is a representative map, but not a dynamic one connected to the crossfilte
 
 * Also it would be nice also to make maybe graphics more complicated with more variables connected.
 
-
 ---
 ## <a name="Dataset"></a>Dataset
 
@@ -166,16 +166,15 @@ The data set has been exported from Kaggle. A link of the exact dataset used can
 ## <a name="Media"></a> Media  ##
 All the images used in the project are taken from Google images page and there are free of copyright.
 
-In this project I used just one image __url url url url shepher shepherd__
-
+In this project I used just one image __[link](http://eskipaper.com/vintage-toys-wallpaper.html#gal_post_34088_vintage-toys-wallpaper-1.jpg)__  
 
 ## <a name="Testing"></a> Testing  ## 
 
 #### <a name="Responsiveness_Testing"></a> Responsiveness Testing  ## 
 
-The responsiveness of the website was tested on Chrome developer tool and also in the Mopzzila developer tool.
+The responsiveness of the website was tested on Chrome developer tool and also in the Mozzila developer tool.
 
-At this stage, the positioning of the footer and background image was tested on the following devices:
+At this stage, the positioning of the footer and background image  and charts cards was tested on the following devices:
 
 Blackberry Playbook
 Galaxy sIII, NOte II, 3
@@ -187,7 +186,7 @@ iPhone 5/SE,6 7,8,X
 iPad, /Pro/ Mini
 etc
 
-The full page is responsive in small, medium, and big devices. The charts are fully responsive thanks to the __ .useViewBoxResizing(true) __ property added in all the charts. Also I create this responsivness with help of the bootrap cards and classes used in their grid system. The selector bar, navbar and footer I edited myself and created some media queries with css help as I learned in previous modules.
+The full page is responsive in small, medium, and big devices. The charts are fully responsive thanks to the __.useViewBoxResizing(true)__ property added in all the charts. Also I create this responsivness with help of the bootrap cards and classes used in their grid system. The selector bar, navbar and footer I edited myself and created some media queries with css help as I learned in previous modules.
 
 #### <a name="Code_Testing"></a> Code Testing  ####
 The HTML was validated using the HTML Validator.
@@ -210,7 +209,7 @@ __Select bar__ When clicking have to display to indicated data from the dataset,
 
 __Toggle button__ When clicked once it hides the respective card where the charts are contained, twice it shows it back again. This can be helpfull in order to ease the graphs display and their analysis.
 
-__The charts__ are interactive and responsive and if clicked they will show the section clicked and if clicked back again that will go to the normal  view again.
+__The charts__ are interactive and responsive and if clicked they will show the section clicked and if clicked back again that will go to the normal view again. And they will be responsive to mobile devices.
 
 __Back to top button__ It will take the user when clicked to the top of the page.
 
@@ -223,7 +222,7 @@ __Footer__ It contains anchors, social media, dataset, main page that takes the 
 This project was developed locally using VS Code. A repository was created on github and named 'toy_storie_shop' Regular commits were made and pushed to my Github repository.
 
 1. Deploy to heroku
-2. enter in the deployed repository
+2. Enter in the deployed repository
 3. Click on the settings cog
 4. Scrolled down to the 'GitHub Pages' section of the settings. Also can be done with Ctrl/Cmd + F
 5. Select 'master branch' from the 'source' dropdown menu, and no label from the dropdown nearby.
@@ -246,7 +245,7 @@ and upload then the above mentionated libraries, after that ,load the bootstap f
 
 Before displaying the charts I inspected the variables with chrome developer console, and checked if the variable pass through the crossfilter. and they are correlated or not.
 
-JavaScript can change,add, remove, all the HTML elements, attributes in the page and can create new events, and react to all existing
+JavaScript can change, add, remove, all the HTML elements, attributes in the page and can create new events, and react to all existing
 
 ## <a name="Challenges"></a> Challenges  ## 
 
