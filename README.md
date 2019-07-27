@@ -258,5 +258,5 @@ Second problem was with shepherd.js I had some problems with the github pages th
 ## <a name="Acknowledgements"></a> Acknowledgements  ## 
 Carina_lead had a video about her project and that helped me when I was stucked in my page. At that time I had only the graphics done, but not a good display. And her call/video helped me.
 
-Many thanks also to the Tutors,my mentor Guido Cecilio Bernal, and to the Code Institute Slack channel was invaluable!
+Many thanks also to the Tutors, my mentor Guido Cecilio Bernal, and to the Code Institute Slack channel was invaluable!
 
