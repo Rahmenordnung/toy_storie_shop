@@ -1,14 +1,13 @@
-# Second Milestone Project
+# Toy storie shop (Second Milestone Project)
  
  #### <a name="Description"></a>Description :
 
-This short program that represents the second project for the Front End developer diploma from Code Institute integrates Javascript and **d3** plus **crossfilter** and **dc.js** and **queue** used in conjunction with a **csv. file**.  as part of the  **Front end Development** module.
+This short program that represents the second project for the Front End developer diploma from Code Institute integrates Javascript and **d3** plus **crossfilter** and **dc.js** and **queue** used in conjunction with a **csv. file**,  as part of the  **Front end Development** module.
 
 Its goal is to exctract the data from the **csv** dataset and to design with it statistical functions that ease the final lecture of the data and it's interpretation. In addition, the site uses jQuery to hide and display parts of the website, and other functions through the DOM.
 
 In this case the data belongs to an **American Toys company** that with the purpose of expansion has presented an extract of their sales with the purpose of understanding the market trends.
 
-In addition I have added a small basic page as a preseentation of the listed products in the graphs in which I have used some small javascript functions.
 
  #### Sumary :
 
@@ -54,27 +53,23 @@ The name of the project is a generic one, __Toy story shop__. As there is not pr
 
 #### <a name="User_Stories"></a>User Stories :
 
+I tried to approach the page in the most proffesional manner that I could, so that it will be mostly used in marketing, sales and business area and/or other investigations.
 
-Story 1
-I know nothing about the series Game of Thrones, but want to find out some basic information.
-Solution: Upon opening the website, the prominent 'see the stats' button leads the user to the dashboard. The tutorial pops up to explain what the dashboard is all about. The user clicks on the arrow to begin reading the information.
-Story 2
-I am a casual fan of the series, and want to learn more about it in a visually pleasing, easily digestible manner.
-Solution: upon opening the website, the prominent 'see the stats' button leads the user to the dashboard. The tutorial gives an overview of what kind of information is available on the website. The casual fan can then click on on one of three buttons to skip to the section he or she is most interested in.
-Story 3
-I have not seen the series yet, but I am considering to watch it.
-Solution: upon opening the website, the prominent 'see the stats' button leads the user to the dashboard. The tutorial gives an overview of what kind of information is available on the website. To someone who is considering to watch the series, they will want to start with general information. He or she will thus click on the downward pointing arrow button to begin reading.
-Story 4
-As a casual fan disappointed in the series finale, I want to find out if my sentiment is shared among critics and other fans.
-Solution: upon opening the website, the prominent 'see the stats' button leads the user to the dashboard. The tutorial gives an overview of what kind of information is available on the website. As a fan disappointed in the finale, the IMDB ratings section is most relevant. He or she will thus click on the 'skip to stats on IMDB ratings' section.
-
-I tried to approach the page in the most proffesional manner that I could, so that it will be mostly used in business industries.
+__Example 1__
 
 The page is made for any investor/client that is interested in seeing tha sales report of their bussines, or their rival, etc
+As a client I have a special interest in knowing more about this Toys company. I have bought some products from them and I want to track where and when all the products batch was sold. I would like to compare how many products of this tipe were bought from this Company.
+As a investor I am interesting in seying how the sales volumes distribute along a time distribution so I can build a marketing plan for my investition.
 
-Is also made for the managers of the company , with the intention of expanding the shops, or to improve their products, etc
+__Example 2__
 
-Last but not least is created for anybody interested in seying how a medium toy company spread their products around world, and the level of sales that they have.
+Is also made for the managers of the company , with the intention of expanding the shops, or to improve their products, etc. The lead board can easily find time patterns of better time when to sell their products, they can explore the map and plan promotions of their products in new geographical areas. They also can analyse how the sale of new productucts have evolved and if it worth it to keep on saling or if their prsent looses for the business.
+
+__Example 3__
+
+Last but not least is created for anybody, manufacturer, importer, wholesaler interested in seeing how a medium toy company spread their products around world, and the level of sales that they have. 
+As a possible client, or retailer I want to see if they are selling products in my area or they will, what type of toys they have in the deposit, how many they sell in a specific period or in average. 
+
 
 #### <a name="Wireframes"></a>Wireframes :
 
