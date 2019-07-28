@@ -168,7 +168,7 @@ The data set has been exported from Kaggle. A link of the exact dataset used can
 ## <a name="Media"></a> Media  ##
 All the images used in the project are taken from Google images page and there are free of copyright.
 
-In this project I used just one image __[link](http://eskipaper.com/vintage-toys-wallpaper.html#gal_post_34088_vintage-toys-wallpaper-1.jpg)__  
+In this project I used just one image __[link](https://papers.co/ipad/mm13-old-car-street-vintage/)__  
 
 ## <a name="Testing"></a> Testing  ## 
 
