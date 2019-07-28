@@ -1,320 +1,264 @@
-# Second Milestone Project
-Short description
-This short program that represents the second project for Front End developer diploma from Code Institute integrates javascript and d3 plus crossfilter and dc.js as part of the Front end Development chapter
+# Toy storie shop (Second Milestone Project)
+ 
+ #### <a name="Description"></a>Description :
 
-used in conjunction with a csv. file. Its goal is to exctarct the data from the csv database and to design with it statistical functions that ease the final lecture of the data and it's interpretation
+This short program that represents the second project for the Front End developer diploma from Code Institute integrates Javascript and **d3** plus **crossfilter** and **dc.js** and **queue** used in conjunction with a **csv. file**,  as part of the  **Front end Development** module.
 
-In this case the data belongs to an American Toys company that with the purpose of of expansion has presented an extract of thei sales with the purpose of understanding the market trends.
+Its goal is to exctract the data from the **csv** dataset and to design with it statistical functions that ease the final lecture of the data and it's interpretation. In addition, the site uses jQuery to hide and display parts of the website, and other functions through the DOM.
 
-In addition I have added a small basic page as a preseentation of the listed products in the graphs in which I have used some small javascript functions.
+In this case the data belongs to an **American Toys company** that with the purpose of expansion has presented an extract of their sales with the purpose of understanding the market trends.
 
-Project##
-I tryed to be at the same time as original as possible. Create texts and images produced by so many years of looking this cartoons and crate a page inspired by the fun and pleasure that I feal when I watch them.
 
-Project implementation
-In the constuction of the project I have used the libraries donated by the Code institute,
+ #### Sumary :
 
-d3.js,
 
-crossfilter,
+* [Description](#Description)
+* [Name](#Name)
+* [UX](#UX)
+* [User Stories](#User_Stories)
+   - [Wireframes](#Wireframes)
+* [Features](#Features)
+  * [Current Features](#Current_Features)
+ 
+    --[Existing_functionality](#Existing_functionality)
+    
+    --[Coding languages](#Coding_languages)
 
-dc.js,
+    --[Libraries](#Libraries)
+    
+    --[Miscelaneous](#Miscelaneous)
+    
+    --[Google API](#Google_API)
+    
+* [Features left to implement](#Features_left_to_implement)    
+* [Testing](#Testing)
+  * [Responsiveness Testing](#Responsiveness_Testing)
+  * [Code Testing](#Code_Testing)
+  * [Ux Testing](#Ux_Testing)
+* [Dataset](#Dataset)
+* [Media](#Media)
+* [Deployment](#Deployment)
+  * [Developer environment](#Developer_environment)
+* [The DOM](#The_DOM)
+* [Challenges](#Challenges)
+* [Bugs](#Bugs)
+* [Acknowledgements](#Acknowledgements) 
+ 
 
-queue.js
+#### <a name="Name"></a>Name :
 
-+font-awesome, and Goolgle fonts (not needed to see the graphs but to style them)
+The name of the project it may sound as a generic one, __Toy story shop__. But as there is not present in the database. I found a very simple one that shows the domain that we are talking, toys, and that we are talking about toys with a story behind, such as old toys. 
 
-That were used for the graphs building. Also I have used jquery.js library that facilitates and is the most used js library, for different
+A link of the working project can be found [here](https://github.com/Rahmenordnung/toy_storie_shop/tree/master/assets/images/mockups)
 
-functions in the page. Also I tryed to use bootstap exctracts, that have been completating the page and"Font awesome" and different types of special Fonts
+---
+## <a name="UX"></a>UX :
 
-imported from Google Fonts.
+### <a name="User_Stories"></a>User Stories :
+
+I tried to approach the page in the most proffesional manner that I could, so that it will be mostly used in marketing, sales and business area and/or other investigations.
+
+__Example 1__
+
+The page is made for any investor/client that is interested in seeing tha sales report of their bussines, or their rival, etc
+As a client I have a special interest in knowing more about this Toys company. I have bought some products from them and I want to track where and when all the products batch was sold. I would like to compare how many products of this tipe were bought from this Company.
+As a investor I am interesting in seeing how the sales volumes distribute along a time distribution so I can build a marketing plan for my investition.
+
+__Example 2__
+
+Is also made for the managers of the company, with the intention of expanding the shops, or to improve their products, etc. The lead board can easily find time patterns of better time when to sell their products, they can explore the map and plan promotions of their products in new geographical areas. They also can analyse how the sale of new productucts have evolved and if it worths to keep on selling or if their present losses for the business.
+
+__Example 3__
+
+Last, but not least is created for anybody, manufacturer, importers, wholesalers interested in seeing how a medium toy company spread their products around world, and the level of sales that they have. 
+As a possible client, or retailer I want to see if they are selling products in my area or they will, what type of toys they have in the deposit, how many they sell in a specific period or in average. 
+
+---
+### <a name="Wireframes"></a>Wireframes :
+
+You can find a pdf link for the wirefranes here: [Mockups](https://github.com/Rahmenordnung/toy_storie_shop/tree/master/assets/images/mockups)
+
+---
+##  <a name="Features"></a>Features
+
+In the constuction of the project I have used the libraries donated by the Code institute, and other functional elements.
+
+
+#### <a name="Current_Features"></a>Current Features ##
+
+
+#### <a name="Existing_functionality"></a> Existing functionality ##
+
+-- __Navbar__: Allows all users to easily navigate to the different sections of the website and interpretate the theme which relates them, regardless of which page they are currently on, simply by clicking the name of the area they wish to visit in the navbar. Also contain an logo that redirect to the home page (in this case, the same page).
+
+-- __Full screen background with button in hover effect__: The image contextualize the business in an the right sector. And the __hover efect__ brings the attention to the the __button__ that leads the user to the charts page.
+
+--__Shepherd.js__ Thanks to javascript it makes a tour with messages and arrows and opacity  hat highlight some key elements in the page that the User should pay attention to in order to understand correctly its purpose
+
+-- __Charts in bootrap cards in differnt sizes__: This charts represent the data in easy to understand manner and makes easy to find connections between different variables from the dataset. Each chart is contained in a bootstrap card that improves the visibility and ads some extra info. The site contains the following types of graphs: bar charts, row charts, pie charts, and scatter plots.
+
+-- __Sections separators__ They are simple headers that group the charts below them to a comun theme.
+
+-- __Useful information__: Allows the user to understand better the charts, and to discover them in a better way, with more detail and attention. this is contained in __bootrap cards__
+
+-- __Toggle hide button__: Once one graph is fully viewed one can hide it or make it appear back so that it will visualize only the needed information.
+
+-- __Search selectors__: There are three selectors that ease the customers display a lot. One can look after the __City__ where the products were delievered, the __Customer name__ and the __order date__ of the delievery. In that way the user can have differents perspectives in which the the data can be analized
+
+-- __Google map__: Allwos the user to locate precisely all the custommers adresses listed in the database. On hover it appears the city name and by clicking the marker, the Customer firma name and the adress available in the records. (Uses Google Maps and Google Places). See js/maps.js. *Mistakes by the adress could appear due to the geographical localizators or incomplete data in the dataset
+
+-- __Footer__: Informs the user that the site is hosted by Github Pages, and provides us a link to where they can view the source code on Github, and also a link to the dataset in a elegant dark green color.
+
+#### <a name="Coding_languages"></a>Current Features ##
+
+-- [HTML5](https://www.w3schools.com/html/html_intro.asp) --Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser.
+
+-- [CSS3](http://www.css3.info/) is a style sheet language used for describing the presentation of a document written in a markup language like HTML.[
+
+-- [Javascript](https://www.javascript.com/) is a high-level, interpreted programming language that conforms to the ECMAScript specification
+
+
+#### <a name="Libraries"></a> Libraries ##
+
+--  [d3.js](https://d3js.org/) D3.js is a JavaScript library for manipulating documents based on data using HTML, SVG, and CSS. D3 allows you to bind arbitrary data to a Document Object Model (DOM), and then apply data-driven transformations to the document.
+
+--  [crossfilter](https://square.github.io/crossfilter/) Crossfilter is a JavaScript library for exploring large multivariate datasets in the browser. 
+
+--  [dc.js](https://dc-js.github.io/dc.js/), dc.js is an easy yet powerful javascript library for data visualization and analysis in the browser and on mobile devices. Is a javascript charting library with native crossfilter support that help to interconect and render big datasets, and to visulize them with svg, and d3.js
+
+--  [queue.js](https://github.com/d3/d3-queue)  A queue evaluates zero or more deferred asynchronous tasks with configurable concurrency: you control how many tasks run at the same time.
+
+
+#### <a name="Miscelaneous"></a> Miscelaneous ##
+
+--  [Font-awesome](https://fontawesome.com/) Font Awesome is a web font containing all the icons from the Twitter Bootstrap framework, and now many more.
+
+--  [Goolgle fonts](https://fonts.google.com/) A collection from Goolgle with diverse fonts. (not needed to see the graphs but to style them) that were used for the graphs building. 
+
+--  [shepherd.js](https://shepherdjs.dev/) Guide your users through a tour of the app. Is a javascript plug that creates an experience of a tour that is displayed at the beginning of the page. I think it improves constistently the user experience of the page.
+
+--  [jquery.js](https://jquery.com/) is a library of Java scripts that simplifies lots of its functions, the main differance with javascriptis that it performs many common scripting functions in fewer lines of codes
+
+--  [bootstap](https://getbootstrap.com/) is a framework to help you design websites faster and easier.
+
+
+#### <a name="Google_API"></a> Google API  ## 
+
+--[Google APIs(Google maps)](https://developers.google.com/maps/documentation/) is a set of application programming interfaces developed by Google which allow communication with Google Services and their integration to other services
 
 Finally I have used the Google Maps API and added to it the clients adresses so that the user can relate and see where each project has been delivered.
 
-Developer environment
-As for the external use of the program, the user should download first the Toys shop data base.csv file.
-
-and upload then the above mentionated libraries, after that ,load the bootstap file and the dc.css as well as jquery so that the program should deploy as expected.
-
-Media
-All the images used in the project are taken from Google images page and there are free of copyright.
-
-Colaborations and help received
-The mentors as well as the tutors helped me in this project with the peces where I got stuck, and their help never the less made me understand better the
-
-programming way of thinking and troubleshouting a problem. Many thanks to all!!!
-
-Features
-HTML
-We'll use CSS and HTML to position and style the data visualization. Instead of starting from scratch, let's leverage Bootstrap's existing stylesheets and methodology (in most of the areas) to get a decent looking website in a short amount of time.
-
-Home
-The page is composed from a simple home space that shows the user whhich are the companys first attributes
-
-In the columns formation I used the Grid system, which I find a little bit more logical, though slower until its complete control.
-
-Used
-
-Index
-This is the core of the page in which main part of the features are proved in a graphic that displays the sales in different ways along a period of time
-
-Contact
-In this secction the customer has the opportunity (even though fictive) to contact via email the Toys company., It contains a selector with diferent geoprafhical areas.
-
-About
-Here one can see a list with the products that the company provides, and sells to the customer.
-
-Script.js
-This file contains javascript language that combined with dc.js, crossfilter on base of d3.js and queue result in a list of graphical data that make easy the
-comprehension of the data available in the .csv document.
-
-Queue
-A look at Queue.js and how you can load multiple files before running the rest of the code. A queue evaluates zero or more deferred asynchronous tasks:
-you control how many tasks run at the same time. When all the tasks complete, or an error occurs, the queue passes the results to your await callback.
-
-queue()
-    .defer(d3.csv, "data/sales.csv")
-    .await(makeGraphs);
-
-function makeGraphs(error, SALESData) {
-    var ndx = crossfilter(SALESData)
-In the below raws all the function that define each graph with a ndx argumnet that filters the function through crossfilter tool.
-
-The last raws call a Render of all function so that we can visulize them, without it that wouldn´t be working.
-
-    amount_causes(ndx);
-    show_gender_balance(ndx);
-    state_status(ndx);
-    country_pie(ndx);
-    sales_month(ndx);
-    scatter_price(ndx);
-    show_Status_products(ndx);
-    Tabletry(ndx);
-
-    show_territory_donuts(ndx);
-
-
-
-
-    dc.renderAll();
-    
-Selector
-This is a selector that sort the products sold by order day with only a click, and the help of crossfilter in which I pased through the ORDERDATE collumn.
-
-    function amount_causes(ndx) {
-        var dim = ndx.dimension(dc.pluck("ORDERDATE"));
-        var group = dim.group();
-
-        dc.selectMenu("#dead-selector")
-            .dimension(dim)
-            .group(group);
-            
-          
-The bar chart below shows the sales distribution through the months of an year. Made with the help of ndx.
-
-When we use this dimension to create the chart, what we're doing is saying "for every item in our Sales data, return the value score as the x value for this particular dimension". Notice that dc has a function pluck to make this less verbose.
-
-Groups take a dimension value as input and return an output value; they are the mechanism by which you get a y-value for a particular x-value.
-
-Also contains a domain and range so that the computer can recognize and order the months of the year. There is a function that moves the names of the month on the x axis so that they can be recognized.
-
-Bar chart
- function show_gender_balance(ndx) {
-        var dim = ndx.dimension(dc.pluck("MONTH_ID"));
-        var group = dim.group();
-
-        dc.barChart("#chart-here")
-            .width(500)
-            .height(500)
-            .margins({ top: 10, right: 50, bottom: 60, left: 80 })
-            .dimension(dim)
-            .group(group)
-            .transitionDuration(500)
-            .x(d3.scale.ordinal().domain([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]).range([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]))
-            .xUnits(dc.units.ordinal)
-            .elasticY(true)
-            .xAxisLabel("COUNTRY")
-            .renderHorizontalGridLines(true)
-            .on('renderlet', function(chart) {
-                chart.selectAll("g.x text")
-                    .attr('dx', '-15')
-                    .attr('transform', "rotate(-45)");
-            })
-            .addFilterHandler(function(filters, filter) { return [filter]; })
-            .yAxis().ticks(20);
-And also a bar chart that proved the liability that the company has in delievering the products to all word The chart is very similar with the other one, but insteed of plucking Months ,it does Status.
-
-function show_Status_products(ndx) {
-    var dim = ndx.dimension(dc.pluck("STATUS"));
-    var group = dim.group();
-
-    dc.barChart("#USA_clients")
-        .width(250)
-        .height(400)
-        .margins({ top: 10, right: 10, bottom: 60, left: 40 })
-        .dimension(dim)
-        .group(group)
-        .transitionDuration(500)
-        .x(d3.scale.ordinal())
-        .xUnits(dc.units.ordinal)
-        .elasticY(true)
-        .xAxisLabel("Status")
-        .renderHorizontalGridLines(true)
-        .on('renderlet', function(chart) {
-            chart.selectAll("g.x text")
-                .attr('dx', '-15')
-                .attr('transform', "rotate(-45)");
-        })
-        .addFilterHandler(function(filters, filter) { return [filter]; })
-        .yAxis().ticks(10);
-
-
-StackedChart
-Proves in a statistical way the distrubution of each product saled by year. The main issue here was to define the reduce function for each type of prduct sold in each year: Like this: var name_dim = ndx.dimension(dc.pluck('YEAR_ID')); var SALESByPRODUCTLINEClassic = name_dim.group().reduceSum(function(d) { if (d.PRODUCTLINE === 'Classic Cars') { return +d.SALES; } else { return 0; }
-
-And define it in the variable that defines the chart:
-
-     var stackedChart = dc.barChart("#sales_per_state_and_situation");
-        stackedChart
-            .width(500)
-            .height(500)
-            .margins({ top: 25, right: 50, bottom: 60, left: 80 })
-            .dimension(name_dim)
-            .group(SALESByPRODUCTLINEClassic, "Classic Cars")
-            .stack(SALESByPRODUCTLINEVintage, "Vintage Cars")
-            .stack(SALESByPRODUCTLINEMotorcycles, "Motorcycles")
-            .stack(SALESByPRODUCTLINETrucks, "Trucks and Buses")
-            .stack(SALESByPRODUCTLINEPlanes, "Planes")
-            .stack(SALESByPRODUCTLINEShips, "Ships")
-            .stack(SALESByPRODUCTLINETrains, "Trains")
-            .x(d3.scale.ordinal())
-            .xUnits(dc.units.ordinal)
-            .xAxisLabel("PRODUCTLINE")
-            .legend(dc.legend().x(420).y(0).itemHeight(15).gap(5));
-        stackedChart.margins().right = 100;
-        dc.renderAll();
-
-
-    }
-
-Time Chart
-This time flow diagram shows in a lineChart the sales distribution through the year quartals, and that is because the quartals are an important time messure method in sales, and Marketing Is not the same to sell toys in Christmas when everybody whants one, or in Summer when everybody is outdoors and in holidays.
-
-The peculiarity here resides in the scale the presents a max and a min date though which the lineChart flows, showing the Graph in a temporal way.
-
-
- var QTR_ID_dim = ndx.dimension(dc.pluck("QTR_ID"));
-        var total_sales_flow = QTR_ID_dim.group();
-
-        var minORDERDATE = QTR_ID_dim.bottom(1)[0].QTR_ID;
-        var maxORDERDATE = QTR_ID_dim.top(1)[0].QTR_ID;
-
-        dc.lineChart("#sales_month")
-            .width(1000)
-            .height(300)
-            .margins({ top: 10, right: 50, bottom: 30, left: 50 })
-            .dimension(QTR_ID_dim)
-            .group(total_sales_flow)
-            .transitionDuration(500)
-            .x(d3.time.scale().domain([minORDERDATE, maxORDERDATE]))
-            .xAxisLabel("Flow-Sale")
-            .yAxis().ticks(4);
-
-
-
-    }
-
-
-Donut Charts
-Destinated to show parts forming a total, and here the total is the hole world where the company delieveres their products, in different locations and countries In the first donut the Contries are represented, there must be a radius value so that the Graph will be able to display in a circle and there is also a legend interactive and clicklable, that improved visibly the accesibility of the smallest portions in the donut.
-
-   function country_pie(ndx) {
-        var dim = ndx.dimension(dc.pluck("COUNTRY"));
-        var group = dim.group();
-
-
-        dc.pieChart('#country_pie')
-            .width(500)
-            .radius(200)
-            .transitionDuration(1000)
-            .dimension(dim)
-            .group(group)
-            .legend(dc.legend().x(420).y(0).itemHeight(9).gap(1));
-
-
-    }
-
-
-and also
-
-A donut splitted in 4 main territories that proves that half of the products are delieverd to European Countries. Also has a reduced radio that add a touch of style to the graph
-
-function show_territory_donuts(ndx) {
-    var dim = ndx.dimension(dc.pluck("TERRITORY"));
-    var group = dim.group();
-
-
-    dc.pieChart('#donuts')
-        .width(500)
-        .radius(400)
-        .innerRadius(50)
-        .transitionDuration(1000)
-        .dimension(dim)
-        .group(group);
-
-
-}
-
-
-SCATER PLOT
-Represents each sale in different locations al over the globe, and the value of the sale in dot, that presents a differnt color depending on the Sale status. It is represented in the x- axis by the quantiyordered and on the y y-axis by the total amont of the Sale. When hovering on each dot one can observe the Shop in the X City and the sale.
-
- function scatter_price(ndx) {
-
-
-
-        var QUANTITYORDEREDDim = ndx.dimension(function(d) {
-            return d.QUANTITYORDERED;
-        });
-        var STATUSColors = d3.scale.ordinal()
-            .domain(["Shipped", "Cancelled", "In Process", "Disputed", "On Hold", "Resolved"])
-            .range(["red", "green", "blue", "yellow", "violet", "brown"]);
-        var minQUANTITYORDERED = QUANTITYORDEREDDim.bottom(1)[0].QUANTITYORDERED;
-        var maxQUANTITYORDERED = QUANTITYORDEREDDim.top(1)[0].QUANTITYORDERED;
-        var SALESDim = ndx.dimension(function(d) {
-            return [d.QUANTITYORDERED, d.SALES, d];
-        });
-        var SALESGroup = SALESDim.group();
-        var spend_chart = dc.scatterPlot("#price_along_dates");
-        spend_chart
-            .width(1068)
-            .height(500)
-            .x(d3.time.scale().domain([minQUANTITYORDERED, maxQUANTITYORDERED]))
-            .brushOn(false)
-            .symbolSize(8)
-            .clipPadding(10)
-            .yAxisLabel("Amount Spent")
-            .title(function(d) {
-                return d.key[2].CUSTOMERNAME + " quatity ordered: " + d.key[2].QUANTITYORDERED + " in store " + d.key[2].CITY;
-            })
-            .colorAccessor(function(d) {
-                return d.key[2].STATUS;
-            })
-            .mouseZoomable(true)
-            .colors(STATUSColors)
-            .brushOn(false)
-            .dimension(SALESDim)
-            .group(SALESGroup);
-
-        dc.renderAll();
-    }
-
-Map.js
-Contains the Google maps API with the clusters option. These work with a API key optained on their page Google maps plataform integrated on a special function provided by Google that conects tha map with the html page.
-
-In the map are represented by clusters each shop where the Toys Company delievered their products.
-
 These is a representative map, but not a dynamic one connected to the crossfilter, because that is beyond the lessons provided in the course and my skills, yet
 
-Thank you very much, for all the help recived from staff, mentors, chat, etc,!!!!
+## <a name="Features left to implement"></a>Features_left_to_implement ##
+
+* First of all I like a lot the graphical distributions in general. So one of the thing that I would like to do is to implement more types of Charts, but for that I have to learn more abot javascript.
+
+* I would like also to connect maybe more datasets and work with them
+
+* Also is my intention to maybe work with geographical data in which I am interested.
+
+* Also it would be nice also to make maybe graphics more complicated with more variables connected.
+
+---
+## <a name="Dataset"></a>Dataset
+
+The data set has been exported from Kaggle. A link of the exact dataset used can be found here .>>[Kaggle](https://www.kaggle.com/kyanyoga/sample-sales-data)
+
+## <a name="Media"></a> Media  ##
+All the images used in the project are taken from Google images page and there are free of copyright.
+
+In this project I used just one image __[link](http://eskipaper.com/vintage-toys-wallpaper.html#gal_post_34088_vintage-toys-wallpaper-1.jpg)__  
+
+## <a name="Testing"></a> Testing  ## 
+
+#### <a name="Responsiveness_Testing"></a> Responsiveness Testing  ## 
+
+The responsiveness of the website was tested on Chrome developer tool and also in the Mozzila developer tool.
+
+At this stage, the positioning of the footer and background image  and charts cards was tested on the following devices:
+
+Blackberry Playbook
+Galaxy sIII, NOte II, 3
+Laptop with HiDPI
+Microsoft Lumia 550
+Nexus 4,5,6,10, etc
+Nokia Lumia, N9
+iPhone 5/SE,6 7,8,X
+iPad, /Pro/ Mini
+etc
+
+The full page is responsive in small, medium, and big devices. The charts are fully responsive thanks to the __.useViewBoxResizing(true)__ property added in all the charts. Also I create this responsivness with help of the bootrap cards and classes used in their grid system. The selector bar, navbar and footer I edited myself and created some media queries with css help as I learned in previous modules.
+
+#### <a name="Code_Testing"></a> Code Testing  ####
+The HTML was validated using the HTML Validator.
+
+The CSS was validated using the CSS Validator. In total, 1 issues was found. This has to do with the parsing of a property. But as it doesn´t really affect the project I considerated to ignore it.
+
+TheJavaScript files were tested using JSHint.com. Initially, 1 warnings were detected: Duplicate key 'mapTypeId'. But that is the normal type of expression for map.js. The rest is clean.
+
+#### <a name="Ux_Testing"></a> Ux Testing ####
+
+The normal functionality of the page has been tested through this tests:
+
+__Full Background start image__: When hovered over it shows a dinamic effect contains a button.
+
+__Go and play button__: When hovered changes color and adds margin around. When clicked hides the hole _start image_ and the _background page_ and displays the charts page that beginns with _shepherd.js tour_
+
+__Shepherd.js tour__ it will be displayed when firsly showing the charts page or each time we refresh it and it will guide the User, explain and show him the first steps that the User can do in order understand better the page and its purpose.
+
+__Select bar__ When clicking have to display to indicated data from the dataset, and if clicked to filter throgh the selection and limit the other elements.
+
+__Toggle button__ When clicked once it hides the respective card where the charts are contained, twice it shows it back again. This can be helpfull in order to ease the graphs display and their analysis.
+
+__The charts__ are interactive and responsive and if clicked they will show the section clicked and if clicked back again that will go to the normal view again. And they will be responsive to mobile devices.
+
+__Back to top button__ It will take the user when clicked to the top of the page.
+
+__Reset button__ When clicked it resets the charts filtering selection.
+
+__Footer__ It contains anchors, social media, dataset, main page that takes the User to the desired links.
+
+## <a name="Deployment"></a> Deployment  #### 
+
+This project was developed locally using VS Code. A repository was created on github and named 'toy_storie_shop' Regular commits were made and pushed to my Github repository.
+
+1. Deploy to heroku
+2. Enter in the deployed repository
+3. Click on the settings cog
+4. Scrolled down to the 'GitHub Pages' section of the settings. Also can be done with Ctrl/Cmd + F
+5. Select 'master branch' from the 'source' dropdown menu, and no label from the dropdown nearby.
+6. Save the selection
+6. The page will refresh automatically and it would be deployed. In my case the workspace is ' https://rahmenordnung.github.io/toy_storie_shop/' 
+
+ └── <--> Code -> Select Settings tab
+                    └── Github Pages
+                            └── Select None in Source -> Select master branch
+                                                                    └──  Select Save
+                                                                                   --->>>github web url
+#### <a name="Developer_environment"></a> Developer environment  #### 
+
+As for the external use of the program, the user should download first the Toys shop data base.csv file.
+and upload then the above mentionated libraries, after that ,load the bootstap file and the dc.css as well as jquery so that the program should deploy as expected.                                                                                   
+
+---                                                                    
+                                                                  
+## <a name="The_DOM"></a> The DOM  ##
+
+Before displaying the charts I inspected the variables with chrome developer console, and checked if the variable pass through the crossfilter. and they are correlated or not.
+
+JavaScript can change, add, remove, all the HTML elements, attributes in the page and can create new events, and react to all existing
+
+## <a name="Challenges"></a> Challenges  ## 
+
+For me was something really exciting to work with data and create amazing graphics. Hard to find a good dataset, to learn at the beggining was the crossfilter, the reduce function, even to adjust the graphs to the cards had some issues for me as I am still a rookie. But the most challenging, and that is why I add it to the project was the map.js, whict took me long time , and still not is not brought to a sublime status, though a functional one. Displaying data in the data-grid was also a hard task for me.
+
+## <a name="Bugs"></a> Bugs  ## 
+I had some problems with the graphs display and the bootrap classes. 
+Second problem was with shepherd.js I had some problems with the github pages that gave me error with the paths. 
+
+## <a name="Acknowledgements"></a> Acknowledgements  ## 
+Carina_lead had a video about her project and that helped me when I was stucked in my page. At that time I had only the graphics done, but not a good display. And her call/video helped me.
+
+Many thanks also to the Tutors, my mentor Guido Cecilio Bernal, and to the Code Institute Slack channel was invaluable!
+
