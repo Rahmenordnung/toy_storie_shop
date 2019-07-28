@@ -1,23 +1,27 @@
+ // Call the queue into the dataset file listed and awaits grph function. 
+
 queue()
     .defer(d3.csv, "csv file/sales.csv")
     .await(makeGraphs);
 
+ // Call the functions for each individual chart.    
+
 function makeGraphs(error, SALESData) {
     var ndx = crossfilter(SALESData)
+        show_num_SALES(ndx);
         CITY(ndx);
         customer_business(ndx);
-        // show_Status_products(ndx);
-        products_per_status_dealsize(ndx);
         amount_causes(ndx);
         show_monthy_sales_distribution(ndx);
         products_per_year(ndx);
-        country_pie(ndx);
         sales_month(ndx);
-        scatter_price(ndx);
-        show_territory_donuts(ndx);
         show_productline(ndx);
+        products_per_status_dealsize(ndx);
+        scatter_price(ndx);
+        country_pie(ndx);
+        show_territory_donuts(ndx);
 
-    // var chart = dc.dataTable("#test");
+        // var chart = dc.dataTable("#test");
 
     // chart
     //       .width(300)
@@ -73,9 +77,11 @@ function makeGraphs(error, SALESData) {
 
         
          // show_Status_products(ndx);
-    dc.renderAll();
 
-//     var dataTable = dc.dataTable("#dataTable");
+
+
+
+    //     var dataTable = dc.dataTable("#dataTable");
 //     var facts;
 
 //       d3.csv("csv file/sales.csv", function(error, data){
@@ -137,6 +143,20 @@ function makeGraphs(error, SALESData) {
 //           resultStart += resultEnd;
 //           updateResult();
 //           dataTable.redraw();
+
+/*total number of sales display*/ 
+dc.renderAll();
+
+function show_num_SALES(ndx) {
+    deathDim = ndx.dimension(dc.pluck('SALES'));
+    deathGroup = deathDim.groupAll().reduceSum(dc.pluck('SALES'));
+    dc.numberDisplay("#numSALES")
+        .group(deathGroup)
+        .valueAccessor(function (d) {
+            return d;
+        })
+}
+
 //selectors//
 //city selector//
 function CITY(ndx) {
@@ -167,6 +187,8 @@ function amount_causes(ndx) {
     }
 
 //graphics//
+
+//graphics related to time//
 //average monthly sales of all all products(bar chart)//
 function show_monthy_sales_distribution(ndx) {
     var dim = ndx.dimension(dc.pluck("MONTH_ID"));
@@ -193,27 +215,7 @@ function show_monthy_sales_distribution(ndx) {
         .addFilterHandler(function(filters, filter) { return [filter]; })
         .yAxis().ticks(20);
     }
-
-//distribution of the total amont of sales per each product available(bar chart)//
-    function show_productline(ndx) {
-        var dim = ndx.dimension(dc.pluck('PRODUCTLINE'));
-        var group = dim.group();
-
-        
-        dc.barChart("#products")
-            .width(600)
-            .height(500)
-            .margins({top: 10, right: 50, bottom: 60, left: 50})
-            .dimension(dim)
-            .group(group)
-            .useViewBoxResizing(true)
-            .transitionDuration(500)
-            .x(d3.scale.ordinal())
-            .xUnits(dc.units.ordinal)
-            .elasticY(true)
-            .xAxisLabel("Products")
-            .yAxis().ticks(20);
-    }
+    
 //time distribution of the sales per trimester also known as quartals(time line chart)//    
 function sales_month(ndx) {
     var QTR_ID_dim = ndx.dimension(dc.pluck("QTR_ID"));
@@ -233,81 +235,7 @@ function sales_month(ndx) {
         .xAxisLabel("Flow-Sale")
         .yAxis().ticks(4);
     }
-
-//distribution of the prducts per sale size and status of the sale(stacked bar chart)//
-function products_per_status_dealsize(ndx) {
-
-    var name_dim = ndx.dimension(dc.pluck('DEALSIZE'));
-    var SALESBySTATUSCancelled = name_dim.group().reduceSum(function(d) {
-        if (d.STATUS === 'Cancelled') {
-            return +d.SALES;
-        }
-        else {
-            return 0;
-        }
-    });
-    var SALESBySTATUSDisputed = name_dim.group().reduceSum(function(d) {
-        if (d.STATUS === 'Disputed') {
-            return +d.SALES;
-        }
-        else {
-            return 0;
-        }
-    });
-    var SALESBySTATUSIn_Process = name_dim.group().reduceSum(function(d) {
-        if (d.STATUS === 'In Process') {
-            return +d.SALES;
-        }
-        else {
-            return 0;
-        }
-    });
-    var SALESBySTATUSOn_Hold = name_dim.group().reduceSum(function(d) {
-        if (d.STATUS === 'On Hold') {
-            return +d.SALES;
-        }
-        else {
-            return 0;
-        }
-    });
-    var SALESBySTATUSResolved = name_dim.group().reduceSum(function(d) {
-        if (d.STATUS === 'Resolved') {
-            return +d.SALES;
-        }
-        else {
-            return 0;
-        }
-    });
-    var SALESBySTATUSShipped = name_dim.group().reduceSum(function(d) {
-        if (d.STATUS === 'Shipped') {
-            return +d.SALES;
-        }
-        else {
-            return 0;
-        }
-    });
-    var stackedChart = dc.barChart("#sales_per_STATUS_and_deal_size");
-    stackedChart
-        .width(600)
-        .height(500)
-        .margins({ top: 25, right: 20, bottom: 60, left: 90 })
-        .dimension(name_dim)
-        .group(SALESBySTATUSShipped, "Shipped")
-        .stack(SALESBySTATUSResolved, "Resolved")
-        .stack(SALESBySTATUSOn_Hold, "On Hold")
-        .stack(SALESBySTATUSIn_Process, "In Process")
-        .stack(SALESBySTATUSDisputed, "Disputed")
-        .stack(SALESBySTATUSCancelled, "Cancelled")
-        .x(d3.scale.ordinal())
-        .xUnits(dc.units.ordinal)
-        .useViewBoxResizing(true)
-        .xAxisLabel("DEALSIZE")
-        .legend(dc.legend().x(525).y(0).itemHeight(15).gap(5));
-    stackedChart.margins().right = 100;
-    
-}
-//distribution of all sales per year, stacked chart with all products stacked one above the other(stacked bar chart)//
-
+    //distribution of all sales per year, stacked chart with all products stacked one above the other(stacked bar chart)//
 function products_per_year(ndx) {
 
     var name_dim = ndx.dimension(dc.pluck('YEAR_ID'));
@@ -389,6 +317,99 @@ function products_per_year(ndx) {
     stackedChart.margins().right = 100;
 }
 
+//distribution of the total amont of sales per each product available(bar chart)//
+    function show_productline(ndx) {
+        var dim = ndx.dimension(dc.pluck('PRODUCTLINE'));
+        var group = dim.group();
+
+        dc.barChart("#products")
+            .width(600)
+            .height(500)
+            .margins({top: 10, right: 50, bottom: 60, left: 50})
+            .dimension(dim)
+            .group(group)
+            .useViewBoxResizing(true)
+            .transitionDuration(500)
+            .x(d3.scale.ordinal())
+            .xUnits(dc.units.ordinal)
+            .elasticY(true)
+            .xAxisLabel("Products")
+            .yAxis().ticks(20);
+    }
+
+//distribution of the prducts per sale size and status of the sale(stacked bar chart)//
+function products_per_status_dealsize(ndx) {
+
+    var name_dim = ndx.dimension(dc.pluck('DEALSIZE'));
+    var SALESBySTATUSCancelled = name_dim.group().reduceSum(function(d) {
+        if (d.STATUS === 'Cancelled') {
+            return +d.SALES;
+        }
+        else {
+            return 0;
+        }
+    });
+    var SALESBySTATUSDisputed = name_dim.group().reduceSum(function(d) {
+        if (d.STATUS === 'Disputed') {
+            return +d.SALES;
+        }
+        else {
+            return 0;
+        }
+    });
+    var SALESBySTATUSIn_Process = name_dim.group().reduceSum(function(d) {
+        if (d.STATUS === 'In Process') {
+            return +d.SALES;
+        }
+        else {
+            return 0;
+        }
+    });
+    var SALESBySTATUSOn_Hold = name_dim.group().reduceSum(function(d) {
+        if (d.STATUS === 'On Hold') {
+            return +d.SALES;
+        }
+        else {
+            return 0;
+        }
+    });
+    var SALESBySTATUSResolved = name_dim.group().reduceSum(function(d) {
+        if (d.STATUS === 'Resolved') {
+            return +d.SALES;
+        }
+        else {
+            return 0;
+        }
+    });
+    var SALESBySTATUSShipped = name_dim.group().reduceSum(function(d) {
+        if (d.STATUS === 'Shipped') {
+            return +d.SALES;
+        }
+        else {
+            return 0;
+        }
+    });
+    var stackedChart = dc.barChart("#sales_per_STATUS_and_deal_size");
+    stackedChart
+        .width(600)
+        .height(500)
+        .margins({ top: 25, right: 20, bottom: 60, left: 90 })
+        .dimension(name_dim)
+        .group(SALESBySTATUSShipped, "Shipped")
+        .stack(SALESBySTATUSResolved, "Resolved")
+        .stack(SALESBySTATUSOn_Hold, "On Hold")
+        .stack(SALESBySTATUSIn_Process, "In Process")
+        .stack(SALESBySTATUSDisputed, "Disputed")
+        .stack(SALESBySTATUSCancelled, "Cancelled")
+        .x(d3.scale.ordinal())
+        .xUnits(dc.units.ordinal)
+        .useViewBoxResizing(true)
+        .xAxisLabel("DEALSIZE")
+        .legend(dc.legend().x(525).y(0).itemHeight(15).gap(5));
+    stackedChart.margins().right = 100;
+    
+}
+
 //sales punctual distribution per quantity of the sale and the amonut spent(scattered plot chart)//
 function scatter_price(ndx) {
     var QUANTITYORDEREDDim = ndx.dimension(function(d) {
@@ -429,6 +450,7 @@ function scatter_price(ndx) {
         .group(SALESGroup);
 }
 
+//graphics related to geography//
 //distribution of the prducts per world regions of delivery(donut diagramm)//
 function show_territory_donuts(ndx) {
     var dim = ndx.dimension(dc.pluck("TERRITORY"));

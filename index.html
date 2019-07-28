@@ -12,8 +12,6 @@
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
 
-    <!-- <link rel="stylesheet" href="http://usablica.github.io/intro.js/introjs.css?v=060"> -->
-
     <link rel="stylesheet" href="assets/css/shepherd-theme-square-dark.css" type="text/css" />
     
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shepherd/1.8.1/css/shepherd-theme-default.css" type="text/css" /> -->
@@ -22,7 +20,7 @@
     <link rel="stylesheet" href="assets/css/dc.min.css" type="text/css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link href="https://fonts.googleapis.com/css?family=Amita&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"</link> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" </link> 
 </head>
 
 <body>
@@ -30,28 +28,25 @@
     <!-- static navbar with logo and burger for mobile display -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
         <div class="container">
-          <a class="navbar-brand" href="https://rahmenordnung.github.io/toy_storie_shop"><h1 class="logo">Toy story shop</h1>
-                <img src="" alt="">
-              </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-          <div class=" navbars collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home
-                      <span class="sr-only">(current)</span>
+            <a class="navbar-brand" href="https://rahmenordnung.github.io/toy_storie_shop"><h1 class="logo">Toy story shop</h1>
                     </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#time_charts">Time charts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#select_bar">Select bar</a>  
-              </li>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+            <div class=" navbars collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#select_bar">Select bar &#x2705</a>  
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sale_numbers_charts">Sale Charts	&#9824;</a>
+                </li>
+                <li class="nav-item">
+                        <a class="nav-link" href="#geography_charts">Geography Charts &#128681</a>  
+                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#time_charts">Time charts	&#8987;</a>
+                </li>
             </ul>
           </div>
         </div>
@@ -59,13 +54,15 @@
     
     <div class="sub_nav"></div>
 
+     <!-- BEGIN LANDING PAGE -->
+
     <div class="content-container background">
         <section class="main">
             <div class="hovereffect">
                 <img class="img-responsive" src="assets/images/toys-wallpapers.jpg" alt="">
                     <div class="overlay">
                             <h1 class="text_top1">Toy story shop</h1>
-                            <h2 class="text_top2">We sell old toys by look at the page and understand what is the status of our Toys sales. </h2>
+                            <h2 class="text_top2">We sell old toys! We celebtrate 10 M sales! Look around to see how we got there... </h2>
                         <p>
                             <button type="button"
                                 class="btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block"
@@ -76,23 +73,27 @@
         </section>
     </div>
          
-    <main>           
+    <main class="all_charts">  
+        <!--- Introduction section -->         
         <div class="dashboard-container jumbotron">        
             <div class="introduction">
                 <hr>
                 <h1 class="main_title">Toy story shop</h1>
 
-                <p>We are specialists in antique toys, old toys and rare toys for collectors, such as <i><b>Classic cars</b>, <b>Vintage cars</b>, <b>Motorcycles</b>, <b>Trucks and buses</b>, <b>Aircrafts</b>, <b>Ships</b>, <b>Trains</b>, memorabilia and even more antique toys (only by local contact) - many antique toys come from well-known factories and regions such as the well nown Erzgebirge and Seiffen, Madrid, Moirans-en-Montagne, Lyon,in Europe, Toledo, Boston ,Seattle, Miami etc, in USA, and many other places all around the world.  </p>
+                <p>We are specialists in antique toys, old toys and rare toys for collectors, such as <i><b>Classic cars</b>, <b>Vintage cars</b>, <b>Motorcycles</b>, <b>Trucks and buses</b>, <b>Aircrafts</b>, <b>Ships</b>, <b>Trains</b>, memorabilia and even more antique toys (only by local contact) - many antique toys come from well-known factories and regions such as the well nown Erzgebirge and Seiffen, Madrid, Moirans-en-Montagne, Lyon,in Europe, Toledo, Boston ,Seattle, Miami etc, in USA, and many other places all around the world. </p>
                         
                 <p>We sell old toys from circa 1800 to 1950. Our business has existed since 1990.  We sell no reproductions and no broken items.
                 In this page one can study different aspects of our sell report made between the years 2003-2005. If you have any questions about our products, please contact us via email - we will get back to you as soon as possible!</p>
             <div>
             <hr>
             
+            <!--- Selectors section -->
+
+            <p class="par_header_section">Selector bar &#x2705</p>
             <div class="all_selectors" id="select_bar">
                 <div class="container select">
                     <div class="row">
-                        <div class="col-sm dc-select-menu" id="city"">
+                        <div class="col-sm dc-select-menu" id="city">
                         <h6 class="selectors_titles">  ~ <u> City selector</u> </h6>
                         </div>
                         <div class="col-sm dc-select-menu" id="customer_selector">
@@ -103,21 +104,52 @@
                         </div>
                     </div>
                 </div>
-            </div>  
-                
+            </div>
+
+            <!--- Begin Charts section -->
+
+            <!-- Total sales number display -->
+
+        <div class="sale_numbers_charts" id="sale_numbers_charts"><p class="par_header_section">Sale numbers charts &#9824;</p>
             <div class="cards">
                 <div class=" card text-center">
                     <div class="card-header">
+                    <!--- toggle button -->    
+                        <div class=toggle>
+                            <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_sales_total()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>
+                        Total sales box</h3>
+                        </div>
+                    </div>
+                    <div id="hide_botton_total_sales">
+                        <div class="card-body">
+                            <p class="card-text"> We celebrate 10 Milions total sales. We are all over the world, and we want to keep on expanding and playing with you.</p> 
+                            <div class=" total charts col-xs-12 col-sm-12 col-12 text-center" id="numSALES"></div>
+                            <a  class=" reset text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            In two years and a half we have reached this huge record. And therefore we are showing our personalized balance sheet.
+                        </div>
+                    </div>    
+                </div>
+            </div>   
+
+            <!--- Quantitity of Sales in each transaction scatter plot -->    
+            
+            <div class="cards">
+                <div class=" card text-center">
+                    <div class="card-header">
+                    <!--- toggle button -->    
                         <div class=toggle>
                             <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>
-                            Quantitity of Sales in each transaction</h3>
+                            Scatter Plot all sales chart</h3>
                         </div>
                     </div>
                     <div id="hide_botton">
                         <div class="card-body">
                             <p class="card-text"> Affordability. We also we don´t sacrifice quality with price, so there are more small amount spended that big. Our shop is highly specialized, therefore we mostly sell little quantities. Ussually the clients don´t have enough with buying only one of our toys. </p>
                             <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="QUANTITYORDERED_chart"></div>
-                            <a  class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                            <!--- Reset button -->
+                            <a  class=" reset text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
                         </div>
                         <div class="card-footer text-muted">
                             There is a real correlation between quantity ordered and amount spended. Logically as bigger is the first, bigger will be the second. But there is no correlation betwwen these two variables and the delivery status of our sales. 
@@ -126,49 +158,113 @@
                 </div>
             </div>
 
-            <div class="geography" id="geography_charts"><div class="row cards">
-                    <div class="col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-header">
-                                <div class=toggle>
-                                    <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_territories()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Distribution of the products by territories</h5>
-                                </div>    
-                            </div>
-                        <div id="hide_botton_territories">
-                            <div class="card-body">
-                                <p class="card-text"> Europe and North America are leaders in our exporting areas. We also deliever to Japan and The Australia Pacific. As an American company is a big success to deliever half of our products to Europe.</p>
-                                    <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="donuts"></div>
-                                <a href="#" class="top buttons btn btn-primary">Back on top</a>
-                                    <div class="card-footer text-muted">
-                                        There is a correlation between sales and areas. And the closest territories to our headquarters, have been more avid in buying our products.
-                                    </div>
-                                </div>    
+            <!---  sales per each product bar chart -->
+                    
+            <div class="row cards">
+                <div class="col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <!--- toggle button -->
+                            <div class=toggle>
+                                <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_product()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Individualized products sale distribution</h5>
                             </div>
                         </div>
-                    </div>
-                <div class="col-sm-6">
-                        <div class="card text-center">
-                            <div class="card-header">
-                                    <div class=toggle>
-                                        <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_country()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Countries distribution per sales</h5>
-                                    </div> 
-                                </div>
-                    <div id="hide_botton_country">
-                        <div class="card-body">
-                            <p class="card-text"> We have clients in nineteen countries, and we treat each of them with the same importance and confidence.We deliever in countries like Ireland and Australia and in all national territory </p>
-                                <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="country_pie"></div>
-                            <a  class="reset text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                        <div id="hide_botton_product">            
+                            <div class="card-body">
+                                <p class="card-text">Classical cars and Vintage are our star products, followed by the rest at similar levels. Our antique trains are a product still in development, with the lowest sales rate. </p>
+                                <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="products"></div>
+                                <!--- Back on button -->
+                                <a href="#" class="top buttons btn btn-primary">Back on top</a>
                                 <div class="card-footer text-muted">
-                                        The correlation is obvious between sales and countries. The sales will be reflected on the territory as soon as the transaction has been registered.
-                                    </div>
+                                    The chart show the total amount of sales for each saled product.
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                    
+                    <!--- Size/Status sales products stacked bar chart -->
+        
+                <div class="col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                            <!--- toggle button -->
+                            <div class=toggle>
+                                <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_deal_size()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Deal size and deal status graphic</h5>
+                            </div>
+                        </div>
+                        <div id="hide_botton_deal_size">            
+                            <div class="card-body">
+                                <p class="card-text">we are a medium size deals company with a high level of shipping and we don´t have among the large deals any cancelled deals yet.</p>
+                                <div class="reset charts col-xs-12 col-sm-12 col-12 text-center" id="sales_per_STATUS_and_deal_size"></div>
+                                <!--- Reset button -->
+                                <a class=" text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                                <div class="card-footer text-muted">
+                                    There is not visible correlation between the status of our sales and their size.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>     
+            <!--- Sales related to Territory donut chart -->
+
+        <div class="geography" id="geography_charts"><p class="par_header_section">Geography charts &#128681</p>
+            <div class="row cards">
+                <div class="col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                        <!--- toggle button -->     
+                            <div class=toggle>
+                                <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_territories()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Distribution of the products by territories</h5>
+                            </div>    
+                        </div>
+                    <div id="hide_botton_territories">
+                        <div class="card-body">
+                            <p class="card-text"> Europe and North America are leaders in our exporting areas. We also deliever to Japan and The Australia Pacific. As an American company is a big success to deliever half of our products to Europe.</p>
+                                <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="donuts"></div>
+                            <!--- Back on button -->    
+                            <a href="#" class="top buttons btn btn-primary">Back on top</a>
+                                <div class="card-footer text-muted">
+                                    There is a correlation between sales and areas. And the closest territories to our headquarters, have been more avid in buying our products.
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+
+            <!--- Sales related to Country pie chart -->    
+
+            <div class="col-sm-6">
+                    <div class="card text-center">
+                        <div class="card-header">
+                                <div class=toggle>
+                                    <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_country()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Countries distribution per sales</h5>
+                                </div> 
+                            </div>
+                <!--- toggle button -->            
+                <div id="hide_botton_country">
+                    <div class="card-body">
+                        <p class="card-text"> We have clients in nineteen countries, and we treat each of them with the same importance and confidence. We deliever in countries like Ireland and Australia as well as in all the  national territory (USA) </p>
+                            <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="country_pie"></div>
+                        <!--- reset button -->    
+                        <a  class="reset text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                            <div class="card-footer text-muted">
+                                The correlation is obvious between sales and countries. The sales will be reflected on the territory as soon as the transaction has been registered.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                <!--- Google map with clusters --> 
+
             <div class="cards">
                     <div class=" card text-center">
                         <div class="card-header">
+                            <!--- toggle button -->
                             <div class=toggle>
                                 <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_map()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Delivery map</h3>
                             </div>
@@ -186,33 +282,39 @@
             </div>    
         </div>
     </div>
-        </div>    
-        
-        <div class="time_charts" id="time_charts">
-            <div class="cards">
-                <div class=" card text-center">
-                    <div class="card-header">
-                        <div class=toggle>
-                            <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_time()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Scatter Plot all sales chart</h3>
+    
+    <!--- Trimestrial Sales time chart --> 
+    
+    <div class="time_charts" id="time_charts"><p class="par_header_section">Time related charts &#8987</p>
+        <div class="cards">
+            <div class=" card text-center">
+                <div class="card-header">
+                    <!--- toggle button -->
+                    <div class=toggle>
+                        <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_time()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Time line per trimester sales</h3>
+                    </div>
+                </div>
+                <div id="hide_botton_time">         
+                    <div class="card-body cards">
+                        <p class="card-text"> In the last trimester of the year there is a clear increase in our sales, that compensate the low sales level recorded in summer. We end the year with a positive bilance, that helps us expand our business and improve our service. </p>
+                        <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="sales_quartal"></div>
+                        <!--- reset button -->
+                            <a class="reset text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
+                        </div>
+                        <div class="card-footer text-muted">
+                            The relation between sals and time is a continuous one because one sale follows the other one and creates a time line that is represented above.
                         </div>
                     </div>
-                    <div id="hide_botton_time">         
-                        <div class="card-body cards">
-                            <p class="card-text"> In the last trimester of the year there is a clear increase in our sales, that compensate the low sales level recorded in summer. We end the year with a positive bilance, that helps us expand our business and improve our service. </p>
-                            <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="sales_quartal"></div>
-                                <a class="reset text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
-                            </div>
-                            <div class="card-footer text-muted">
-                                The relation between sals and time is a continuous one because one sale follows the other one and creates a time line that is represented above.
-                            </div>
-                        </div>
-                    </div>    
-                </div>
-            
+                </div>    
+            </div>
+
+        <!--- Monthly sales bar chart -->    
+        
             <div class="row cards">
                 <div class="col-sm-6">
                     <div class="card text-center">
                         <div class="card-header">
+                            <!--- toggle button -->
                             <div class=toggle>
                                 <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_month()" data-toggle="tooltip" title="toggle"><i class=" fa fa-angle-double-up"></i></button>Average monthly sales chart</h5>
                             </div>
@@ -221,17 +323,22 @@
                             <div class="card-body">
                                 <p class="card-text">The sales number here are detailed through months of the year. In average the biggest peak is reached in November, caused by the Christmas sales preparation.</p>
                                 <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="chart-here"></div>
+                                <!--- Back on button -->
                                 <a href="#" class="top buttons btn btn-primary">Back on top</a>
                                 <div class="card-footer text-muted">
-                                   The correlation is a temporal one and that is dictated by the social factors such as festivities 
+                                The correlation is a temporal one and that is dictated by the social factors such as festivities 
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>    
+                </div>
+                
+                <!--- Years sales/products stacked bar chart -->
+
                 <div class="col-sm-6">
                     <div class="card text-center">
                         <div class="card-header">
+                            <!--- toggle button -->
                             <div class=toggle>
                                 <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_year()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Compleate sales of all products per year chart</h5>
                             </div>
@@ -240,6 +347,7 @@
                             <div class="card-body">
                                 <p class="card-text">Our main product is Classical cars antique toys. Clear increase of our sales level in the second year of existance in all the available products </p>
                                 <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="sales_per_year_products"></div>
+                                <!--- Reset button -->
                                 <a class="reset text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
                                 <div class="card-footer text-muted">
                                     The yearly increse of the total sold products remains proporcionaly constant for each of them throughout the years.
@@ -249,79 +357,41 @@
                     </div>
                 </div>
             </div>
-        </div>    
-                    
-        <div class="row cards">
-            <div class="col-sm-6">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <div class=toggle>
-                            <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_product()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Individualized products sale distribution</h5>
-                        </div>
-                    </div>
-                    <div id="hide_botton_product">            
-                        <div class="card-body">
-                            <p class="card-text">Classical cars and Vintage are our star products, followed by the rest at similar levels. Our antique trains are a product still in development, with the lowest sales rate. </p>
-                            <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="products"></div>
-                            <a href="#" class="top buttons btn btn-primary">Back on top</a>
-                            <div class="card-footer text-muted">
-                                The chart show the total amount of sales for each saled product.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>    
-            <div class="col-sm-6">
-                <div class="card text-center">
-                    <div class="card-header">
-                        <div class=toggle>
-                            <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_deal_size()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Deal size and deal status graphic</h5>
-                        </div>
-                    </div>
-                    <div id="hide_botton_deal_size">            
-                        <div class="card-body">
-                            <p class="card-text">we are a medium size deals company with a high level of shipping and we don´t have among the large deals any cancelled deals yet.</p>
-                            <div class="reset charts col-xs-12 col-sm-12 col-12 text-center" id="sales_per_STATUS_and_deal_size"></div>
-                            <a class=" text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>
-                            <div class="card-footer text-muted">
-                                There is not visible correlation between the status of our sales and their size.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div> 
+    </div>
+
+    (html comment removed:  Table Div )
+    <div id="dataTable-div">
+        <h1>Data Table Pagination</h1>
+        <table id="dataTable" class="table table-hover" align="center" ></table>
+    </div>
+
+    <div class="row">
+        <div id="paging">
+            Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
+            <input id="last" class="btn" type="Button" value="Last" onclick="javascript:last()" />
+            <input id="next" class="btn" type="button" value="Next" onclick="javascript:next()"/>
+        </div>
+        <table id="test" class="table table-striped"></table>
         </div>
 
-        (html comment removed:  Table Div )
-        <div id="dataTable-div">
-          <h1>Data Table Pagination</h1>
-          <table id="dataTable" class="table table-hover" align="center" ></table>
-        </div>
+    <!-- <div id="pagination">
+        Results: <span id="start"></span>-<span id="end"></span> of <span id="totalSize"></span>
+        <button id="prev" class="btn" onclick="prev()">Prev</button>
+        <button id="next" class="btn" onclick="next()">Next</button>
+        </div> -->
 
-        <div class="row">
-            <div id="paging">
-              Showing <span id="begin"></span>-<span id="end"></span> of <span id="size"></span> <span id="totalsize"></span>
-              <input id="last" class="btn" type="Button" value="Last" onclick="javascript:last()" />
-              <input id="next" class="btn" type="button" value="Next" onclick="javascript:next()"/>
-            </div>
-            <table id="test" class="table table-striped"></table>
-          </div>
-
-        <!-- <div id="pagination">
-            Results: <span id="start"></span>-<span id="end"></span> of <span id="totalSize"></span>
-            <button id="prev" class="btn" onclick="prev()">Prev</button>
-            <button id="next" class="btn" onclick="next()">Next</button>
-          </div> -->
-
-            <div class="col-sm-12">
-                <div class="card text-center">
-                    <div class="card-header">
-                <table id="test" class=" charts col-xs-12 col-sm-12 col-12 text-center table table-striped"></table>
-                </div>
+        <div class="col-sm-12">
+            <div class="card text-center">
+                <div class="card-header">
+            <table id="test" class=" charts col-xs-12 col-sm-12 col-12 text-center table table-striped"></table>
             </div>
         </div>
-        <div class="charts col-xs-12 col-sm-12 col-12 text-center" id="sales_per_STATUS_and_deal_size"></div>
-            <a class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>        
+    </div>
+    <div class="charts col-xs-12 col-sm-12 col-12 text-center" id="sales_per_STATUS_and_deal_size"></div>
+        <a class="text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" title="This resets everything." data-intro="This resets everything." data-highlightClass="intro" data-tooltipClass="intro">Reset selection</a>        
+    
+    
     </main>
 
     <!-- FOOTER -->
@@ -336,14 +406,12 @@
                         <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
                     </ul>
                 </div>
-                </hr>
             </div>	
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
                     <p><u><a href=https://www.kaggle.com/">Kaggle</a></u> provided this original unmodified database.</p>
-                    <p class="copyright">&copy All right Reversed.<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Toy story shop</a></p>
+                    <p class="copyright">&copy All right Reversed.<a class="text-green ml-2" href="https://rahmenordnung.github.io/toy_storie_shop/" target="_blank">Toy story shop</a></p>
                 </div>
-                </hr>
             </div>	
         </div>
     </section>
@@ -362,30 +430,16 @@
 
     <script type="text/javascript" src="assets/js/graph.js"></script>
 
-    
-
     <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/shepherd/1.8.1/js/shepherd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/esm/popper-utils.min.js"></script>
      -->
     
-
-    <script type="text/javascript" src="assets/js/shepherd.min.js"></script>
+     <script type="text/javascript" src="assets/js/shepherd.min.js"></script>
     <script type="text/javascript" src="assets/js/popper.min.js"></script>
     
     <script type="text/javascript" src="assets/js/scripts.js"></script>
     <script type="text/javascript" src="assets/js/map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpSSxuK48quxHpT6nGK-pzyTLJOZlFZvM&callback=initMap" async defer></script>
-
-    
-    
-    
-    
-    
-    <script>
-    
-
-    
-    </script>
 
 </body>
 </html>

@@ -1,3 +1,4 @@
+/*google maps API*/ 
 function initMap() {
     var map = new google.maps.Map(document.getElementById('Map'), {
 
@@ -10,8 +11,7 @@ function initMap() {
 
     });
 
-
-    
+/*google maps clusters geographical data*/     
     var locations = [{
         lat: 40.4938993, //Madrid, mora//
         lng: -3.712306099999978,
@@ -331,8 +331,8 @@ function initMap() {
     }, {
         lat: 40.102900, //Hillside
         lng: -78.548990,
-        title:'Pasadena',
-        businnes:'<u>Toys4GrownUps.com</u>, Hillside Dr.'
+        title:'New Bedford',
+        businnes:'<u>FunGiftIdeas.com</u>, First Street,.'
     }, {
         lat: 53.335380, //Dublin
         lng: -6.249470,
@@ -409,6 +409,8 @@ function initMap() {
         title:'Charleroi',
         businnes:'<u>Royale Belge</u>, Boulevard Tirou, 255'
     }];
+
+    /*google maps clusters functions and hover effect*/   
     var markers = locations.forEach(function(location, i) {
             var infowindow = new google.maps.InfoWindow({
             content:  location.businnes || 'no information'  

@@ -5,11 +5,13 @@ $(document).ready(function() {
       $(this).find("i").toggleClass("fas fa-angle-double-down");
   });
 
+
+
   $("#main-btn").on("click", function () {
     $(".main").hide();
     $(".dashboard-container").fadeIn(500);
-    $(".content-container").removeClass("background").addClass("background-alt");
-    introJs().start();
+    // $(".content-container").removeClass("background").addClass("background-alt");
+    // introJs().start();
   });
 
   /*selector colors javascript*/ 
@@ -17,7 +19,7 @@ $(document).ready(function() {
   $(".all_selectors").hover(function() {
       $(this).css("background-color", "#d6eeff");
   }, function() {
-      $(this).css("background-color", "#d0c9c9");
+      $(this).css("background-color", "#d4d8f9");
   });
 
   /*Shepherd.js dinamic tour*/ 
@@ -29,7 +31,17 @@ $(document).ready(function() {
   });
   
   tour.addStep('example-step', {
-    text: 'Welcome to our Toy Story shop!!! If you would like to find <b>a customer</b>, <b>a date</b> when or <b>a town</b> where our productus have been saled and delievered, you can start by clicking the selector bar highlighted.',
+    text: 'Welcome to our Toy Story shop!!! Here you can select charts grouped by comun themes. We recomend you to start with the <b>Select bar</b>',
+    attachTo: '.navbar-nav bottom',
+    buttons: [
+        {
+          text: 'Next', 
+          action: tour.next
+        }
+    ]
+  });
+  tour.addStep('example-step1', {
+    text: 'If you would like to find <b>a customer</b>, <b>a date</b> when or <b>a town</b> where our productus have been saled and delievered, you can start by clicking the selector bar highlighted.',
     attachTo: '.all_selectors bottom',
     buttons: [
         {
@@ -37,7 +49,11 @@ $(document).ready(function() {
           action: tour.next
         }
     ]
-  }); 
+  });
+  
+  'Welcome to our Toy Story shop!!! If you would like to find <b>a customer</b>, <b>a date</b> when or <b>a town</b> where our productus have been saled and delievered, you can start by clicking the selector bar highlighted.',
+
+
   tour.addStep('example-step2', {
     text: 'This button toggle through hiding and showing the charts. In this way you can choose which of them you want to be looking at',
     attachTo: '.gray bottom',
@@ -83,10 +99,17 @@ $(document).ready(function() {
       
 });
 
-
 /* toggle on click hide button*/ 
 function myFunction() {
   var x = document.getElementById("hide_botton");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+function myFunction_sales_total() {
+  var x = document.getElementById("hide_botton_total_sales");
   if (x.style.display === "none") {
     x.style.display = "block";
   } else {

@@ -5,17 +5,14 @@
   margin-bottom: 25px;
   margin-top: 25px
 }
-/*hover box text*/
+
+/*Background intro image*/
+/*backgraund intro image css */
 
 .navbar-brand{
   padding: 0px
 }
-.image{
-  height: 15%;
-  width: 100%;
- background-image: url("data/image_products/car.jpeg");
- 
-}
+
 .main_title{
 text-align: center;
 margin-bottom: 10rem;
@@ -30,6 +27,141 @@ margin-top: 6rem;
   color: cornflowerblue;
   text-shadow: 4px 4px 4px #aaa;
 }
+/*buttons intro image*/
+
+.btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  margin-right: -50%;
+  top: 50%;
+  left: 50%;
+}
+.btn-outline-primary{
+  color: #ffff07;
+  border-color: #00fbff;
+  border: double;
+  border-radius: 20px;
+  height: 60px;
+  width: 180px;
+  font-weight: 500;
+  font-size: x-large;
+  font-family: 'Italianno', cursive;
+}
+
+/*hover effect for background image */
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #6fccc7;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+}
+.overlay
+{margin-top: 250px;}
+.text_top1{
+  font-family: 'Tangerine', cursive;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 175px;
+  color: cornflowerblue;
+}
+.img-responsive{
+  width: auto;
+  background-size: cover;
+}
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.hovereffect:hover img {
+  opacity: 0.7;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: 'Italianno', cursive;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    background-color: rgb(214, 219, 221);
+    margin: 0%
+  }
+  .overlay{margin-top: 0px;}
+  .text_top1{font-size: 75px;}
+  .hovereffect h2{font-size: 17px;}
+}
+
+/* sub background bar*/
 .sub_nav{
   height: 3px;
   background-color: red;
@@ -39,18 +171,14 @@ margin-top: 6rem;
 .all_selectors{
   display: flex;
   padding: 30px;
-  margin-block-end: 50px;
-  margin-block-start: 50px;
-  background-color: #bdd4d1;
+  background-color: #5b29e4;
   border-radius: 15px;
   justify-content: center;
   border: 1px black double;
 }
 .selectors_titles{
   text-transform: uppercase;
-  font: linear-gradient(to bottom right, red, yellow,blue)
 }
-
  .select select {
         font-family: 'Arial';
         display: inline-block;
@@ -58,9 +186,9 @@ margin-top: 6rem;
         cursor: pointer;
         padding: 9px 17px;
         outline: 0;
-        border: 1px inset #29a803;
+        border: 1px inset #d4d8f9;
         border-radius: 10px;
-        background: #a5d2d9;
+        background: #cecece;
         color: #000000;
         appearance: none;
         -webkit-appearance: none;
@@ -75,7 +203,7 @@ margin-top: 6rem;
             opacity: 1;
             pointer-events: none;
         }
-
+/* 
         
 .select_arrow {
     position: absolute;
@@ -93,18 +221,21 @@ margin-top: 6rem;
 .select select:hover ~ .select_arrow,
 .select select:focus ~ .select_arrow {
     border-color: #05e3e3;
-}
-.select select:disabled ~ .select_arrow {
-    border-top-color: #ffe700;
-}
-.section_title{
-  text-align: center;
-}
+} */
+/* .select select:disabled ~ .select_arrow {
+    border-top-color: #ffe700; */
+
 
 /*settings for all charts*/
 .dashboard-container{
   margin-left: 40px;
   margin-right: 40px;
+}
+
+.number-display{
+  border: 2px solid red;
+  padding: 10px;
+  border-radius: 20px;
 }
 /*row charts_small cards*/
 .col-sm-6{
@@ -121,6 +252,7 @@ margin-bottom:75px;
 }
 .cards{
   margin-bottom: 30px;
+  margin-top: 25px;
 }
 .buttons{
   margin-bottom: 15px;
@@ -130,51 +262,17 @@ margin-bottom:75px;
 .toggle {
   margin-right:30px;
 }
-.time_charts{
-  margin-bottom: 10px;
-  border: 2px solid red;
-}
+/*section id borders and headers*/
 
-
-.btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block{
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  position: absolute;
-  transform: translate(-50%,-50%);
-  margin-right: -50%;
-  top: 50%;
-  left: 50%;
-    
-}
-
-.btn-outline-primary{
-  color: #ffff07;
-  border-color: #00fbff;
-  border: double;
-  border-radius: 20px;
-  height: 60px;
-  width: 180px;
-  font-weight: 500;
-  font-size: x-large;
-  font-family: 'Italianno', cursive;
-}
-  
-  /* Flexbox stuff */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  /* Text styles */
+.par_header_section{
+  border: 1px ridge;
+  box-shadow: 1px 1px grey;
+  background:#d4d8f9;
   text-align: center;
-  color: white;
-  
-  /* Background styles */
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  border-radius:40px;
+  margin-top:25px; 
 }
+
 
 /*footer*/
  
@@ -249,117 +347,9 @@ section .section-title {
     padding-bottom: 0px;
     margin-bottom: 10px;
 }
+body.shepherd-active::after {
+  width:max-content;
 }
-
-/*image display*/
-
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  cursor: default;
-  background: #6fccc7;
-}
-
-.hovereffect .overlay {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
-  left: 0;
-  padding: 50px 20px;
-}
-.overlay
-{margin-top: 250px;}
-.text_top1{
-  font-family: 'Tangerine', cursive;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  font-size: 175px;
-  color: cornflowerblue;
-}
-.img-responsive{
-  width: auto;
-}
-.hovereffect img {
-  display: block;
-  position: relative;
-  max-width: none;
-  width: calc(100% + 20px);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-10px,0,0);
-  transform: translate3d(-10px,0,0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.hovereffect:hover img {
-  opacity: 0.7;
-  filter: alpha(opacity=40);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-.hovereffect h2 {
-  text-transform: uppercase;
-  color: rgb(255, 255, 255);
-  font-family: 'Italianno', cursive;
-  text-align: center;
-  position: relative;
-  font-size: 30px;
-  overflow: hidden;
-  padding: 0.5em 0;
-  background-color: transparent;
-}
-
-.hovereffect h2:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  content: '';
-  -webkit-transition: -webkit-transform 0.35s;
-  transition: transform 0.35s;
-  -webkit-transform: translate3d(-100%,0,0);
-  transform: translate3d(-100%,0,0);
-}
-
-.hovereffect:hover h2:after {
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-.hovereffect a, .hovereffect p {
-  color: #FFF;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(100%,0,0);
-  transform: translate3d(100%,0,0);
-}
-
-.hovereffect:hover a, .hovereffect:hover p {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
-}
-
-@media only screen and (max-width: 850px) {
-  body {
-    background-color: rgb(214, 219, 221);
-    margin: 0%
-  }
-  .overlay{margin-top: 0px;}
-  .text_top1{font-size: 75px;}
-  .hovereffect h2{font-size: 17px;}
 }
 
 /*shepherd.js css rules*/
