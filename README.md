@@ -93,7 +93,7 @@ In the constuction of the project I have used the libraries donated by the Code 
 
 -- __Full screen background with button in hover effect__: The image contextualize the business in an the right sector. And the __hover efect__ brings the attention to the the __button__ that leads the user to the charts page.
 
---__Shepherd.js__ Thanks to javascript it makes a tour with messages and arrows and opacity  hat highlight some key elements in the page that the User should pay attention to in order to understand correctly its purpose
+--__Intro.js__ Thanks to javascript it makes a tour with messages and arrows and opacity. It highlights some key elements in the page that the User should pay attention to in order to understand correctly its purpose.
 
 -- __Charts in bootrap cards in differnt sizes__: This charts represent the data in easy to understand manner and makes easy to find connections between different variables from the dataset. Each chart is contained in a bootstrap card that improves the visibility and ads some extra info. The site contains the following types of graphs: bar charts, row charts, pie charts, and scatter plots.
 
@@ -135,7 +135,7 @@ In the constuction of the project I have used the libraries donated by the Code 
 
 --  [Goolgle fonts](https://fonts.google.com/) A collection from Goolgle with diverse fonts. (not needed to see the graphs but to style them) that were used for the graphs building. 
 
---  [shepherd.js](https://shepherdjs.dev/) Guide your users through a tour of the app. Is a javascript plug that creates an experience of a tour that is displayed at the beginning of the page. I think it improves constistently the user experience of the page.
+--  [Intro.js](https://introjs.com/) Guide your users through a tour of the app. Is a javascript plug that creates an experience of a tour that is displayed at the beginning of the page. I think it improves constistently the user experience of the page.
 
 --  [jquery.js](https://jquery.com/) is a library of Java scripts that simplifies lots of its functions, the main differance with javascriptis that it performs many common scripting functions in fewer lines of codes
 
@@ -168,7 +168,7 @@ The data set has been exported from Kaggle. A link of the exact dataset used can
 ## <a name="Media"></a> Media  ##
 All the images used in the project are taken from Google images page and there are free of copyright.
 
-In this project I used just one image __[link](http://eskipaper.com/vintage-toys-wallpaper.html#gal_post_34088_vintage-toys-wallpaper-1.jpg)__  
+In this project I used just one image __[link](https://papers.co/ipad/mm13-old-car-street-vintage/)__  
 
 ## <a name="Testing"></a> Testing  ## 
 
@@ -203,9 +203,9 @@ The normal functionality of the page has been tested through this tests:
 
 __Full Background start image__: When hovered over it shows a dinamic effect contains a button.
 
-__Go and play button__: When hovered changes color and adds margin around. When clicked hides the hole _start image_ and the _background page_ and displays the charts page that beginns with _shepherd.js tour_
+__Go and play button__: When hovered changes color and adds margin around. When clicked hides the hole _start image_ and the _background page_ and displays the charts page that beginns with _intro.js tour_
 
-__Shepherd.js tour__ it will be displayed when firsly showing the charts page or each time we refresh it and it will guide the User, explain and show him the first steps that the User can do in order understand better the page and its purpose.
+__intro.js tour__ it will be displayed when firsly showing the charts page or each time we refresh it and it will guide the User, explain and show him the first steps that the User can do in order understand better the page and its purpose.
 
 __Select bar__ When clicking have to display to indicated data from the dataset, and if clicked to filter throgh the selection and limit the other elements.
 
@@ -255,8 +255,7 @@ For me was something really exciting to work with data and create amazing graphi
 
 ## <a name="Bugs"></a> Bugs  ## 
 I had some problems with the graphs display and the bootrap classes. 
-Second problem was with shepherd.js I had some problems with the github pages that gave me error with the paths. 
-
+Second problem was the size of the background image and it was because of the use of useless classes.
 ## <a name="Acknowledgements"></a> Acknowledgements  ## 
 Carina_lead had a video about her project and that helped me when I was stucked in my page. At that time I had only the graphics done, but not a good display. And her call/video helped me.
 
