@@ -49,7 +49,7 @@ In this case the data belongs to an **American Toys company** that with the purp
 
 The name of the project it may sound as a generic one, __Toy story shop__. But as there is not present in the database. I found a very simple one that shows the domain that we are talking, toys, and that we are talking about toys with a story behind, such as old toys. 
 
-A link of the working project can be found [here](https://github.com/Rahmenordnung/toy_storie_shop/tree/master/assets/images/mockups)
+A link of the working project can be found [here](https://rahmenordnung.github.io/toy_storie_shop/)
 
 ---
 ## <a name="UX"></a>UX :
@@ -213,7 +213,7 @@ __Toggle button__ When clicked once it hides the respective card where the chart
 
 __The charts__ are interactive and responsive and if clicked they will show the section clicked and if clicked back again that will go to the normal view again. And they will be responsive to mobile devices.
 
-__Back to top button__ It will take the user when clicked to the top of the page.
+__Back to top button__ It will take the user when clicked to the top of the page. So that the user experience is improved in that one can move easily on top or down (with scrolling or navbarlinks) of the page.
 
 __Reset button__ When clicked it resets the charts filtering selection.
 
