@@ -56,7 +56,16 @@ function myFunction_territories() {
     s.style.display = "none";
   }
 }
-function myFunction_country() {
+
+// function showHide(id) {
+//   var s = document.getElementById(id);
+//   if (s.style.display === "none") {
+//     s.style.display = "block";
+//   } else {
+//     s.style.display = "none";
+//   }
+// }
+ function myFunction_country() {
   var s = document.getElementById("hide_botton_country");
   if (s.style.display === "none") {
     s.style.display = "block";
