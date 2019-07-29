@@ -1,17 +1,16 @@
 
-/*toggle arrows in hide/show button , arrow up vs arrow down*/ 
+/*toggle arrows in hide/show button, arrow up vs arrow down*/ 
 $(document).ready(function() {
   $("button").click(function(){
       $(this).find("i").toggleClass("fas fa-angle-double-down");
   });
 
-
-
+   /*start page and hide/fade IN content of charts page button*/ 
   $("#main-btn").on("click", function () {
     $(".main").hide();
-    $(".dashboard-container").fadeIn(500);
-    // $(".content-container").removeClass("background").addClass("background-alt");
-    // introJs().start();
+    $(".all_charts").fadeIn(500);
+  /*start Intro Js*/ 
+    introJs().start();
   });
 
   /*selector colors javascript*/ 
@@ -21,81 +20,6 @@ $(document).ready(function() {
   }, function() {
       $(this).css("background-color", "#d4d8f9");
   });
-
-  /*Shepherd.js dinamic tour*/ 
-
-  const tour = new Shepherd.Tour({
-    defaults: {
-        classes: 'shepherd-theme-square-dark',
-    }
-  });
-  
-  tour.addStep('example-step', {
-    text: 'Welcome to our Toy Story shop!!! Here you can select charts grouped by comun themes. We recomend you to start with the <b>Select bar</b>',
-    attachTo: '.navbar-nav bottom',
-    buttons: [
-        {
-          text: 'Next', 
-          action: tour.next
-        }
-    ]
-  });
-  tour.addStep('example-step1', {
-    text: 'If you would like to find <b>a customer</b>, <b>a date</b> when or <b>a town</b> where our productus have been saled and delievered, you can start by clicking the selector bar highlighted.',
-    attachTo: '.all_selectors bottom',
-    buttons: [
-        {
-          text: 'Next', 
-          action: tour.next
-        }
-    ]
-  });
-  
-  'Welcome to our Toy Story shop!!! If you would like to find <b>a customer</b>, <b>a date</b> when or <b>a town</b> where our productus have been saled and delievered, you can start by clicking the selector bar highlighted.',
-
-
-  tour.addStep('example-step2', {
-    text: 'This button toggle through hiding and showing the charts. In this way you can choose which of them you want to be looking at',
-    attachTo: '.gray bottom',
-    buttons: [
-        {
-          text: 'Next', 
-          action: tour.next
-        }
-    ]
-  });
-  tour.addStep('example-step3', {
-    text: 'Here you make all the selected data disappear and you will be able to start back again from the beginning',
-    attachTo: '.reset bottom',
-    buttons: [
-        {
-          text: 'Next', 
-          action: tour.next
-        }
-    ]
-  });
-  tour.addStep('example-step4', {
-    text: 'Here you will go back to the beggining of the page',
-    attachTo: '.top bottom',
-    buttons: [
-        {
-          text: 'Next', 
-          action: tour.next
-        }
-    ]
-  });
-  tour.addStep('example-step5', {
-    text: 'On this map you can find the exact adress of each of all customers , just hover the clusters and click on them',
-    attachTo: '#Map bottom',
-    buttons: [
-        {
-          text: 'End tour', 
-          action: tour.next
-        }
-    ]
-  });
-  
-    tour.start()
       
 });
 
@@ -179,9 +103,12 @@ function myFunction_deal_size() {
   } else {
     s.style.display = "none";
   }
+}
+function myFunction_table() {
+  var s = document.getElementById("hide_botton_table");
+  if (s.style.display === "none") {
+    s.style.display = "block";
+  } else {
+    s.style.display = "none";
+  }
 } 
-
-
-
-
-  

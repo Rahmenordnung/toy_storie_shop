@@ -6,17 +6,19 @@
   margin-top: 25px
 }
 
-/*Background intro image*/
-/*backgraund intro image css */
-
+/*Navbar*/
 .navbar-brand{
   padding: 0px
 }
 
 .main_title{
 text-align: center;
-margin-bottom: 10rem;
-margin-top: 6rem;
+margin-bottom: 3rem;
+margin-top: 4rem;
+font-family: 'Tangerine', serif;
+text-shadow: 4px 4px 4px #866e1d;
+color: cornflowerblue;
+font-size: 75px;
 }
 .navbars{
   font-family: 'Italianno', cursive;
@@ -27,7 +29,25 @@ margin-top: 6rem;
   color: cornflowerblue;
   text-shadow: 4px 4px 4px #aaa;
 }
+.navbar-dark .navbar-nav .nav-link{
+  color:orange;
+}
+
+/*backgraund intro image css */
 /*buttons intro image*/
+.all_charts {
+  display: None;
+}
+.content-container background{
+  position: relative;
+  height: 100vh;
+  margin-top: 0 !important;
+}
+.main{
+  position: relative;
+  height: 100vh;
+  margin-top: 0 !important;
+}
 
 .btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block{
   position: absolute;
@@ -89,7 +109,8 @@ margin-top: 6rem;
   display: block;
   position: relative;
   max-width: none;
-  width: calc(100% + 20px);
+  width: calc(100% + 10px);
+  height: inherit;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   -webkit-transform: translate3d(-10px,0,0);
@@ -153,19 +174,29 @@ margin-top: 6rem;
 
 @media only screen and (max-width: 850px) {
   body {
-    background-color: rgb(214, 219, 221);
+    /* background-color: rgb(214, 219, 221);
     margin: 0%
+    width: -webkit-fill-available;
+    height: -webkit-fill-available; */
   }
   .overlay{margin-top: 0px;}
   .text_top1{font-size: 75px;}
   .hovereffect h2{font-size: 17px;}
+  .data_content{
+    font-size: 5px;
+  }
 }
 
 /* sub background bar*/
 .sub_nav{
   height: 3px;
   background-color: red;
-  background-image: linear-gradient(to bottom right, red, yellow,blue);}
+  background-image: linear-gradient(to bottom right, red, yellow,blue);
+}
+.jumbotron{
+  padding: 0rem 2rem; 
+}
+
 
 /*selectors bar*/
 .all_selectors{
@@ -179,52 +210,30 @@ margin-top: 6rem;
 .selectors_titles{
   text-transform: uppercase;
 }
- .select select {
-        font-family: 'Arial';
-        display: inline-block;
-        width: 100%;
-        cursor: pointer;
-        padding: 9px 17px;
-        outline: 0;
-        border: 1px inset #d4d8f9;
-        border-radius: 10px;
-        background: #cecece;
-        color: #000000;
-        appearance: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-    }
-        .select select:hover,
-        .select select:focus {
-            color: #3e539b;
-            background: #ffffff;
-        }
-        .select select:disabled {
-            opacity: 1;
-            pointer-events: none;
-        }
-/* 
-        
-.select_arrow {
-    position: absolute;
-    top: 12px;
-    right: 15px;
-    width: 14px;
-    height: 14px;
-    border: solid #1925cd;
-    border-width: 0 4px 4px 0;
-    display: inline-block;
-    padding: 3px;
-    transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
+.select select {
+  font-family: 'Arial';
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 9px 17px;
+  outline: 0;
+  border: 1px inset #d4d8f9;
+  border-radius: 10px;
+  /* background: #cecece; */
+  color: #000000;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
-.select select:hover ~ .select_arrow,
-.select select:focus ~ .select_arrow {
-    border-color: #05e3e3;
-} */
-/* .select select:disabled ~ .select_arrow {
-    border-top-color: #ffe700; */
-
+.select select:hover,
+.select select:focus {
+  color: #3e539b;
+  background: #ffffff;
+}
+.select select:disabled {
+  opacity: 1;
+  pointer-events: none;
+}
 
 /*settings for all charts*/
 .dashboard-container{
@@ -262,10 +271,13 @@ margin-bottom:75px;
 .toggle {
   margin-right:30px;
 }
+
 /*section id borders and headers*/
 
 .par_header_section{
   border: 1px ridge;
+  color:orange;
+  font-size: larger;
   box-shadow: 1px 1px grey;
   background:#d4d8f9;
   text-align: center;
@@ -350,27 +362,11 @@ section .section-title {
 body.shepherd-active::after {
   width:max-content;
 }
+.table th{
+  width: 80%;
+}
 }
 
-/*shepherd.js css rules*/
- 
- body::after {
-  opacity: 0;
-  }
+
   
-  body.shepherd-active::after {
-  content: "";
-  display: block;
-  background-color: #000;
-  opacity: 0.4;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1; }
-  
-  .shepherd-element.shepherd-open, .shepherd-target.shepherd-enabled {
-  z-index: 10000000;
-  position: relative; 
-  } 
+
