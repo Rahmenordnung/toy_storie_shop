@@ -49,7 +49,7 @@ In this case the data belongs to an **American Toys company** that with the purp
 
 The name of the project it may sound as a generic one, __Toy story shop__. But as there is not present in the database. I found a very simple one that shows the domain that we are talking, toys, and that we are talking about toys with a story behind, such as old toys. 
 
-A link of the working project can be found [here](https://github.com/Rahmenordnung/toy_storie_shop/tree/master/assets/images/mockups)
+A link of the working project can be found [here](https://rahmenordnung.github.io/toy_storie_shop/)
 
 ---
 ## <a name="UX"></a>UX :
