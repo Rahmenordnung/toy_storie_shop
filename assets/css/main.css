@@ -70,6 +70,15 @@ font-size: 75px;
   font-size: x-large;
   font-family: 'Italianno', cursive;
 }
+/*text intro_page*/
+.publicity{
+  color:violet;}
+.sales_made{
+  color:red;
+} 
+.message{
+  color: greenyellow;
+} 
 
 /*hover effect for background image */
 
@@ -91,10 +100,10 @@ font-size: 75px;
   overflow: hidden;
   top: 0;
   left: 0;
-  padding: 50px 20px;
+  
 }
 .overlay
-{margin-top: 250px;}
+{margin-top: 200px;}
 .text_top1{
   font-family: 'Tangerine', cursive;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
@@ -173,12 +182,6 @@ font-size: 75px;
 }
 
 @media only screen and (max-width: 850px) {
-  body {
-    /* background-color: rgb(214, 219, 221);
-    margin: 0%
-    width: -webkit-fill-available;
-    height: -webkit-fill-available; */
-  }
   .overlay{margin-top: 0px;}
   .text_top1{font-size: 75px;}
   .hovereffect h2{font-size: 17px;}

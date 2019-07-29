@@ -11,7 +11,6 @@
     <!-- Load stylesheets -->
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" />
-
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intro.js/2.9.3/introjs.css" />    
     <link rel="stylesheet" href="assets/css/main.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/dc.min.css" type="text/css" />
@@ -31,6 +30,7 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
             <div class=" navbars collapse navbar-collapse" id="navbarResponsive">
+                <!--Intro.js enclosed in navbarelement (1) -->
             <ul class="navbar-nav ml-auto data-step="1" data-position="bottom" data-intro="Welcome to our <b>Toy Story shop!!!</b> Here you can select charts grouped by common themes. We recomend you to start with the <b>Select bar</b>"
                 <li class="nav-item">
                     <a class="nav-link menu" href="#select_bar">Select bar </a>  
@@ -62,7 +62,9 @@
                 <img class="img-responsive" src="assets/images/papers.co-mm13-old-car-street-vintage-40-wallpaper.jpg" alt="">
                     <div class="overlay">
                             <h1 class="text_top1">Toy story shop</h1>
-                            <h2 class="text_top2">We sell old toys! We celebtrate 10 M sales! Look around to see how we got there... </h2>
+                            <h2 class="text_top2"><p><span class=publicity>We sell old toys!</span></p>
+                                <p><span class=sales_made> We celebtrate 10 M sales!</span></p> 
+                                <p><span class=message>&nbsp; Look around to see how we got there...</span></p> </h2>
                         <p>
                             <button type="button"
                                 class="btn btn-outline-primary flicker-in-1 hvr-bounce-in mx-auto d-block"
@@ -91,6 +93,7 @@
             <!--- Selectors section -->
 
             <p class="par_header_section">Select bar</p>
+            <!--Intro.js enclosed in class (2) slect bar-->
             <div class="all_selectors" id="select_bar" data-step="2" data-intro="If you would like to find <b>a customer</b>, <b>a date</b> when or <b>a town</b> where our productus have been saled and delievered, you can start by clicking the selector bar highlighted.">
                 <div class="container select">
                     <div class="row">
@@ -114,14 +117,16 @@
                     <div class="card-header">
                     <!--- toggle button -->    
                         <div class=toggle>
-                            <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_sales_total()" data-toggle="tooltip" title="toggle" data-step="3" data-intro="This button toggle through hiding and showing the charts. In this way you can choose which of them you want to be looking at"><i class="fa fa-angle-double-up"></i></button>
-                        Total sales box</h3>
+                            <!--Intro.js enclosed in class (3) toggle button -->
+                            <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_sales_total()" id="1" data-toggle="tooltip" title="toggle" data-step="3" data-intro="This button toggle through hiding and showing the charts. In this way you can choose which of them you want to be looking at"><i class="fa fa-angle-double-up"></i></button>
+                            Total sales box</h3>
                         </div>
                     </div>
                     <div id="hide_botton_total_sales">
                         <div class="card-body">
                             <p class="card-text"> We celebrate 10 Milions total sales. We are all over the world, and we want to keep on expanding and playing with you.</p> 
                             <div class=" total charts col-xs-12 col-sm-12 col-12 text-center" id="numSALES"></div>
+                            <!--Intro.js enclosed in anchor tag (4) reset button -->
                             <a  class=" reset text-white buttons btn btn-danger border-white" onclick="javascript:dc.filterAll(); dc.renderAll();" data-highlightClass="intro" data-tooltipClass="intro" data-step="4" data-intro="Here you make all the selected data disappear and you will be able to start back again from the beginning">Reset selection</a>
                         </div>
                         <div class="card-footer text-muted">
@@ -138,7 +143,7 @@
                     <div class="card-header">
                     <!--- toggle button -->    
                         <div class=toggle>
-                            <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>
+                            <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction()" id="1" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>
                             Scatter Plot all sales chart</h3>
                         </div>
                     </div>
@@ -164,7 +169,7 @@
                         <div class="card-header">
                             <!--- toggle button -->
                             <div class=toggle>
-                                <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_product()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Individualized products sale distribution</h5>
+                                <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_product()" id="2" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Individualized products sale distribution</h5>
                             </div>
                         </div>
                         <div id="hide_botton_product">            
@@ -172,6 +177,7 @@
                                 <p class="card-text">Classical cars and Vintage are our star products, followed by the rest at similar levels. Our antique trains are a product still in development, with the lowest sales rate. </p>
                                 <div class=" charts col-xs-12 col-sm-12 col-12 text-center" id="products"></div>
                                 <!--- Back on button -->
+                                <!--Intro.js enclosed anchortag (5) back on top button -->
                                 <a href="#" class="top buttons btn btn-primary" data-step="5" data-intro="Here you will go back to the beggining of the page"
                                 >Back on top</a>
                                 <div class="card-footer text-muted">
@@ -189,7 +195,7 @@
                         <div class="card-header">
                             <!--- toggle button -->
                             <div class=toggle>
-                                <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_deal_size()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Deal size and deal status graphic</h5>
+                                <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_deal_size()" id="3" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Deal size and deal status graphic</h5>
                             </div>
                         </div>
                         <div id="hide_botton_deal_size">            
@@ -209,14 +215,14 @@
         </div>     
             <!--- Sales related to Territory donut chart -->
 
-        <div class="geography" id="geography_charts"><p class="par_header_section">Geography charts</p>
+        <div class="geography" id="geography"><p class="par_header_section">Geography charts</p>
             <div class="row cards">
                 <div class="col-sm-6">
                     <div class="card text-center">
                         <div class="card-header">
                         <!--- toggle button -->     
                             <div class=toggle>
-                                <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_territories()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Distribution of the products by territories</h5>
+                                <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_territories()" id="4" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Distribution of the products by territories</h5>
                             </div>    
                         </div>
                     <div id="hide_botton_territories">
@@ -237,7 +243,7 @@
                     <div class="card text-center">
                         <div class="card-header">
                                 <div class=toggle>
-                                    <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_country()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Countries distribution per sales</h5>
+                                    <h5 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_country()" id="5" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Countries distribution per sales</h5>
                                 </div> 
                             </div>
                 <!--- toggle button -->            
@@ -263,12 +269,13 @@
                         <div class="card-header">
                             <!--- toggle button -->
                             <div class=toggle>
-                                <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_map()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Delivery map</h3>
+                                <h3 class="card-title"><button class="gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_map()" id="6" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Delivery map</h3>
                             </div>
                         </div>
                         <div id="hide_botton_map">
                             <div class="card-body">
                                 <p class="card-text">Our products reach all corners of the world</p>
+                                <!--Intro.js enclosed in class (6) google map -->
                             <div class="  col-xs-12 col-sm-12 col-12 text-center" id="Map" data-step="6" data-intro="On this map you can find the exact address of each of all customers, just hover the clusters and click on them"></div>
                             <div class="card-footer text-muted">
                                 Worldwide, wherever people recognize the quality of our products.
@@ -363,6 +370,7 @@
                         <div class="card-header">
                             <!--- toggle button -->
                             <div class=toggle>
+                                <!--Intro.js enclosed in class (7) data_table -->
                                 <div id="dataTable-div" data-step="7" data-intro="Here is a table with all the data available , you can inspect it or pas the next or preview page. <b>Enjoy!</b>">
                                     <h3 class="card-title">
                                     <button class="table_hide gray toggle btn btn-outline-secondary btn-circle" onclick="myFunction_table()" data-toggle="tooltip" title="toggle"><i class="fa fa-angle-double-up"></i></button>Data Table Pagination</h3>
@@ -405,8 +413,8 @@
             </div>	
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-                    <p><u><a href=https://www.kaggle.com/">Kaggle</a></u> provided this original unmodified database.</p>
-                    <p class="copyright">&copy All right Reversed.<a class="text-green ml-2" href="https://rahmenordnung.github.io/toy_storie_shop/" target="_blank">Toy story shop</a></p>
+                    <p><u><a href="https://www.kaggle.com/">Kaggle</a></u> provided this original unmodified database.</p>
+                    <p class="copyright">&copy All rights reversed.<a class="text-green ml-2" href="https://rahmenordnung.github.io/toy_storie_shop/" target="_blank">Toy story shop</a></p>
                 </div>
             </div>	
         </div>
