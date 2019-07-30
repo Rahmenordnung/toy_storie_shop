@@ -105,7 +105,9 @@ In the constuction of the project I have used the libraries donated by the Code 
 
 -- __Search selectors__: There are three selectors that ease the customers display a lot. One can look after the __City__ where the products were delievered, the __Customer name__ and the __order date__ of the delievery. In that way the user can have differents perspectives in which the the data can be analized
 
--- __Google map__: Allwos the user to locate precisely all the custommers adresses listed in the database. On hover it appears the city name and by clicking the marker, the Customer firma name and the adress available in the records. (Uses Google Maps and Google Places). See js/maps.js. *Mistakes by the adress could appear due to the geographical localizators or incomplete data in the dataset
+-- __Google map__: Allows the user to locate precisely all the custommers adresses listed in the database. On hover it appears the city name and by clicking the marker, the Customer firma name and the adress available in the records. (Uses Google Maps and Google Places). See js/maps.js. *Mistakes by the adress could appear due to the geographical localizators or incomplete data in the dataset
+
+-- __Data table with pagination__ Represent all the data displayed in 4 columns, __Ordernumber, orderdate, city, customer name__ limitated to 21 items per page. This allows the user a full and easy visualization of the data. Responsive to the charts sellection it consist to be a true help for one who wants a full detail of the sales records of one speciffic companny(for example).
 
 -- __Footer__: Informs the user that the site is hosted by Github Pages, and provides us a link to where they can view the source code on Github, and also a link to the dataset in a elegant dark green color.
 
@@ -160,6 +162,8 @@ These is a representative map, but not a dynamic one connected to the crossfilte
 
 * Also it would be nice also to make maybe graphics more complicated with more variables connected.
 
+* The datatable is not as responsive as I would like because the total number of items is not refreshing after each sellection. I would like that to be improved in a future. 
+
 ---
 ## <a name="Dataset"></a>Dataset
 
@@ -212,6 +216,8 @@ __Select bar__ When clicking have to display to indicated data from the dataset,
 __Toggle button__ When clicked once it hides the respective card where the charts are contained, twice it shows it back again. This can be helpfull in order to ease the graphs display and their analysis.
 
 __The charts__ are interactive and responsive and if clicked they will show the section clicked and if clicked back again that will go to the normal view again. And they will be responsive to mobile devices.
+
+__The data table and pagination buttons__ are responsive and interactive. The number of files displayed it will change after each click on a chart, and it will reset when clicking the reset button. The next button will go forward and previous will go back.
 
 __Back to top button__ It will take the user when clicked to the top of the page. So that the user experience is improved in that one can move easily on top or down (with scrolling or navbarlinks) of the page.
 
